@@ -224,6 +224,8 @@ body {
     box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
 }
 
+.nav-link.active{background-color:#007bff; color:#fff}
+
 
 /* //mark: login */
 body.login_body {
@@ -264,22 +266,31 @@ hr{
     margin-bottom: 25px;
 }
 /* 데이트 피커 */
-.table.search_day .datepick .form-control{
+.search_day .datepick{
+	position: relative;
+	display: inline-block;
+}
+.search_day .datepick:after{
+	content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    background: url('../img/ico_cal.png') 82% 50% no-repeat;
+    z-index: 99999;
+    background-size: 22px;
+}
+.search_day .datepick .form-control{
     display: inline-block;
 }
 /* 인덱스 게시판 기간조회 테이블 */
-.table.search_day th,
-.table.search_day td{
-    border: none;
-}
-.table.search_day td{
-    text-align: center;
-}
-
 .datepick input.form-control{
-    width: 45%;
+	width: 150px;
 }
-
+.custom-file-label::after{
+	content: '파일선택';
+}
 /* 우편번호 modal */
 .postmodal_content .postmodal_header, 
 .postmodal_content .postmodal_wrap .postmodal_search,
@@ -371,7 +382,16 @@ hr{
     text-align: center;
     margin-bottom: 16px;
 }
-
+/* 영상 리스트 */
+.thumb-list > a{
+	display: inline-block;
+	width: 33%;
+	padding: 10px;
+	text-align: center;
+}
+.thumb-list > a > span{
+	display: block;
+}
 
 /*!
  * Font Awesome Free 5.10.0 by @fontawesome - https://fontawesome.com

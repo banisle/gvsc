@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <!-- admin custom CSS -->
+    <link rel="stylesheet" href="../../css/admin_custom.css" />
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+	<script src="../../js/bootstrap.bundle.min.js"></script>
+	<!-- datepicker lib -->
+    <script src="../../js/jquery-ui.js"></script>
+    <!-- admin custom JS -->
+    <script src="../../js/admin_custom.js"></script>
+
+    <title>계정관리 - 어드민</title>
+</head>
+
+<body>
+
+    <!-- //mark : (sta) 상단 nav -->
+    <nav class="navbar bg-white fixed-top flex-md-nowrap p-0 shadow">
+        <div class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">
+			<a href="">	경기도 로고</a>
+			<a href="">	경기도 청소년활동진흥센터 로고</a>
+		</div>
+		<div class="navbar bg-white ">
+			<a class="nav-link" href="#">소개</a>
+			<a class="nav-link" href="#">전체공개</a>
+			<a class="nav-link" href="#">正말正책</a>
+			<a class="nav-link" href="#">자료실</a>
+			<a class="nav-link active" href="#">기본설정</a>
+        </div>
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" href="#">로그아웃</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- (end) 상단 nav -->
+    <!-- //mark : 컨테이너 -->
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebar" class="col-md-2 d-none d-md-block">
+                <div class="list-group panel">
+                    <a href="#menu1" class="list-group-item" data-toggle="collapse" data-parent="#sidebar"
+                        aria-expanded="true"><span class="hidden-sm-down">기본설정</span>
+                    </a>
+                    <div class="collapse show" id="menu1">
+                        <a href="#" class="list-group-item " data-parent="#menu1">계정관리</a>
+                        <a href="#" class="list-group-item active" data-parent="#menu1">팝업창관리</a>
+                        <a href="#" class="list-group-item" data-parent="#menu1">배너관리</a>
+                        <a href="#" class="list-group-item" data-parent="#menu1">홈설정</a>
+                    </div>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+				<h1 class="mb-5">팝업 등록</h1>
+                <div class="">
+					
+					<div class="mt-5">
+						<table class="table table-bordered mt-5">
+							<colgroup>
+								<col width="200px">
+								<col width="*">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>팝업이름</th>
+									<td>
+										<div class="form-check form-check-inline">
+											<input class="form-control col" type="text" >
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>사용여부</th>
+									<td>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="" value="" >
+											<label class="form-check-label" for="">사용</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="" value="" checked>
+											<label class="form-check-label" for="">사용안함(중지)
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>팝업위치</th>
+									<td>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="" value="" checked>
+											<label class="form-check-label" for="">메인페이지</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="" value="" >
+											<label class="form-check-label" for="">특정페이지</label>
+										</div>
+										<input class="form-control col" type="text" >
+										<span class="text-info">* URL은 반드시 http://”를 포함하여 입력하세요. </span>
+									</td>
+								</tr>
+								<tr class="search_day">
+									<th>게시기간</th>
+									<td>
+										<span class="datepick"><input type="text" class="form-control"></span>
+										<div class="form-check form-check-inline">
+											<select name="" id=""  class="custom-select">
+												<option value="">0시</option>
+												<option value="">1시</option>
+												<option value="">2시</option>
+												<option value="">3시</option>
+												<option value="">4시</option>
+												<option value="">5시</option>
+												<option value="">6시</option>
+												<option value="">7시</option>
+												<option value="">8시</option>
+												<option value="">9시</option>
+												<option value="">10시</option>
+												<option value="">11시</option>
+												<option value="">12시</option>
+												<option value="">13시</option>
+												<option value="">14시</option>
+												<option value="">15시</option>
+												<option value="">16시</option>
+												<option value="">17시</option>
+												<option value="">18시</option>
+												<option value="">19시</option>
+												<option value="">20시</option>
+												<option value="">21시</option>
+												<option value="">22시</option>
+												<option value="">23시</option>
+											</select>
+										</div>
+										~
+										<span class="datepick"><input type="text" class="form-control"></span>
+										<div class="form-check form-check-inline">
+											<select name="" id=""  class="custom-select">
+												<option value="">0시</option>
+												<option value="">1시</option>
+												<option value="">2시</option>
+												<option value="">3시</option>
+												<option value="">4시</option>
+												<option value="">5시</option>
+												<option value="">6시</option>
+												<option value="">7시</option>
+												<option value="">8시</option>
+												<option value="">9시</option>
+												<option value="">10시</option>
+												<option value="">11시</option>
+												<option value="">12시</option>
+												<option value="">13시</option>
+												<option value="">14시</option>
+												<option value="">15시</option>
+												<option value="">16시</option>
+												<option value="">17시</option>
+												<option value="">18시</option>
+												<option value="">19시</option>
+												<option value="">20시</option>
+												<option value="">21시</option>
+												<option value="">22시</option>
+												<option value="">23시</option>
+											</select>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>팝업창 위치</th>
+									<td>
+										상단에서 <input class="col-form-label" type="text" > px /
+										좌측에서 <input class="col-form-label" type="text" > px
+									</td>
+								</tr>
+								<tr>
+									<th>팝업창 표시</th>
+									<td>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="" value="" checked>
+											<label class="form-check-label" for="">하루동안 열지 않음</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="" value="" >
+											<label class="form-check-label" for="">다시 열지 않음</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>팝업창 링크</th>
+									<td>
+										<input class="form-control col" type="text" >
+										<span class="text-info">* URL은 반드시 http://”를 포함하여 입력하세요. </span>
+									</td>
+								</tr>
+								<tr>
+									<th>이미지 파일</th>
+									<td>
+										<div class="custom-file">
+											<input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
+											<label class="custom-file-label" for="inputGroupFile04">선택된 파일 없음</label>
+										</div>
+									</td>
+								</tr>
+								<!-- 파일 선택시 표시됨 -->
+								<tr>
+									<th>이미지 파일</th>
+									<td>
+										Popup1.jpg
+										<button type="button" class="ml-5 btn btn-outline-primary btn-sm">업로드</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="text-right">
+							<button type="button" class="btn btn-lg btn-primary">등록</button>
+							<button type="button" class="btn btn-lg btn-secondary">목록</button>
+						</div>
+					</div>
+                </div>
+            </main>
+        </div>
+    </div>
+	<script>
+        //데이트픽커
+        $(".datepick input").datepicker({
+            dateFormat: 'yy-mm-dd',
+            showMonthAfterYear: true //년 월
+                ,
+            yearSuffix: "년" //달력의 년도 부분 뒤에 붙는 텍스트
+                ,
+            monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11',
+                '12'] //달력의 월 부분 텍스트
+                ,
+            monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월','11월', '12월'] //달력의 월 부분 Tooltip 텍스트
+                ,
+            dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'] //달력의 요일 부분 텍스트
+                ,
+            dayNames: ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'] //달력의 요일 부분 Tooltip 텍스트
+        });
+    </script>
+
+</body>
+
+</html>

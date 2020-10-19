@@ -1,4 +1,3 @@
-// thenet UI LIB 0.7
 // banisle@gmail.com
 
 'use strict';
@@ -2417,11 +2416,11 @@ ANUI.module = (function () {
 
             $up.on('click', function () {
                 upFunc($(this));
-                console.log('up');
+                // console.log('up');
             });
             $dn.on('click', function () {
                 dnFunc($(this));
-                console.log('dn');
+                // console.log('dn');
             });
 
             var upFunc = function (t) {

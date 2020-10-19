@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <!-- admin custom CSS -->
+    <link rel="stylesheet" href="../../css/admin_custom.css" />
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+	<script src="../../js/bootstrap.bundle.min.js"></script>
+	<!-- datepicker lib -->
+    <script src="../../js/jquery-ui.js"></script>
+    <!-- admin custom JS -->
+	<script src="../../js/admin_custom.js"></script>
+	<!-- front ui -->
+    <script src="../../js/ANUI.js"></script>
+
+    <title>계정관리 - 어드민</title>
+</head>
+
+<body>
+
+    <!-- //mark : (sta) 상단 nav -->
+    <nav class="navbar bg-white fixed-top flex-md-nowrap p-0 shadow">
+        <div class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">
+			<a href="">	경기도 로고</a>
+			<a href="">	경기도 청소년활동진흥센터 로고</a>
+		</div>
+		<div class="navbar bg-white ">
+			<a class="nav-link" href="#">소개</a>
+			<a class="nav-link" href="#">전체공개</a>
+			<a class="nav-link" href="#">正말正책</a>
+			<a class="nav-link" href="#">자료실</a>
+			<a class="nav-link active" href="#">기본설정</a>
+        </div>
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" href="#">로그아웃</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- (end) 상단 nav -->
+    <!-- //mark : 컨테이너 -->
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebar" class="col-md-2 d-none d-md-block">
+                <div class="list-group panel">
+                    <a href="#menu1" class="list-group-item" data-toggle="collapse" data-parent="#sidebar"
+                        aria-expanded="true"><span class="hidden-sm-down">기본설정</span>
+                    </a>
+                    <div class="collapse show" id="menu1">
+                        <a href="#" class="list-group-item " data-parent="#menu1">계정관리</a>
+                        <a href="#" class="list-group-item " data-parent="#menu1">팝업창관리</a>
+                        <a href="#" class="list-group-item" data-parent="#menu1">배너관리</a>
+                        <a href="#" class="list-group-item active" data-parent="#menu1">홈설정</a>
+                    </div>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+				<h1 class="mb-5">홈화면 영상자료 등록 </h1>
+                <div class="">
+					<div class="mt-5">
+						<table class="table border-bottom">
+							<thead class="thead-dark">
+								<tr>
+									<th scope="col">순번</th>
+									<th scope="col">자료유형</th>
+									<th scope="col">영상썸네일</th>
+									<th scope="col">영상제목</th>
+									<th scope="col">등록 여부</th>
+									<th scope="col">노출순서</th>
+								</tr>
+							</thead>
+							<tbody class="ui-updn">
+								<tr>
+									<td>1</td>
+									<td>교육</td>
+									<td><img src="../../img/@mv01.png" alt="[청소년 공감콘서트 온드림스쿨 강원 동해편] 크리에이터 도티"></td>
+									<td>[청소년 공감콘서트 온드림스쿨 강원 동해편] 크리에이터 도티 </td>
+									<td>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="" value="" checked>
+											<label class="form-check-label" for="">등록중</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="" value="">
+											<label class="form-check-label" for="">등록대기</label>
+										</div>
+										<button type="button" class="btn btn-outline-primary btn-sm">등록 삭제</button>
+									</td>
+									<td>
+										<div class="btn-wrap">
+											<span><button type="button" class="btn-icn icn_up ui-row-up"><span class="">▲</span></button></span>
+											<span><button type="button" class="btn-icn icn_up ui-row-dn"><span class="">▼</span></button></span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>홍보</td>
+									<td><img src="../../img/@mv02.png" alt="청소년 지도사는 담배피는 학생을 보면 어떻게 하나요? (청소년지도사 Q&A)"></td>
+									<td>청소년 지도사는 담배피는 학생을 보면 어떻게 하나요? (청소년지도사 Q&A) </td>
+									<td>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="" value="" checked>
+											<label class="form-check-label" for="">등록중</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="" value="">
+											<label class="form-check-label" for="">등록대기</label>
+										</div>
+										<button type="button" class="btn btn-outline-primary btn-sm">등록 삭제</button>
+									</td>
+									<td>
+										<div class="btn-wrap">
+											<span><button type="button" class="btn-icn icn_up ui-row-up"><span class="">▲</span></button></span>
+											<span><button type="button" class="btn-icn icn_up ui-row-dn"><span class="">▼</span></button></span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>교육</td>
+									<td><img src="../../img/@mv01.png" alt="[청소년 공감콘서트 온드림스쿨 강원 동해편] 크리에이터 도티"></td>
+									<td>[청소년 공감콘서트 온드림스쿨 강원 동해편] 크리에이터 도티 </td>
+									<td>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="" value="" checked>
+											<label class="form-check-label" for="">등록중</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="" value="">
+											<label class="form-check-label" for="">등록대기</label>
+										</div>
+										<button type="button" class="btn btn-outline-primary btn-sm">등록 삭제</button>
+									</td>
+									<td>
+										<div class="btn-wrap">
+											<span><button type="button" class="btn-icn icn_up ui-row-up"><span class="">▲</span></button></span>
+											<span><button type="button" class="btn-icn icn_up ui-row-dn"><span class="">▼</span></button></span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>홍보</td>
+									<td><img src="../../img/@mv02.png" alt="청소년 지도사는 담배피는 학생을 보면 어떻게 하나요? (청소년지도사 Q&A)"></td>
+									<td>청소년 지도사는 담배피는 학생을 보면 어떻게 하나요? (청소년지도사 Q&A) </td>
+									<td>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="" value="" checked>
+											<label class="form-check-label" for="">등록중</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="" value="">
+											<label class="form-check-label" for="">등록대기</label>
+										</div>
+										<button type="button" class="btn btn-outline-primary btn-sm">등록 삭제</button>
+									</td>
+									<td>
+										<div class="btn-wrap">
+											<span><button type="button" class="btn-icn icn_up ui-row-up"><span class="">▲</span></button></span>
+											<span><button type="button" class="btn-icn icn_up ui-row-dn"><span class="">▼</span></button></span>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="text-right">
+							<button type="button" class="btn btn-lg btn-primary">교육영상 등록하기 </button>
+							<button type="button" class="btn btn-lg btn-secondary">홍보영상 등록하기 </button>
+						</div>
+					</div>
+                </div>
+            </main>
+        </div>
+    </div>
+<script>
+	ANUI.module.updnChgUi('.ui-updn','tr');
+</script>
+</body>
+
+</html>
