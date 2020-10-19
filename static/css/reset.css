@@ -67,8 +67,13 @@ outline: none;
 		url('../fonts/notokr-bold.woff') format('woff');
 }
 
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
 .fw-l{font-weight: 100}
 .fw-r{font-weight: 300}
 .fw-m{font-weight: 500}
 .fw-b{font-weight: 700}
+
+.ff-ng-r{ font-family: 'Nanum Gothic'; font-weight: 400; }
+.ff-ng-b{ font-family: 'Nanum Gothic'; font-weight: 700; }
+.ff-ng-eb{ font-family: 'Nanum Gothic'; font-weight: 800; }
