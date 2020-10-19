@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <!-- admin custom CSS -->
+    <link rel="stylesheet" href="../../css/admin_custom.css" />
+    <!-- 데이트피커-->
+    <link rel="stylesheet" href="../../css/jquery-ui.css">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <!-- datepicker lib -->
+    <script src="../../js/jquery-ui.js"></script>
+    <!-- admin custom JS -->
+    <script src="../../js/admin_custom.js"></script>
+
+    <title>어드민 템플릿</title>
+</head>
+
+<body>
+
+    <!-- //mark : (sta) 상단 nav -->
+    <nav class="navbar bg-white fixed-top flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">logo</a>
+        <div class="navbar-collapse px-3">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-info">link</button>
+            </div>
+        </div>
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" href="#">로그인</a>
+                <!-- <a class="nav-link" href="#">Sign out</a> -->
+            </li>
+        </ul>
+    </nav>
+    <!-- (end) 상단 nav -->
+    <!-- //mark : 컨테이너 -->
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebar" class="col-md-2 d-none d-md-block">
+                <div class="list-group panel">
+                    <a href="#menu1" class="list-group-item collapsed" data-toggle="collapse" data-parent="#sidebar"
+                        aria-expanded="false"><span class="hidden-sm-down">Item 1 - hasSub</span>
+                    </a>
+                    <div class="collapse" id="menu1">
+                        <a href="#" class="list-group-item" data-parent="#menu1">Subitem 2</a>
+                        <a href="#" class="list-group-item" data-parent="#menu1">Subitem 3</a>
+                    </div>
+                    <a href="#" class="list-group-item collapsed" data-parent="#sidebar">
+                        <span class="hidden-sm-down">Item 2</span></a>
+                    <a href="#menu3" class="list-group-item collapsed" data-toggle="collapse" data-parent="#sidebar"
+                        aria-expanded="false"><span class="hidden-sm-down">Item 3 - hasSub</span></a>
+                    <div class="collapse" id="menu3">
+                        <a href="#" class="list-group-item" data-parent="#menu3">3.1</a>
+                        <a href="#" class="list-group-item" data-parent="#menu3">3.3</a>
+                    </div>
+                    <a href="./btn.html" class="list-group-item collapsed" data-parent="#sidebar">
+                        <span class="hidden-sm-down">btn</span></a>
+                    <a href="./join.html" class="list-group-item collapsed" data-parent="#sidebar">
+                        <span class="hidden-sm-down">join</span></a>
+                    <a href="./login.html" class="list-group-item collapsed" data-parent="#sidebar">
+                        <span class="hidden-sm-down">login</span></a>
+                    <a href="./modal.html" class="list-group-item collapsed" data-parent="#sidebar"><span
+                            class="hidden-sm-down">modal</span></a>
+                    <a href="./tab.html" class="list-group-item collapsed" data-parent="#sidebar">
+                        <span class="hidden-sm-down">tab</span></a>
+                    <a href="./table.html" class="list-group-item collapsed" data-parent="#sidebar">
+                        <span class="hidden-sm-down">table</span></a>
+                    <a href="./tabletype.html" class="list-group-item collapsed" data-parent="#sidebar">
+                        <span class="hidden-sm-down">tabletype</span></a>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+                <h1 class="">조회 테이블</h1>
+                <table class="table search_day">
+                    <colgroup>
+                        <col width="10%">
+                        <col width="23%">
+                        <col width="27%">
+                        <col width="">
+                    </colgroup>
+                    <tr>
+                        <th>조회기간</th>
+                        <td>
+                            <span class="datepick"><input type="text" class="form-control"></span>
+                            ~
+                            <span class="datepick"><input type="text" class="form-control"></span>
+                        </td>
+                        <td>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <!--라디오는 name를 동일하게 줘야함 체크박스는 다르게 줘야함-->
+                                <label class="btn btn-secondary active">
+                                    <input type="radio" name="options" id="option1" autocomplete="off" checked> 오늘
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> 7일
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="options" id="option3" autocomplete="off"> 1개월
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="options" id="option4" autocomplete="off"> 3개월
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="options" id="option5" autocomplete="off"> 6개월
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="options" id="option6" autocomplete="off"> 12개월
+                                </label>
+                            </div>
+                        </td>
+                        <th>
+                            <button type="button" class="btn btn-outline-dark">기간 조회</button>
+                        </th>
+                    </tr>
+                </table>
+                <!--
+              <div class="form-inline">
+                  <strong class="col-1">조회기간</strong>
+                  <div class="form-inline">
+                    <div class="col-5 ml-4">
+                        <span class="datepick"><input type="text" class="form-control"></span>~<span class="datepick"><input type="text" class="form-control col-form-label-sm"></span>
+                    </div>
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons"> //라디오는 name를 동일하게 줘야함 체크박스는 다르게 줘야함
+                        <label class="btn btn-sm btn-secondary active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> 오늘
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> 7일
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> 1개월
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="option4" autocomplete="off"> 3개월
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="option5" autocomplete="off"> 6개월
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="option6" autocomplete="off"> 12개월
+                        </label>
+                    </div>
+                    <div class=" ml-4">
+                        <button type="button" class="btn btn-outline-dark">기간 조회</button>
+                    </div>
+                  </div>
+              </div>
+              -->
+
+                <table class="table table-bordered">
+                    <colgroup>
+                        <col width="10%">
+                        <col width="23%">
+                        <col width="10%">
+                        <col width="23%">
+                        <col width="10%">
+                        <col width="23%">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>상태</th>
+                            <td>
+                                <select class="form-control">
+                                    <option>정상</option>
+                                    <option>비정상</option>
+                                </select>
+                            </td>
+                            <th>카테고리</th>
+                            <td>
+                                <select class="form-control">
+                                    <option>전체</option>
+                                    <option>카테고리1</option>
+                                    <option>카테고리2</option>
+                                </select>
+                            </td>
+                            <th>기관</th>
+                            <td>
+                                <select class="form-control">
+                                    <option>전체</option>
+                                    <option>카테고리1</option>
+                                    <option>카테고리2</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>검색 입력</th>
+                            <td colspan="5">
+                                <div class="form-inline">
+                                    <select class="form-control col-2 mr-2">
+                                        <option>전체</option>
+                                        <option>카테고리1</option>
+                                        <option>카테고리2</option>
+                                    </select>
+                                    <input class="form-control col" type="search" placeholder="직접 입력 삭제 버튼 나옴"
+                                        aria-label="Search">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary btn-lg">검색하기</button>
+                </div>
+                <!-- 조회결과 테이블 -->
+                <div class="mt-5">
+                    <p><strong>조회 결과</strong><span class="ml-2">2019-10-22 00:00:00</span></p>
+                    <table class="table border-bottom">
+                        <thead>
+                            <tr>
+                                <th scope="col">NO</th>
+                                <th scope="col">카테고리</th>
+                                <th scope="col">상품 코드</th>
+                                <th scope="col">제목</th>
+                                <th scope="col">이용 조건</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>트래킹</td>
+                                <td>ABCDEFG</td>
+                                <td>조회 테이블 입니다</td>
+                                <td>무료</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>트래킹</td>
+                                <td>ABCDEFG</td>
+                                <td>조회 테이블 입니다</td>
+                                <td>무료</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>트래킹</td>
+                                <td>ABCDEFG</td>
+                                <td>조회 테이블 입니다</td>
+                                <td>무료</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="text-right">
+                        <button type="button" class="btn btn-lg btn-outline-primary">신규 등록</button>
+                    </div>
+                </div>
+                <!-- pagination -->
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" aria-label="Previous"><span
+                                    aria-hidden="true">&laquo;</span></a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#">6</a></li>
+                        <li class="page-item"><a class="page-link" href="#">7</a></li>
+                        <li class="page-item"><a class="page-link" href="#">8</a></li>
+                        <li class="page-item"><a class="page-link" href="#">9</a></li>
+                        <li class="page-item"><a class="page-link" href="#">10</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="row mt-5">
+                    <h3 class="col-6">상세 조회 테이블</h3>
+                    <div class="col-6 text-right">
+                        <button type="button" class="btn btn-outline-primary">목록</button>
+                    </div>
+                </div>
+                <p class="text-right"><strong>기본정보 Latest Update : 2019-12-23 00:00:00</strong></p>
+                <table class="table border-bottom">
+                    <colgroup>
+                        <col width="20%">
+                        <col width="30%">
+                        <col width="20%">
+                        <col width="30%">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="table-active">데이터 상품 부제</th>
+                            <td>테이블 입니다</td>
+                            <th scope="row" class="table-active">카테고리</th>
+                            <td>카테고리 1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active">데이터 상품 요약</th>
+                            <td colspan="3">여기는 더넷</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active">데이터 상품 부제</th>
+                            <td colspan="3">즐거운 더넷</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="text-right">
+                    <button type="button" class="btn btn-outline-primary">목록</button>
+                </div>
+                <div class="text-right mt-2">
+                    <button type="button" class="btn btn-lg btn-secondary">취소</button>
+                    <button type="button" class="btn btn-lg btn-primary">저장</button>
+                </div>
+
+                <div class="mt-5 mb-5">
+                    <!-- 탭 메뉴 -->
+                    <ul class="nav nav-tabs " id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="tabnav1" data-toggle="tab" href="#tab1" role="tab"
+                                aria-controls="home" aria-selected="true">기본 테이블</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="tabnav2" data-toggle="tab" href="#tab2" role="tab"
+                                aria-controls="profile" aria-selected="false">검색 테이블</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="tabnav3" data-toggle="tab" href="#tab3" role="tab"
+                                aria-controls="contact" aria-selected="false">자료(1)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="tabnav4" data-toggle="tab" href="#tab4" role="tab"
+                                aria-controls="contact" aria-selected="false">이벤트(1)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="tabnav5" data-toggle="tab" href="#tab5" role="tab"
+                                aria-controls="contact" aria-selected="false">보도자료(1)</a>
+                        </li>
+                    </ul>
+                    <!-- 탭 메뉴 상세-->
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="mt-5">
+                                <p class="text-right"><strong>기본정보 Latest Update : 2019-12-23 00:00:00</strong></p>
+                                <table class="table border-bottom">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">NO</th>
+                                            <th scope="col">카테고리</th>
+                                            <th scope="col">상품 코드</th>
+                                            <th scope="col">제목</th>
+                                            <th scope="col">이용 조건</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>트래킹</td>
+                                            <td>ABCDEFG</td>
+                                            <td>조회 테이블 입니다</td>
+                                            <td>무료</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>트래킹</td>
+                                            <td>ABCDEFG</td>
+                                            <td>조회 테이블 입니다</td>
+                                            <td>무료</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>트래킹</td>
+                                            <td>ABCDEFG</td>
+                                            <td>조회 테이블 입니다</td>
+                                            <td>무료</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="text-right">
+                                    <button type="button" class="btn btn-primary">공지사항 등록</button>
+                                </div>
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#" aria-label="Previous"><span
+                                                    aria-hidden="true">&laquo;</span></a>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">8</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next"><span
+                                                    aria-hidden="true">&raquo;</span></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="profile-tab">
+                            <table class="table table-bordered mt-5">
+                                <colgroup>
+                                    <col width="200px">
+                                    <col width="500px">
+                                    <col width="200px">
+                                    <col width="500px">
+                                    <col width="200px">
+                                    <col width="500px">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>상태</th>
+                                        <td>
+                                            <select class="form-control">
+                                                <option>정상</option>
+                                                <option>비정상</option>
+                                            </select>
+                                        </td>
+                                        <th>카테고리</th>
+                                        <td>
+                                            <select class="form-control">
+                                                <option>전체</option>
+                                                <option>카테고리1</option>
+                                                <option>카테고리2</option>
+                                            </select>
+                                        </td>
+                                        <th>기관</th>
+                                        <td>
+                                            <select class="form-control">
+                                                <option>전체</option>
+                                                <option>카테고리1</option>
+                                                <option>카테고리2</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>검색 입력</th>
+                                        <td colspan="5">
+                                            <div class="form-inline">
+                                                <select class="form-control col-2 mr-2">
+                                                    <option>전체</option>
+                                                    <option>카테고리1</option>
+                                                    <option>카테고리2</option>
+                                                </select>
+                                                <input class="form-control col" type="search"
+                                                    placeholder="직접 입력 삭제 버튼 나옴" aria-label="Search">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-primary btn-lg">검색하기</button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="contact-tab">
+                            과연 뭐가 나올까요?
+                        </div>
+                        <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="contact-tab">
+                            그냥 글자 입니다
+                        </div>
+                        <div class="tab-pane fade" id="tab5" role="tabpanel" aria-labelledby="contact-tab">
+                            !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </main>
+        </div>
+    </div>
+
+
+    <script>
+        //데이트픽커
+        $(".datepick input").datepicker({
+            dateFormat: 'yy-mm-dd',
+            showMonthAfterYear: true //년 월
+                ,
+            yearSuffix: "년" //달력의 년도 부분 뒤에 붙는 텍스트
+                ,
+            monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11',
+                '12'] //달력의 월 부분 텍스트
+                ,
+            monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월','11월', '12월'] //달력의 월 부분 Tooltip 텍스트
+                ,
+            dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'] //달력의 요일 부분 텍스트
+                ,
+            dayNames: ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'] //달력의 요일 부분 Tooltip 텍스트
+        });
+    </script>
+</body>
+
+</html>

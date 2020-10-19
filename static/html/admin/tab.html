@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <!-- admin custom CSS -->
+    <link rel="stylesheet" href="/css/admin_custom.css" />
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <!-- admin custom JS -->
+    <script src="/js/admin_custom.js"></script>
+
+    <title>어드민 템플릿</title>
+</head>
+
+<body>
+
+    <!-- //mark : (sta) 상단 nav -->
+    <nav class="navbar bg-white fixed-top flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">logo</a>
+        <div class="navbar-collapse px-3">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-info">link</button>
+            </div>
+        </div>
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" href="#">로그인</a>
+                <!-- <a class="nav-link" href="#">Sign out</a> -->
+            </li>
+        </ul>
+    </nav>
+    <!-- (end) 상단 nav -->
+    <!-- //mark : 컨테이너 -->
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebar" class="col-md-2 d-none d-md-block">
+                <div class="list-group panel">
+                    <a href="#menu1" class="list-group-item collapsed" data-toggle="collapse" data-parent="#sidebar"
+                        aria-expanded="false"><span class="hidden-sm-down">Item 1 - hasSub</span>
+                    </a>
+                    <div class="collapse" id="menu1">
+                        <a href="#" class="list-group-item" data-parent="#menu1">Subitem 2</a>
+                        <a href="#" class="list-group-item" data-parent="#menu1">Subitem 3</a>
+                    </div>
+                    <a href="#" class="list-group-item collapsed" data-parent="#sidebar">
+                        <span class="hidden-sm-down">Item 2</span></a>
+                    <a href="#menu3" class="list-group-item collapsed" data-toggle="collapse" data-parent="#sidebar"
+                        aria-expanded="false"><span class="hidden-sm-down">Item 3 - hasSub</span></a>
+                    <div class="collapse" id="menu3">
+                        <a href="#" class="list-group-item" data-parent="#menu3">3.1</a>
+                        <a href="#" class="list-group-item" data-parent="#menu3">3.3</a>
+                    </div>
+                    <a href="./btn.html" class="list-group-item collapsed" data-parent="#sidebar">
+                        <span class="hidden-sm-down">btn</span></a>
+                    <a href="./join.html" class="list-group-item collapsed" data-parent="#sidebar">
+                        <span class="hidden-sm-down">join</span></a>
+                    <a href="./login.html" class="list-group-item collapsed" data-parent="#sidebar">
+                        <span class="hidden-sm-down">login</span></a>
+                    <a href="./modal.html" class="list-group-item collapsed" data-parent="#sidebar"><span
+                            class="hidden-sm-down">modal</span></a>
+                    <a href="./tab.html" class="list-group-item collapsed" data-parent="#sidebar">
+                        <span class="hidden-sm-down">tab</span></a>
+                    <a href="./table.html" class="list-group-item collapsed" data-parent="#sidebar">
+                        <span class="hidden-sm-down">table</span></a>
+                    <a href="./tabletype.html" class="list-group-item collapsed" data-parent="#sidebar">
+                        <span class="hidden-sm-down">tabletype</span></a>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+                <h1>탭메뉴</h1>
+                
+                <p><strong>기본탭메뉴 ('nav nav-tabs')</strong></p>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">탭 메뉴1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">탭 메뉴2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">탭 메뉴3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">탭 메뉴4</a>
+                    </li>
+                </ul>
+                <!--
+                <nav class="nav nav-tabs">
+                    <a class="nav-item nav-link active" href="#">탭 메뉴1</a>
+                    <a class="nav-item nav-link" href="#">탭 메뉴2</a>
+                    <a class="nav-item nav-link" href="#">탭 메뉴3</a>
+                    <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">탭 메뉴4</a>
+                </nav>
+                -->
+                
+                <p class="mt-5"><strong>기본탭메뉴 ('nav nav-pills')</strong></p>
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">탭 메뉴1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">탭 메뉴2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">탭 메뉴3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">탭 메뉴4</a>
+                    </li>
+                </ul>
+                
+                <p class="mt-5"><strong>양쪽정렬 탭 너비 가변 ('nav nav-tabs nav-fill')</strong></p>
+                <ul class="nav nav-tabs nav-fill">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">탭 메뉴1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">탭 메뉴2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">탭 메뉴3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">탭 메뉴4</a>
+                    </li>
+                </ul>
+                <p class="mt-5"><strong>양쪽정렬 탭 너비 고정 ('nav nav-tabs nav-justified')</strong></p>
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">탭 메뉴1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">탭 메뉴2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">탭 메뉴3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">탭 메뉴4</a>
+                    </li>
+                </ul>
+                
+                <p class="mt-5"><strong>자바스크립트 기본 탭</strong></p>
+                <div>
+                    <ul class="nav nav-tabs " id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">탭 메뉴1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">탭 메뉴2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">탭 메뉴3</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">탭 메뉴 1 내요요요요용요요요요요요용</div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">탭 메뉴 2 내요오오오오오옹요요오오옹</div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">탭 메뉴 3 내요요오오오오오오오옹</div>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">탭 메뉴1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">탭 메뉴2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">탭 메뉴3</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">내용1111111111111111111111111111111111111111111111111111111111</div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">내용2222222222222222222222222222222222222222222222222222222222222</div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">내용3333333333333333333333333333333333333333333333333333333333333</div>
+                    </div>
+                </div>
+                
+                
+                
+            </main>
+        </div>
+    </div>
+
+
+    <script>
+        //모달 제이쿼리
+        $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+        });
+      
+    //   $(function() {
+    //       $.datepicker.setDefaults({
+    //           dateFormat: 'yy-mm-dd'
+    //           ,showMonthAfterYear:true //년 월
+    //           ,yearSuffix: "년" //달력의 년도 부분 뒤에 붙는 텍스트
+    //           ,monthNamesShort: ['1','2','3','4','5','6','7','8','9','10','11','12'] //달력의 월 부분 텍스트
+    //           ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','12월'] //달력의 월 부분 Tooltip 텍스트
+    //           ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 부분 텍스트
+    //           ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 부분 Tooltip 텍스트
+    //       });
+    //       $( ".datepick input" ).datepicker();
+    //   });
+  
+     
+      </script>
+</body>
+
+</html>

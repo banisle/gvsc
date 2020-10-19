@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <!-- admin custom CSS -->
+    <link rel="stylesheet" href="../../css/admin_custom.css" />
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <!-- admin custom JS -->
+    <script src="../../js/admin_custom.js"></script>
+
+    <title>계정관리 - 어드민</title>
+</head>
+
+<body>
+
+    <!-- //mark : (sta) 상단 nav -->
+    <nav class="navbar bg-white fixed-top flex-md-nowrap p-0 shadow">
+        <div class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">
+			<a href="">	경기도 로고</a>
+			<a href="">	경기도 청소년활동진흥센터 로고</a>
+		</div>
+		<div class="navbar bg-white ">
+			<a class="nav-link" href="#">소개</a>
+			<a class="nav-link" href="#">전체공개</a>
+			<a class="nav-link" href="#">正말正책</a>
+			<a class="nav-link" href="#">자료실</a>
+			<a class="nav-link active" href="#">기본설정</a>
+        </div>
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" href="#">로그아웃</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- (end) 상단 nav -->
+    <!-- //mark : 컨테이너 -->
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebar" class="col-md-2 d-none d-md-block">
+                <div class="list-group panel">
+                    <a href="#menu1" class="list-group-item collapsed" data-toggle="collapse" data-parent="#sidebar"
+                        aria-expanded="false"><span class="hidden-sm-down">기본설정</span>
+                    </a>
+                    <div class="collapse show" id="menu1">
+                        <a href="#" class="list-group-item active data-parent="#menu1">계정관리</a>
+                        <a href="#" class="list-group-item" data-parent="#menu1">팝업창관리</a>
+                        <a href="#" class="list-group-item" data-parent="#menu1">배너관리</a>
+                        <a href="#" class="list-group-item" data-parent="#menu1">홈설정</a>
+                    </div>
+                   
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+				<h1 class="mb-5">계정관리</h1>
+				
+                
+                <div class="">
+					<div>
+						<ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">비밀번호 변경
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">중간 관리 계정
+								</a>
+							</li>
+						</ul>
+						<div class="tab-content" id="myTabContent">
+							<!-- 비밀번호 변경 탭 -->
+							<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+								<div class="form-group">
+									<label for="">계정 아이디</label>
+									<div class="form-row mb-3">
+										<div class="col">
+											<input type="text" class="form-control " id="" placeholder="직접 입력" value="gyscadmin" readonly>
+										</div>
+									</div>
+									<label for="">현재 비밀번호</label>
+									<div class="mb-3">
+										<input type="password" class="form-control " id="" placeholder="" required>
+									</div>
+									<label for="">신규 비밀번호</label>
+									<div class="mb-3">
+										<input type="password" class="form-control " id="" placeholder="" required>
+									</div>
+									<label for="">신규 비밀번호 확인</label>
+									<div>
+										<input type="password" class="form-control " id="" placeholder="" required>
+									</div>
+								</div>
+
+								<button type="button" class="btn btn-primary">설정하기</button>
+
+
+
+
+							</div>
+							<!-- 중간관리 계정 탭 -->
+							<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+								<div class="form-row">
+									<div class="col">
+										<input type="search" class="form-control" id="" placeholder="검색어를 입력하세요 ">
+										<p id="" class="form-text text-info">(검색어는 지역명 또는 아이디를 입력하세요) </p>
+									</div>
+									<div class="col">
+										<button type="submit" class="btn btn-primary">검색</button>
+									</div>
+								</div>
+
+								<table class="table border-bottom">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">지역명(사용자명)</th>
+                                            <th scope="col">아이디</th>
+                                            <th scope="col">계정권한유지</th>
+                                            <th scope="col">비밀번호 초기화 </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>가평군</td>
+                                            <td>gapyeong</td>
+                                            <td>
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio" name="inlineRadioOptions" id="" value="" checked>
+													<label class="form-check-label" for="">예</label>
+												</div>
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio" name="inlineRadioOptions" id="" value="">
+													<label class="form-check-label" for="">아니오</label>
+												</div>
+											</td>
+                                            <td><button type="button" class="btn btn-primary btn-sm">초기화</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>가평군</td>
+                                            <td>gapyeong</td>
+                                            <td>
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio" name="inlineRadioOptions" id="" value="" checked>
+													<label class="form-check-label" for="">예</label>
+												</div>
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio" name="inlineRadioOptions" id="" value="">
+													<label class="form-check-label" for="">아니오</label>
+												</div>
+											</td>
+                                            <td><button type="button" class="btn btn-primary btn-sm">초기화</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+							</div>
+						</div>
+					</div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
