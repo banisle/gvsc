@@ -8,7 +8,7 @@
 	<meta name="viewport" content="initial-scale=1, viewport-fit=cover">
 	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
 	<link href="../../img/common/favicon-152.png" rel="apple-touch-icon-precomposed">
-	<title>전체공개 공지사항- 청출어람</title>
+	<title>정책제안- 청출어람</title>
 	<link rel="stylesheet" href="../../css/style.css">
 	<script src="../../js/jquery-3.4.1.min.js"></script>
 	<script src="../../js/ANUI.js"></script>
@@ -43,43 +43,85 @@
 			<div class="ui-tab-wrap">
 				<ul class="ui-tab" role="tablist">
 					<li><span><a href="#" id="ui-tab-btn1" class="ui-tab-btn on" role="tab"
-								aria-controls="ui-tab-list1"><span>공지사항</span></a></span></li>
+								aria-controls="ui-tab-list1"><span>정책제안</span></a></span></li>
 					<li><span><a href="#" id="ui-tab-btn2" class="ui-tab-btn" role="tab"
-								aria-controls="ui-tab-list2"><span>질의응답</span></a></span></li>
-					<li><span><a href="#" id="ui-tab-btn3" class="ui-tab-btn" role="tab"
-								aria-controls="ui-tab-list3"><span>활동공유</span></a></span></li>
+								aria-controls="ui-tab-list2"><span>제안결과</span></a></span></li>
 				</ul>
-				<!-- 공지사항 -->
+				<!-- 정책제안 -->
 				<div id="ui-tab-list1" class="ui-tab-list on" role="tabpanel" aria-labelledby="ui-tab-btn1">
 					<section>
-						<h1>공지사항</h1>
-						<p>경기도청소년활동진흥센터는 청소년들의 올바른 성장을 지원합니다.</p>
-						<!-- view -->
+						<h1>정책제안</h1>
+						<p>청소년을 위해 변화하였으면 하는 것들에 대해 자유롭게 의견을 제안하는 공간입니다.</p>
 						<div class="">
 							<div class="board-area--row">
 								<strong>제목</strong>
-								<span class="board--desc"></span>
-							</div>
-							<div class="board-area--row-2">
-								<strong>등록일</strong>
-								<span class="board--desc">yyyy.mm.dd</span>
-								<strong>조회수</strong>
-								<span class="board--desc">123</span>
-							</div>
-							<div class="board-area--row">
 								<span class="board--desc">
-									내용
+									<div class="inp-wrap"><input type="text" placeholder="" class=""></div>
 								</span>
 							</div>
 							<div class="board-area--row">
-								<strong>첨부파일</strong>
-								<span class="board--desc">aaaaa.jpg</span>
+								<strong>지역선택</strong>
+								<span class="board--desc">
+									<div class="select-wrap ui-selectbox">
+									    <select title="test" id="sel01" class="" >
+									        <option value="선택하세요" selected disabled hidden>선택하세요</option>
+											<option value="">경기도</option>
+											<option value="">김포시</option>
+											<option value="">파주시</option>
+											<option value="">고양시</option>
+											<option value="">연천군</option>
+											<option value="">동두천시</option>
+											<option value="">양주시</option>
+											<option value="">의정부시</option>
+											<option value="">포천군</option>
+											<option value="">부천시</option>
+											<option value="">시흥시</option>
+											<option value="">광명시</option>
+											<option value="">안산시</option>
+											<option value="">안양시</option>
+											<option value="">군포시</option>
+											<option value="">과천시</option>
+											<option value="">의왕시</option>
+											<option value="">성남시</option>
+											<option value="">구리시</option>
+											<option value="">남양주시</option>
+											<option value="">가평군</option>
+											<option value="">하남시</option>
+											<option value="">광주시</option>
+											<option value="">양평군</option>
+											<option value="">수원시</option>
+											<option value="">화성시</option>
+											<option value="">오산시</option>
+											<option value="">용인시</option>
+											<option value="">이천시</option>
+											<option value="">여주군</option>
+											<option value="">평택시</option>
+											<option value="">안성시</option>
+									    </select>
+									</div>
+								</span>
+							</div>
+							<div class="board-area--row-2">
+								<strong>작성자</strong>
+								<span class="board--desc">작성자명(로그인연동) </span>
+								<strong>비밀번호</strong>
+								<span class="board--desc">
+									<div class="inp-wrap"><input type="password" placeholder="" class=""></div>
+								</span>
+							</div>
+							
+							<div class="board-area--row">
+								<span class="board--desc">
+									//editor
+								</span>
 							</div>
 						</div>
 						<div class="btn-wrap">
+							<button type="button" class="btn">저장</button>
 							<button type="button" class="btn">목록</button>
 						</div>
 					</section>
+					
 				</div>
 			</div>
 
@@ -105,7 +147,9 @@
 	</div>
 </body>
 <script>
-	
+	// ANUI.module.tabUi();
+	ANUI.module.selectUi();
+	ANUI.module.inputDelUi();
 
 </script>
 

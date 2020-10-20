@@ -8,7 +8,7 @@
 	<meta name="viewport" content="initial-scale=1, viewport-fit=cover">
 	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
 	<link href="../../img/common/favicon-152.png" rel="apple-touch-icon-precomposed">
-	<title>전체공개 공지사항- 청출어람</title>
+	<title>로그인 - 청출어람</title>
 	<link rel="stylesheet" href="../../css/style.css">
 	<script src="../../js/jquery-3.4.1.min.js"></script>
 	<script src="../../js/ANUI.js"></script>
@@ -40,49 +40,44 @@
 		</header>
 		<!-- mark: content -->
 		<div id="cont">
-			<div class="ui-tab-wrap">
-				<ul class="ui-tab" role="tablist">
-					<li><span><a href="#" id="ui-tab-btn1" class="ui-tab-btn on" role="tab"
-								aria-controls="ui-tab-list1"><span>공지사항</span></a></span></li>
-					<li><span><a href="#" id="ui-tab-btn2" class="ui-tab-btn" role="tab"
-								aria-controls="ui-tab-list2"><span>질의응답</span></a></span></li>
-					<li><span><a href="#" id="ui-tab-btn3" class="ui-tab-btn" role="tab"
-								aria-controls="ui-tab-list3"><span>활동공유</span></a></span></li>
-				</ul>
-				<!-- 공지사항 -->
-				<div id="ui-tab-list1" class="ui-tab-list on" role="tabpanel" aria-labelledby="ui-tab-btn1">
-					<section>
-						<h1>공지사항</h1>
-						<p>경기도청소년활동진흥센터는 청소년들의 올바른 성장을 지원합니다.</p>
-						<!-- view -->
-						<div class="">
-							<div class="board-area--row">
-								<strong>제목</strong>
-								<span class="board--desc"></span>
-							</div>
-							<div class="board-area--row-2">
-								<strong>등록일</strong>
-								<span class="board--desc">yyyy.mm.dd</span>
-								<strong>조회수</strong>
-								<span class="board--desc">123</span>
-							</div>
-							<div class="board-area--row">
-								<span class="board--desc">
-									내용
-								</span>
-							</div>
-							<div class="board-area--row">
-								<strong>첨부파일</strong>
-								<span class="board--desc">aaaaa.jpg</span>
+			<div class="laypop type--login" id="" style="display: block;">
+				<div class="wrap-modal" role="document" >
+					<article class="inner">
+						<header class="laypop__header">
+							<h1 id="title-dialog">로그인</h1>
+						</header>
+						<div class="laypop__content">
+							<div class="scrollWrap ui-scrollview">
+								<div class="ui-scrollbar"><span class="bar"></span></div>
+								<div class="scrollInner ui-scrollarea">
+									<div class="scrollview ui-content">
+										<div id="desc-txt" >
+											<!-- 청소년 사용자 -->
+											<p>SNS로 간편하게 로그인하여 이용하실 수 있습니다.<br>학교, 도서관 등 다중이용 PC로 소셜로그인을 하신 경우 이용 후 반드시 로그아웃 해 주시기 바랍니다. </p>
+											<div class="btn-wrap">
+												<button type="button" class="btn--kakao"><span>카카오계정 로그인</span></button>
+											</div>
+											<!-- 관리자 -->
+											<p>관리자는 SNS 로그인이 아닌 아이디로 로그인해 주시기 바랍니다.</p>
+											<div class="inp-wrap"><input type="text" placeholder="아이디" class=""></div>
+											<div class="inp-wrap"><input type="password" placeholder="비밀번호는 6자 이상 ~ 20자 이하 " class=""></div>
+											<div class="btn-wrap">
+												<button type="button" class="btn--login"><span>로그인</span></button>
+											</div>
+											<div class="form-grp">
+												<span><input type="checkbox" id="" class="form__chk"><label for=""><span class="label-txt">아이디 저장</span></label></span>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="btn-wrap">
-							<button type="button" class="btn">목록</button>
-						</div>
-					</section>
+						<footer class="laypop_footer">
+							<div class="btn-wrap"><a href="#" class="btn--ok w100 mvClose"><span>닫기</span></a></div>
+						</footer>
+					</article>
 				</div>
 			</div>
-
 		</div>
 		<footer>
 			<address>

@@ -8,7 +8,7 @@
 	<meta name="viewport" content="initial-scale=1, viewport-fit=cover">
 	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
 	<link href="../../img/common/favicon-152.png" rel="apple-touch-icon-precomposed">
-	<title>전체공개 공지사항- 청출어람</title>
+	<title>정책제안- 청출어람</title>
 	<link rel="stylesheet" href="../../css/style.css">
 	<script src="../../js/jquery-3.4.1.min.js"></script>
 	<script src="../../js/ANUI.js"></script>
@@ -43,43 +43,58 @@
 			<div class="ui-tab-wrap">
 				<ul class="ui-tab" role="tablist">
 					<li><span><a href="#" id="ui-tab-btn1" class="ui-tab-btn on" role="tab"
-								aria-controls="ui-tab-list1"><span>공지사항</span></a></span></li>
+								aria-controls="ui-tab-list1"><span>정책제안</span></a></span></li>
 					<li><span><a href="#" id="ui-tab-btn2" class="ui-tab-btn" role="tab"
-								aria-controls="ui-tab-list2"><span>질의응답</span></a></span></li>
-					<li><span><a href="#" id="ui-tab-btn3" class="ui-tab-btn" role="tab"
-								aria-controls="ui-tab-list3"><span>활동공유</span></a></span></li>
+								aria-controls="ui-tab-list2"><span>제안결과</span></a></span></li>
 				</ul>
-				<!-- 공지사항 -->
+				<!-- 정책제안 -->
 				<div id="ui-tab-list1" class="ui-tab-list on" role="tabpanel" aria-labelledby="ui-tab-btn1">
 					<section>
-						<h1>공지사항</h1>
-						<p>경기도청소년활동진흥센터는 청소년들의 올바른 성장을 지원합니다.</p>
-						<!-- view -->
-						<div class="">
-							<div class="board-area--row">
-								<strong>제목</strong>
-								<span class="board--desc"></span>
+						<h1>정책제안</h1>
+						<p>청소년을 위해 변화하였으면 하는 것들에 대해 자유롭게 의견을 제안하는 공간입니다.</p>
+						<div class="propose-wrap">
+							<p class="subject">청소년의 인권을 침해하는 청소년 보호 앱을 없애주세요</p>
+							<div class="info">
+								<span>제안 날짜 : 2020-09-17</span>
+								<span>제안자 : hs2****</span>
+								<span>참여인원 [459명]</span>
 							</div>
-							<div class="board-area--row-2">
-								<strong>등록일</strong>
-								<span class="board--desc">yyyy.mm.dd</span>
-								<strong>조회수</strong>
-								<span class="board--desc">123</span>
+							<div class="step--02">
+								<span>의견 제안</span>
+								<span>제안 심사 중</span>
+								<span>피드백 완료</span>
 							</div>
-							<div class="board-area--row">
-								<span class="board--desc">
-									내용
-								</span>
+							<div class="para">
+								<strong>제안내용</strong>
+								<p>
+									안녕하세요<br> 경기도에서 거주하고있는 청소년입니다.<br> 청소년 보호 앱은 원격위치조회,메신저 내용 확인,실시간으로 핸드폰에 모든 기능,활동 을 제한할 수 있습니다.유해사이트 차단은 저도 동의합니다. 올바른 성 관념을 잡아주기 위해서 유해사이트 차단은 필요하다고 봅니다.하지만, 위치 조회,메신저 내용 확인,통화기록확인,접속 사이트 확인 등 여러 사생활침해가 될 수 있는 기능은 없어져야 한다고 생각합니다.
+								</p>
 							</div>
-							<div class="board-area--row">
-								<strong>첨부파일</strong>
-								<span class="board--desc">aaaaa.jpg</span>
+							<div class="file">
+								<strong>첨부</strong>
+								<span class="desc">첨부파일명.확장자</span>
 							</div>
-						</div>
-						<div class="btn-wrap">
-							<button type="button" class="btn">목록</button>
+							<div class="btn-wrap">
+								<button type="button" class="btn">동의</button>
+							</div>
+							<div class="reply">
+								<span class="st01">좋은 제안입니다.</span>
+								<span class="st02">저도 동감입니다.</span>
+								<span class="st01">좋은 제안입니다.</span>
+								<div class="btn-wrap">
+									<button type="button" class="btn">댓글 더보기</button>
+								</div>
+							</div>
+							<div class="textbox">
+								<textarea name="" id="" cols="30" rows="10">당신 의견을 등록해 주세요. 주제와 무관한 댓글이나 악플은 삭제될 수 있습니다. </textarea>
+								<span class="count">0/1000</span>
+								<div class="btn-wrap">
+									<button type="button" class="btn">등록</button>
+								</div>
+							</div>
 						</div>
 					</section>
+					
 				</div>
 			</div>
 
@@ -105,7 +120,9 @@
 	</div>
 </body>
 <script>
-	
+	// ANUI.module.tabUi();
+	ANUI.module.selectUi();
+	ANUI.module.inputDelUi();
 
 </script>
 

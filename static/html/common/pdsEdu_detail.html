@@ -8,7 +8,7 @@
 	<meta name="viewport" content="initial-scale=1, viewport-fit=cover">
 	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
 	<link href="../../img/common/favicon-152.png" rel="apple-touch-icon-precomposed">
-	<title>전체공개 공지사항- 청출어람</title>
+	<title>자료실 - 청출어람</title>
 	<link rel="stylesheet" href="../../css/style.css">
 	<script src="../../js/jquery-3.4.1.min.js"></script>
 	<script src="../../js/ANUI.js"></script>
@@ -43,17 +43,23 @@
 			<div class="ui-tab-wrap">
 				<ul class="ui-tab" role="tablist">
 					<li><span><a href="#" id="ui-tab-btn1" class="ui-tab-btn on" role="tab"
-								aria-controls="ui-tab-list1"><span>공지사항</span></a></span></li>
+								aria-controls="ui-tab-list1"><span>교육관</span></a></span></li>
 					<li><span><a href="#" id="ui-tab-btn2" class="ui-tab-btn" role="tab"
-								aria-controls="ui-tab-list2"><span>질의응답</span></a></span></li>
+								aria-controls="ui-tab-list2"><span>홍보관</span></a></span></li>
 					<li><span><a href="#" id="ui-tab-btn3" class="ui-tab-btn" role="tab"
-								aria-controls="ui-tab-list3"><span>활동공유</span></a></span></li>
+								aria-controls="ui-tab-list3"><span>보도자료</span></a></span></li>
 				</ul>
-				<!-- 공지사항 -->
+				<div class="side-menu">
+					<ul>
+						<li><a href="">교육자료</a></li>
+						<li><a href="">교육영상</a></li>
+					</ul>
+				</div>
+				<!-- 교육관 -->
 				<div id="ui-tab-list1" class="ui-tab-list on" role="tabpanel" aria-labelledby="ui-tab-btn1">
 					<section>
-						<h1>공지사항</h1>
-						<p>경기도청소년활동진흥센터는 청소년들의 올바른 성장을 지원합니다.</p>
+						<h1>교육영상</h1>
+						<p>경기도청소년활동진흥센터는 청소년들의 올바른 성장을 지원합니다. </p>
 						<!-- 검색 -->
 						<div class="">
 							<div class="form-search-wrap">
@@ -71,35 +77,28 @@
 							</div>
 							<button type="button" class="btn"><span class="icn--search">검색</span></button>
 						</div>
-						<!-- list -->
-						<div>
-							<table class="">
-								<caption></caption>
-								<colgroup>
-									<col>
-									<col>
-									<col>
-									<col>
-								</colgroup>
-								<thead >
-									<tr>
-										<th scope="col">번호</th>
-										<th scope="col">제목</th>
-										<th scope="col">작성일</th>
-										<th scope="col">조회</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>03</td>
-										<td>[카테고리] 제목입니다. </td>
-										<td>2020.09.11</td>
-										<td>123</td>
-									</tr>
-								
-								</tbody>
-							</table>
-
+						<!-- view -->
+						<div class="">
+							<div class="board-area--row">
+								<strong>제목</strong>
+								<span class="board--desc"></span>
+							</div>
+							<div class="board-area--row-2">
+								<strong>작성자</strong>
+								<span class="board--desc">작성자</span>
+								<strong>조회수</strong>
+								<span class="board--desc">123</span>
+							</div>
+							<div class="board-area--row">
+								<span class="board--desc">
+									<p>영상 URL</p>
+									<p><img src="../../img/@mv01.png" alt="[청소년 공감콘서트 온드림스쿨 강원 동해편] 크리에이터 도티"></p>
+									<span>[청소년 공감콘서트 온드림스쿨 강원 동해편] 크리에이터 도티</span>
+								</span>
+							</div>
+						</div>
+						<div class="btn-wrap">
+							<button type="button" class="btn">목록</button>
 						</div>
 
 						<!-- pagination -->
@@ -122,14 +121,7 @@
 						</div>
 					</section>
 				</div>
-				<!-- 질의응답 -->
-				<div id="ui-tab-list2" class="ui-tab-list" role="tabpanel" aria-labelledby="ui-tab-btn2">
-					
-				</div>
-				<!-- 활동공유 -->
-				<div id="ui-tab-list3" class="ui-tab-list" role="tabpanel" aria-labelledby="ui-tab-btn3">
-				
-				</div>
+
 			</div>
 
 		</div>
@@ -152,12 +144,34 @@
 			</div>
 		</footer>
 	</div>
+	<!-- //mark: 모달 샘플 -->
+	<div class="laypop type01" id="" data-target="modal01" role="dialog" aria-labelledby="title-dialog"
+		aria-describedby="desc-txt">
+		<div class="wrap-modal" role="document">
+			<article class="inner">
+				<header class="laypop__header">
+					<h1 id="title-dialog">팝업 타이틀</h1>
+				</header>
+				<div class="laypop__content">
+					<div class="scrollWrap ui-scrollview">
+						<div class="ui-scrollbar"><span class="bar"></span></div>
+						<div class="scrollInner ui-scrollarea">
+							<div class="scrollview ui-content">
+								<div id="desc-txt" style="text-align:center;">(sta)내용이 들어가는 영역</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<footer class="laypop_footer">
+					<div class="btn-wrap"><a href="#" class="btn--ok w100 mvClose"><span>닫기</span></a></div>
+				</footer>
+			</article>
+		</div>
+	</div>
 </body>
 <script>
-	// ANUI.module.tabUi();
-	ANUI.module.selectUi();
-	ANUI.module.inputDelUi();
-
+	ANUI.module.tabUi();
+	ANUI.module.modalUi();
 </script>
 
 </html>
