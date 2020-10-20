@@ -54,82 +54,37 @@
 					<section>
 						<h1>공지사항</h1>
 						<p>경기도청소년활동진흥센터는 청소년들의 올바른 성장을 지원합니다.</p>
-						<!-- 검색 -->
+						<!-- view -->
 						<div class="">
-							<div class="form-search-wrap">
-								<div class="select-wrap ui-selectbox">
-									<select title="test" id="sel01" class="" >
-										<option value="선택하세요" selected disabled hidden>선택하세요</option>
-										<option value="test2" disabled >test2</option>
-										<option value="test3">test3</option>
-										<option value="test4">test4</option>
-									</select>
-								</div>
+							<div class="board-area--row">
+								<strong>제목</strong>
+								<span class="board--desc"></span>
 							</div>
-							<div class="search-wrap">
-								<span class="inp-form ui-hasDelForm"><input type="text" placeholder="검색어를 입력하세요." class="ui-hasDel"></span>
+							<div class="board-area--row-2">
+								<strong>등록일</strong>
+								<span class="board--desc">yyyy.mm.dd</span>
+								<strong>조회수</strong>
+								<span class="board--desc">123</span>
 							</div>
-							<button type="button" class="btn"><span class="icn--search">검색</span></button>
+							<div class="board-area--row">
+								<span class="board--desc">
+									내용
+								</span>
+							</div>
+							<div class="board-area--row">
+								<strong>첨부파일</strong>
+								<span class="board--desc">aaaaa.jpg</span>
+							</div>
 						</div>
-						<!-- list -->
-						<div>
-							<table class="">
-								<caption></caption>
-								<colgroup>
-									<col>
-									<col>
-									<col>
-									<col>
-								</colgroup>
-								<thead >
-									<tr>
-										<th scope="col">번호</th>
-										<th scope="col">제목</th>
-										<th scope="col">작성일</th>
-										<th scope="col">조회</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>03</td>
-										<td>[카테고리] 제목입니다. </td>
-										<td>2020.09.11</td>
-										<td>123</td>
-									</tr>
-								
-								</tbody>
-							</table>
+						<div class="btn-wrap">
+							<button type="button" class="btn"><span class="icn--search">목록</span></button>
+						</div>
+						
 
-						</div>
-
-						<!-- pagination -->
-						<div class="pagewrap">
-							<span class="pagination">
-								<a href="" class="prev"><span class="hidden">이전 10개</span></a>
-								<!-- 활성화 active 클래스 -->
-								<a href="" class="num active"><span>1</span></a>
-								<a href="" class="num"><span>2</span></a>
-								<a href="" class="num"><span>3</span></a>
-								<a href="" class="num"><span>4</span></a>
-								<a href="" class="num"><span>5</span></a>
-								<a href="" class="num"><span>6</span></a>
-								<a href="" class="num"><span>7</span></a>
-								<a href="" class="num"><span>8</span></a>
-								<a href="" class="num"><span>9</span></a>
-								<a href="" class="num"><span>10</span></a>
-								<a href="" class="next"><span class="hidden">다음 10개</span></a>
-							</span>
-						</div>
+					
 					</section>
 				</div>
-				<!-- 질의응답 -->
-				<div id="ui-tab-list2" class="ui-tab-list" role="tabpanel" aria-labelledby="ui-tab-btn2">
-					
-				</div>
-				<!-- 활동공유 -->
-				<div id="ui-tab-list3" class="ui-tab-list" role="tabpanel" aria-labelledby="ui-tab-btn3">
-				
-				</div>
+			
 			</div>
 
 		</div>
@@ -154,9 +109,7 @@
 	</div>
 </body>
 <script>
-	// ANUI.module.tabUi();
-	ANUI.module.selectUi();
-	ANUI.module.inputDelUi();
+	
 
 </script>
 
