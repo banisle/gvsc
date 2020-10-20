@@ -77,3 +77,8 @@ outline: none;
 .ff-ng-r{ font-family: 'Nanum Gothic'; font-weight: 400; }
 .ff-ng-b{ font-family: 'Nanum Gothic'; font-weight: 700; }
 .ff-ng-eb{ font-family: 'Nanum Gothic'; font-weight: 800; }
+
+/* mark: skip navi */
+#skip {position: relative;}
+#skip a {position: absolute; top: -200px; left: 0; border: 1px solid #fff; color: #fff; background: #333; line-height: 30px; width: 160px; text-align: center; text-decoration: none;}
+#skip a:active, #skip a:focus {top: 0;}

@@ -7,45 +7,202 @@
     <meta name="viewport" content="initial-scale=1, viewport-fit=cover">
     <link href="../../img/common/favicon.ico" rel="shrtcut icon">
 	<link href="../../img/common/favicon-152.png" rel="apple-touch-icon-precomposed">
-    <title>SETTING MY CAR - GENESIS</title>
+    <title>청출어람</title>
     <link rel="stylesheet" href="../../css/style.css">
     <script src="../../js/jquery-3.4.1.min.js"></script>
     <script src="../../js/ANUI.js"></script>
     <script src="../../js/common.js"></script>
 </head>
 <body class="main">
-    <div class="container main">
+	<!-- mark: skip-navi -->
+	<div id="skip">
+        <a href="#nav">전체 메뉴 바로가기</a>
+        <a href="#cont">본문 바로가기</a>
+    </div>
+    <div class="container--main">
         <header>
-            <h1>SETTING MY CAR</h1>
-            <a href="" class="home"><span><span class="hidden">HOME</span></span></a>
-        </header>
-        <section>
-            <article>
-                <ul class="menulist">
-                    <li><a href="#"><span>DEVICE CONNECTION</span></a></li>
-                    <li><a href="#"><span>PERSONALIZATION SETTINGS</span></a></li>
-                    <li><a href="#"><span>DATE AND TIME</span></a></li>
-                    <li><a href="#"><span>GENERAL SETTINGS</span></a></li>
-                    <li><a href="#"><span>SOUND SETTINGS</span></a></li>
-                    <li><a href="#"><span>VOICE RECOGNITION SETTING</span></a></li>
-                    <li><a href="#"><span>RADIO PRESET</span></a></li>
-                    <li><a href="#"><span>VEHICLE SETTINGS</span></a></li>
-                    <li><a href="#"><span>NAVIGATION SETTINGS</span></a></li>
-                </ul>
-                <!-- //mark : ver info -->
-                <div class="ver_info_wrap">
-                    <div class="ver_info">
-                        <span class="icn_sync"></span>
-                        This is my car setting for SP2 (Version: June 21, 2019)
-                    </div>
-                </div>
-                <!-- // ver info -->
-            </article>
-            <!-- 하단 고정시 fixed 클래스 추가 -->
-			<div class="btn_wrap main fixed" >
-                <button type="button" class="btn_apply"><span>APPLY</span></button>
-            </div>
-        </section>
+			<h1><a href="#">경기도 청소년참여플랫폼 청출어람</a></h1>
+			<div class="gnb" id="nav">
+				<ul>
+					<li><a href="">소개</a></li>
+					<li><a href="">전체공개</a></li>
+					<li><a href="">正말正책</a></li>
+					<li><a href="">자료실</a></li>
+				</ul>
+				<div class="family-link">
+					<a href=""><img src="" alt="새로운 경기 공정한 세상"></a>
+					<a href=""><img src="" alt="청소년활동진흥센터"></a>
+				</div>
+				<button type="button" class="top-util"><span>로그아웃</span></button>
+			</div>
+		</header>
+		<!-- mark: content -->
+		<div id="cont">
+			<!-- mark: 배너 -->
+			<section>
+				<h2>배너</h2>
+				<article class="main-banner">
+					<a href="" title="바로가기"><img src="" alt="경기도 청소년 정책관련정보"></a>
+					<a href="" title="바로가기"><img src="" alt="경기도 청소년 시설"><span class="num"><strong>123</strong>곳</span></a>
+					<a href="" title="바로가기"><img src="" alt="경기도 청소년참여위원회 현황"></a>
+					<a href="" title="바로가기"><img src="" alt="현재 제안 중인 정책"><span class="num"><strong>14</strong>건</span></a>
+					<a href="" title="바로가기"><img src="" alt="제1회 청년의 날"></a>
+				</article>
+			</section>
+			<!-- mark: 검색-->
+			<section>
+				<h2>검색</h2>
+				<article class="main-board">
+					<div class="form-search">
+						<input type="search">
+						<button type="button"><span>검색</span></button>
+					</div>
+					<!-- 검색결과 -->
+					<div class="serch-result">
+						<span class="total-num">
+							총 5건
+						</span>
+						<span class="form-radio">
+							<input type="radio"><label for="">최신순</label>
+						</span>
+						<span class="form-radio">
+							<input type="radio"><label for="">조회순</label>
+						</span>
+						<div class="table">
+							<table>
+								<caption>검색결과</caption>
+								<colgroup>
+									<col>
+									<col>
+									<col>
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">게시판</th>
+										<th scope="col">제목</th>
+										<th scope="col">작성일</th>
+										<th scope="col">조회</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>공지사항</td>
+										<td>[카테고리] 청소년정책참여 사이트가 오픈했습니다.</td>
+										<td>yyyy.mm.dd</td>
+										<td>123</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="pagewrap">
+								<span class="pagination">
+									<a href="" class="prev"><span class="hidden">이전 10개</span></a>
+									<!-- 활성화 active 클래스 -->
+									<a href="" class="num active"><span>1</span></a>
+									<a href="" class="num"><span>2</span></a>
+									<a href="" class="num"><span>3</span></a>
+									<a href="" class="num"><span>4</span></a>
+									<a href="" class="num"><span>5</span></a>
+									<a href="" class="num"><span>6</span></a>
+									<a href="" class="num"><span>7</span></a>
+									<a href="" class="num"><span>8</span></a>
+									<a href="" class="num"><span>9</span></a>
+									<a href="" class="num"><span>10</span></a>
+									<a href="" class="next"><span class="hidden">다음 10개</span></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</article>
+			</section>
+			<!-- mark: 게시판-->
+			<section>
+				<h2>의견나눔 게시판</h2>
+				<article>
+					<div class="main-board--step">
+						<ul>
+							<li>01 아이디어 제시</li>
+							<li>02 공감 및 의견 나누기</li>
+							<li>03 정책 논의</li>
+							<li>04 정책 발의</li>
+						</ul>
+					</div>
+					<div class="main-board--index">
+						<div class="index-list">
+							<strong>공지사항</strong>
+							<a href="" title="바로가기">더보기</a>
+							<ul>
+								<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
+								<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
+								<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
+							</ul>
+						</div>
+						<div class="index-list">
+							<strong>공지사항</strong>
+							<a href="" title="바로가기">더보기</a>
+							<ul>
+								<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
+								<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
+								<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
+							</ul>
+						</div>
+						<div class="index-list">
+							<strong>정책 제안</strong>
+							<a href="" title="바로가기">더보기</a>
+							<ul>
+								<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
+								<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
+								<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
+							</ul>
+						</div>
+						<div class="index-list">
+							<strong>자료실</strong>
+							<a href="" title="바로가기">더보기</a>
+							<ul>
+								<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
+								<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
+								<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
+							</ul>
+						</div>
+					</div>
+				</article>
+			</section>
+			<!-- mark: 영상자료 -->
+			<section>
+				<h2>영상자료</h2>
+				<p>홍보 및 교육에 대한 영상자료 </p>
+				<div class="mv-list">
+					<ul>
+						<li><a href=""><img src="" alt=""><span class="tit">내일은 여는 청소년  VLOG</span></a></li>
+						<li><a href=""><img src="" alt=""><span class="tit">내일은 여는 청소년  VLOG</span></a></li>
+						<li><a href=""><img src="" alt=""><span class="tit">내일은 여는 청소년  VLOG</span></a></li>
+						<li><a href=""><img src="" alt=""><span class="tit">내일은 여는 청소년  VLOG</span></a></li>
+						<li><a href=""><img src="" alt=""><span class="tit">내일은 여는 청소년  VLOG</span></a></li>
+						<li><a href=""><img src="" alt=""><span class="tit">내일은 여는 청소년  VLOG</span></a></li>
+						<li><a href=""><img src="" alt=""><span class="tit">내일은 여는 청소년  VLOG</span></a></li>
+					</ul>
+				</div>
+			</section>
+		</div>
+		<!-- mark: footer -->
+		<footer>
+			<address>
+				<span class="detail">(16305) 경기도 수원시 장안구 송원로 55 2층</span>
+				<span class="phone"><a href="tel:031-232-9385">대표전화: 031-232-9385~5</a></span>
+				<span class="fax">팩스 : 031-232-9388</span>
+				<span class="email"><a href="mailto:kgyvc@hanmail.net">이메일 : kgyvc@hanmail.net</a></span>
+				<span class="code">고유번호 : 135-82-60877</span>
+				<span class="owner">대표자 : 서재범</span>
+			</address>
+			<div class="ex-link">
+				<ul>
+					<li><a href="">여성가족부</a></li>
+					<li><a href="">경기도</a></li>
+					<li><a href="">한국청소년 활동진흥원</a></li>
+					<li><a href="">재단법인 대건청소년회</a></li>
+				</ul>
+			</div>
+		</footer>
     </div>
 </body>
 </html>

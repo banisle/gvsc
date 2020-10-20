@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="initial-scale=1, viewport-fit=cover">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon-152.png" rel="apple-touch-icon-precomposed">
+	<title>전체공개 - 청출어람</title>
+	<link rel="stylesheet" href="../../css/style.css">
+	<script src="../../js/jquery-3.4.1.min.js"></script>
+	<script src="../../js/ANUI.js"></script>
+	<script src="../../js/common.js"></script>
+</head>
+
+<body class="">
+	<!-- mark: skip-navi -->
+	<div id="skip">
+		<a href="#nav">전체 메뉴 바로가기</a>
+		<a href="#cont">본문 바로가기</a>
+	</div>
+	<div class="container--sub">
+		<header>
+			<h1><a href="#">경기도 청소년참여플랫폼 청출어람</a></h1>
+			<div class="gnb" id="nav">
+				<ul>
+					<li><a href="">소개</a></li>
+					<li><a href="">전체공개</a></li>
+					<li><a href="">正말正책</a></li>
+					<li><a href="">자료실</a></li>
+				</ul>
+				<div class="family-link">
+					<a href=""><img src="" alt="새로운 경기 공정한 세상"></a>
+					<a href=""><img src="" alt="청소년활동진흥센터"></a>
+				</div>
+				<button type="button" class="top-util"><span>로그아웃</span></button>
+			</div>
+		</header>
+		<!-- mark: content -->
+		<div id="cont">
+			<div class="ui-tab-wrap">
+				<ul class="ui-tab" role="tablist">
+					<li><span><a href="#" id="ui-tab-btn1" class="ui-tab-btn on" role="tab"
+								aria-controls="ui-tab-list1"><span>공지사항</span></a></span></li>
+					<li><span><a href="#" id="ui-tab-btn2" class="ui-tab-btn" role="tab"
+								aria-controls="ui-tab-list2"><span>질의응답</span></a></span></li>
+					<li><span><a href="#" id="ui-tab-btn3" class="ui-tab-btn" role="tab"
+								aria-controls="ui-tab-list3"><span>활동공유</span></a></span></li>
+				</ul>
+				<!-- 공지사항 -->
+				<div id="ui-tab-list1" class="ui-tab-list on" role="tabpanel" aria-labelledby="ui-tab-btn1">
+					
+				</div>
+				<!-- 질의응답 -->
+				<div id="ui-tab-list2" class="ui-tab-list" role="tabpanel" aria-labelledby="ui-tab-btn2">
+					
+				</div>
+				<!-- 활동공유 -->
+				<div id="ui-tab-list3" class="ui-tab-list" role="tabpanel" aria-labelledby="ui-tab-btn3">
+				
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			<address>
+				<span class="detail">(16305) 경기도 수원시 장안구 송원로 55 2층</span>
+				<span class="phone"><a href="tel:031-232-9385">대표전화: 031-232-9385~5</a></span>
+				<span class="fax">팩스 : 031-232-9388</span>
+				<span class="email"><a href="mailto:kgyvc@hanmail.net">이메일 : kgyvc@hanmail.net</a></span>
+				<span class="code">고유번호 : 135-82-60877</span>
+				<span class="owner">대표자 : 서재범</span>
+			</address>
+			<div class="ex-link">
+				<ul>
+					<li><a href="">여성가족부</a></li>
+					<li><a href="">경기도</a></li>
+					<li><a href="">한국청소년 활동진흥원</a></li>
+					<li><a href="">재단법인 대건청소년회</a></li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+	<!-- //mark: 모달 샘플 -->
+	<div class="laypop type01" id="" data-target="modal01" role="dialog" aria-labelledby="title-dialog"
+		aria-describedby="desc-txt">
+		<div class="wrap-modal" role="document">
+			<article class="inner">
+				<header class="laypop__header">
+					<h1 id="title-dialog">팝업 타이틀</h1>
+				</header>
+				<div class="laypop__content">
+					<div class="scrollWrap ui-scrollview">
+						<div class="ui-scrollbar"><span class="bar"></span></div>
+						<div class="scrollInner ui-scrollarea">
+							<div class="scrollview ui-content">
+								<div id="desc-txt" style="text-align:center;">(sta)내용이 들어가는 영역</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<footer class="laypop_footer">
+					<div class="btn-wrap"><a href="#" class="btn--ok w100 mvClose"><span>닫기</span></a></div>
+				</footer>
+			</article>
+		</div>
+	</div>
+</body>
+<script>
+	ANUI.module.tabUi();
+	ANUI.module.modalUi();
+</script>
+
+</html>
