@@ -8,3 +8,143 @@
 /* //mark : space */
 .mb--s{margin-bottom: 10px;}
 .mt--s{margin-top: 10px;}
+
+/* //mark: text */
+.tit-h2{padding-bottom: 16px; font-size: 28px;color:#238af1;font-weight:700;}
+.txt-sub1{font-size: 18px; color: #6e6e6e;}
+.txt-l{text-align: left !important;}
+.txt-r{text-align: right !important;}
+.txt-c{text-align: center !important;}
+
+
+/* //mark: table */
+.table-wrap {
+	width: 100%;
+}
+.table {
+	width: 1204px;
+	margin: 0 auto;
+	font-size: 14px;
+	border-top: 1px solid #d2d2d2;
+	border-bottom: 1px solid #d2d2d2;
+}
+
+.table thead th {
+	padding: 17px 0 15px;
+	color: #333;
+	background: #f9f9f9;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.table tbody tr:last-child td {
+	border-bottom: 0;
+}
+
+.table tbody td {
+	padding: 17px 0 15px;
+	text-align: center;
+	border-bottom: 1px solid #e8e8e8;
+	color: #666;
+	vertical-align: middle;
+	line-height: 1.6;
+}
+/* //mark: layout */
+[class^="container"]{ }
+header{
+	width: 1180px;
+	margin: 0 auto;
+	position: relative;
+	height: 130px;
+	padding: 37px 0 29px;
+	box-sizing: border-box;
+}
+header h1{display: inline-block; padding-left: 36px;}
+header h1 > a {display: inline-block;}
+header h1 img{width: 130px;}
+header .gnb{ display: inline-block; padding-left: 115px; position: relative; font-size: 18px; line-height: 27px; vertical-align: top;}
+header .gnb li{display: inline-block;padding-right: 45px;}
+header .gnb li:last-child{padding-right:0;}
+header .gnb li a{display: inline-block;line-height: 64px;color: #333;}
+header .gnb li a:hover{color:#417ec7;}
+header .family-link{display: inline-block; padding-left: 97px; padding-top: 10px; vertical-align: top;}
+header .family-link a{vertical-align: middle;}
+header .family-link a:first-child{padding-right: 20px;}
+
+.content{}
+.content .banner-wrap{
+	height: 599px;
+	padding: 137px 0 0 0;
+	position: relative;
+	background-image: linear-gradient(to bottom, #bedbed -2%, #b9d8eb 15%, #add0e5 32%, #99c3dd 49%, #7cb0d0 66%, #5798c0 84%, #418ab7 93%);
+	box-sizing: border-box;
+}
+.content .banner-wrap > div{
+	overflow: hidden;
+	height: 100%;
+	background: url('../img/con01_img01.png') 50% 97% no-repeat;
+}
+.content .banner-wrap article{width: 1180px;margin: 0 auto;}
+.content .banner-wrap article .banner-sm{float: left;width: 600px;}
+.content .banner-wrap article .banner-sm a{float: left; position: relative; padding: 0 20px 20px 0;}
+.content .banner-wrap article .banner-sm .num{position: absolute;right: 0;bottom: 0;}
+.content .banner-wrap article .banner-big{ float: right; }
+
+.content .talk-wrap{
+	padding-top: 60px;
+	background: #f1fdff;
+}
+.content .talk-wrap .main-board--step{ overflow: hidden; width: 1180px; margin: 60px auto 0;}
+.content .talk-wrap .main-board--step li{float: left; width: 25%; font-size: 2px; color: #333;text-align: center;}
+.content .talk-wrap .main-board--step li .txt{font-size: 16px;color: #000;line-height: 28px;}
+.content .talk-wrap .main-board--step li [class^="icn"]{
+	display: block;
+	padding-top: 132px;
+	padding-bottom: 25px;
+	background: url('../img/con01_link0.png') 50% 0 no-repeat;
+	background-size: 102px;
+	text-align: center;
+	font-size: 22px;
+	font-weight: 700;
+	color: #333;
+}
+.content .talk-wrap .main-board--step li [class^="icn"][class$="-2"]{
+	background: url('../img/con01_link02.png') 50% 0 no-repeat;
+	background-size: 102px;
+}
+.content .talk-wrap .main-board--step li [class^="icn"][class$="-3"]{
+	background: url('../img/con01_link03.png') 50% 0 no-repeat;
+	background-size: 102px;
+}
+.content .talk-wrap .main-board--step li [class^="icn"][class$="-4"]{
+	background: url('../img/con01_link04.png') 50% 0 no-repeat;
+	background-size: 102px;
+}
+.content .main-search-wrap{ overflow: hidden; width: 100%; padding: 60px 0 39px; text-align: center; }
+.content .main-search-wrap .form-search__inp{
+	position: relative;
+	display: inline-block;
+    width: 609px;
+	height: 42px;
+	margin-right: 12px;
+    box-sizing: border-box;
+    border: 1px solid #238af1;
+    border-radius: 21px;
+    background: #fff;
+}
+.content .main-search-wrap .form-search input{width: 100%; padding:0 62px; border:0;line-height: 42px; background: transparent;}
+.content .main-search-wrap .form-search input::placeholder{color:#a1cbf5;}
+.content .main-board--index{overflow: hidden;}
+.content .main-search-wrap .form-search .btn-search{
+	width: 101px;
+	height: 56px;
+	background: url('../img/search01_bt.png') 0 0 no-repeat;
+	font-size: 0;
+}
+.content .serch-result{padding:37px 0 64px;}
+.content .main-board--index{background: #c5def8;}
+
+@media screen and (max-width:960px) {
+	.content .talk-wrap .main-board--step li{
+		width: 100%;
+	}
+}

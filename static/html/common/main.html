@@ -14,14 +14,14 @@
     <script src="../../js/common.js"></script>
 </head>
 <body class="main">
-	<!-- mark: skip-navi -->
+	<!-- //mark: skip-navi -->
 	<div id="skip">
         <a href="#nav">전체 메뉴 바로가기</a>
         <a href="#cont">본문 바로가기</a>
     </div>
     <div class="container--main">
         <header>
-			<h1><a href="#">경기도 청소년참여플랫폼 청출어람</a></h1>
+			<h1><a href="#"><img src="../../img/logo_01@2x.png" alt="경기도 청소년참여플랫폼 청출어람"></a></h1>
 			<div class="gnb" id="nav">
 				<ul>
 					<li><a href="">소개</a></li>
@@ -29,143 +29,158 @@
 					<li><a href="">正말正책</a></li>
 					<li><a href="">자료실</a></li>
 				</ul>
-				<div class="family-link">
-					<a href=""><img src="" alt="새로운 경기 공정한 세상"></a>
-					<a href=""><img src="" alt="청소년활동진흥센터"></a>
-				</div>
-				<button type="button" class="top-util"><span>로그아웃</span></button>
 			</div>
+			<div class="family-link">
+				<a href=""><img src="../../img/banner01.png" alt="새로운 경기 공정한 세상"></a>
+				<a href=""><img src="../../img/banner02.png" alt="청소년활동진흥센터"></a>
+			</div>
+			<!-- <button type="button" class="top-util"><span>로그아웃</span></button> -->
 		</header>
-		<!-- mark: content -->
-		<div id="cont">
-			<!-- mark: 배너 -->
-			<section>
-				<h2>배너</h2>
-				<article class="main-banner">
-					<a href="" title="바로가기"><img src="" alt="경기도 청소년 정책관련정보"></a>
-					<a href="" title="바로가기"><img src="" alt="경기도 청소년 시설"><span class="num"><strong>123</strong>곳</span></a>
-					<a href="" title="바로가기"><img src="" alt="경기도 청소년참여위원회 현황"></a>
-					<a href="" title="바로가기"><img src="" alt="현재 제안 중인 정책"><span class="num"><strong>14</strong>건</span></a>
-					<a href="" title="바로가기"><img src="" alt="제1회 청년의 날"></a>
-				</article>
-			</section>
-			<!-- mark: 검색-->
-			<section>
-				<h2>검색</h2>
-				<article class="main-board">
-					<div class="form-search">
-						<input type="search">
-						<button type="button"><span>검색</span></button>
-					</div>
-					<!-- 검색결과 -->
-					<div class="serch-result">
-						<span class="total-num">
-							총 5건
-						</span>
-						<div class="form-grp">
-							<span><input type="radio" id="" name="rad-grp" class="form__radio"><label for="rad-on1"><span class="label-txt">최신순</span></label></span>
-							<span><input type="radio" id="" name="rad-grp" class="form__radio"><label for="rad-on1"><span class="label-txt">조회순</span></label></span>
+		<!-- //mark: content -->
+		<se id="cont" class="content">
+			<!-- //mark: 배너 -->
+			<section class="banner-wrap">
+				<div>
+					<h2 class="hidden">배너</h2>
+					<article class="main-banner">
+						<div class="banner-sm">
+							<a href="" title="바로가기"><img src="../../img/top-banner01.png" alt="경기도 청소년 정책관련정보"></a>
+							<a href="" title="바로가기"><img src="../../img/top-banner02.png" alt="경기도 청소년 시설"><span class="num"><strong>123</strong>곳</span></a>
+							<a href="" title="바로가기"><img src="../../img/top-banner04.png" alt="경기도 청소년참여위원회 현황"></a>
+							<a href="" title="바로가기"><img src="../../img/top-banner05.png" alt="현재 제안 중인 정책"><span class="num"><strong>14</strong>건</span></a>
 						</div>
-						<div class="table">
-							<table>
-								<caption>검색결과</caption>
-								<colgroup>
-									<col>
-									<col>
-									<col>
-									<col>
-								</colgroup>
-								<thead>
-									<tr>
-										<th scope="col">게시판</th>
-										<th scope="col">제목</th>
-										<th scope="col">작성일</th>
-										<th scope="col">조회</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>공지사항</td>
-										<td>[카테고리] 청소년정책참여 사이트가 오픈했습니다.</td>
-										<td>yyyy.mm.dd</td>
-										<td>123</td>
-									</tr>
-								</tbody>
-							</table>
-							<div class="pagewrap">
-								<span class="pagination">
-									<a href="" class="prev"><span class="hidden">이전 10개</span></a>
-									<!-- 활성화 active 클래스 -->
-									<a href="" class="num active"><span>1</span></a>
-									<a href="" class="num"><span>2</span></a>
-									<a href="" class="num"><span>3</span></a>
-									<a href="" class="num"><span>4</span></a>
-									<a href="" class="num"><span>5</span></a>
-									<a href="" class="num"><span>6</span></a>
-									<a href="" class="num"><span>7</span></a>
-									<a href="" class="num"><span>8</span></a>
-									<a href="" class="num"><span>9</span></a>
-									<a href="" class="num"><span>10</span></a>
-									<a href="" class="next"><span class="hidden">다음 10개</span></a>
-								</span>
+						<a href="" title="바로가기" class="banner-big"><img src="../../img/top-banner03.png" alt="제1회 청년의 날"></a>
+					</article>
+				</div>
+			</section>
+			<!-- //mark: 의견나눔-->
+			<section class="talk-wrap">
+
+				<h2 class="tit-h2 txt-c">의견나눔 게시판</h2>
+				<p class="txt-sub1 txt-c">청소년에게 필요하다고 생각되는 모든 의견을 망설이지 말고 제시해주세요.</p>
+				<article>
+					<div class="main-board--step">
+						<ul>
+							<li><span class="icn-1">아이디어 제시</span>
+								<span class="txt">다양한 아이디어를 형식에 상관없이 자유롭게 게시물의 형태로 남기기</span>
+							</li>
+							<li><span class="icn-2">공감 및 의견 나누기</span>
+								<span class="txt">좋은 의견과 아이디어에 공감하고 의견에 대해 더 좋은 보충안이나 수정사항에 대해 자유롭게 의견나누기</span>
+							</li>
+							<li><span class="icn-3">정책 논의</span>
+								<span class="txt">50회 이상의 공감 시 청소년참여위 원회를 통한 아이디어 가공 및 전문자문단의 피드백을 통한 정책 구체화</span>
+							</li>
+							<li><span class="icn-4">정책 발의</span>
+								<span class="txt">구체화된 아이디어를 정책 제안서 작성을 통해 도,시,군에 정책 제안 및 정책 발의 여부 공개</span>
+							</li>
+						</ul>
+					</div>
+					<!-- //mark: 검색-->
+					<div class="main-search-wrap">
+						<div class="form-search">
+							<div class="form-search__inp">
+								<input type="search" placeholder="검색어를 입력하세요">
+							</div>
+							<button type="button" class="btn-search"><span>검색</span></button>
+						</div>
+						<!-- 검색결과 -->
+						<div class="serch-result">
+							<span class="total-num">
+								총 5건
+							</span>
+							<div class="form-grp">
+								<span><input type="radio" id="r1" name="rad-grp" class="form__radio" checked><label for="r1"><span class="label-txt">최신순</span></label></span>
+								<span><input type="radio" id="r2" name="rad-grp" class="form__radio"><label for="r2"><span class="label-txt">조회순</span></label></span>
+							</div>
+							<div class="table-wrap">
+								<table class="table">
+									<caption class="hidden">검색결과</caption>
+									<colgroup>
+										<col>
+										<col>
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">게시판</th>
+											<th scope="col">제목</th>
+											<th scope="col">작성일</th>
+											<th scope="col">조회</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>공지사항</td>
+											<td>[카테고리] 청소년정책참여 사이트가 오픈했습니다.</td>
+											<td>yyyy.mm.dd</td>
+											<td>123</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="pagewrap">
+									<span class="pagination">
+										<a href="" class="prev"><span class="hidden">이전 10개</span></a>
+										<!-- 활성화 active 클래스 -->
+										<a href="" class="num active"><span>1</span></a>
+										<a href="" class="num"><span>2</span></a>
+										<a href="" class="num"><span>3</span></a>
+										<a href="" class="num"><span>4</span></a>
+										<a href="" class="num"><span>5</span></a>
+										<a href="" class="num"><span>6</span></a>
+										<a href="" class="num"><span>7</span></a>
+										<a href="" class="num"><span>8</span></a>
+										<a href="" class="num"><span>9</span></a>
+										<a href="" class="num"><span>10</span></a>
+										<a href="" class="next"><span class="hidden">다음 10개</span></a>
+									</span>
+								</div>
 							</div>
 						</div>
 					</div>
 				</article>
 			</section>
-			<!-- mark: 게시판-->
-			<section>
-				<h2>의견나눔 게시판</h2>
-				<article>
-					<div class="main-board--step">
-						<ul>
-							<li>01 아이디어 제시</li>
-							<li>02 공감 및 의견 나누기</li>
-							<li>03 정책 논의</li>
-							<li>04 정책 발의</li>
-						</ul>
-					</div>
-					<div class="main-board--index">
-						<div class="index-list">
-							<strong>공지사항</strong>
-							<a href="" title="바로가기">더보기</a>
-							<ul>
-								<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
-								<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
-								<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
-							</ul>
-						</div>
-						<div class="index-list">
-							<strong>공지사항</strong>
-							<a href="" title="바로가기">더보기</a>
-							<ul>
-								<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
-								<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
-								<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
-							</ul>
-						</div>
-						<div class="index-list">
-							<strong>정책 제안</strong>
-							<a href="" title="바로가기">더보기</a>
-							<ul>
-								<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
-								<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
-								<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
-							</ul>
-						</div>
-						<div class="index-list">
-							<strong>자료실</strong>
-							<a href="" title="바로가기">더보기</a>
-							<ul>
-								<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
-								<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
-								<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
-							</ul>
-						</div>
-					</div>
-				</article>
+			<!-- //mark: 게시판 인덱스 -->
+			<section class="main-board--index">
+				<div class="index-list">
+					<strong>공지사항</strong>
+					<a href="" title="바로가기">더보기</a>
+					<ul>
+						<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
+						<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
+						<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
+					</ul>
+				</div>
+				<div class="index-list">
+					<strong>공지사항</strong>
+					<a href="" title="바로가기">더보기</a>
+					<ul>
+						<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
+						<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
+						<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
+					</ul>
+				</div>
+				<div class="index-list">
+					<strong>정책 제안</strong>
+					<a href="" title="바로가기">더보기</a>
+					<ul>
+						<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
+						<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
+						<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
+					</ul>
+				</div>
+				<div class="index-list">
+					<strong>자료실</strong>
+					<a href="" title="바로가기">더보기</a>
+					<ul>
+						<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
+						<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
+						<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
+					</ul>
+				</div>
 			</section>
-			<!-- mark: 영상자료 -->
+			
+			<!-- //mark: 영상자료 -->
 			<section>
 				<h2>영상자료</h2>
 				<p>홍보 및 교육에 대한 영상자료 </p>
@@ -182,7 +197,7 @@
 				</div>
 			</section>
 		</div>
-		<!-- mark: footer -->
+		<!-- //mark: footer -->
 		<footer>
 			<address>
 				<span class="detail">(16305) 경기도 수원시 장안구 송원로 55 2층</span>
