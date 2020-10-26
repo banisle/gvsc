@@ -236,7 +236,6 @@ a[class^=btn],
 button[class^=btn] {
 	display: inline-block;
 	position: relative;
-	min-width: 182px;
 	height: 52px;
 	padding: 0;
 	font-size: 16px;
@@ -587,7 +586,7 @@ input.form__chk__slide:disabled+label:before {
 
 .form-grp>span {
 	display: inline-block;
-	padding: 0 10px 0 0;
+	padding: 0 38px 0 0;
 	vertical-align: middle;
 }
 
@@ -598,6 +597,7 @@ input.form__chk__slide:disabled+label:before {
 input+label>.label-txt {
 	position: relative;
 	top: -2px;
+	padding-left: 8px;
 	font-size: 16px;
 	vertical-align: middle
 }

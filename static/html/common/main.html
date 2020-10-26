@@ -37,7 +37,7 @@
 			<!-- <button type="button" class="top-util"><span>로그아웃</span></button> -->
 		</header>
 		<!-- //mark: content -->
-		<se id="cont" class="content">
+		<div id="cont" class="content">
 			<!-- //mark: 배너 -->
 			<section class="banner-wrap">
 				<div>
@@ -83,17 +83,17 @@
 							</div>
 							<button type="button" class="btn-search"><span>검색</span></button>
 						</div>
-						<!-- 검색결과 -->
-						<div class="serch-result">
-							<span class="total-num">
-								총 5건
-							</span>
-							<div class="form-grp">
-								<span><input type="radio" id="r1" name="rad-grp" class="form__radio" checked><label for="r1"><span class="label-txt">최신순</span></label></span>
-								<span><input type="radio" id="r2" name="rad-grp" class="form__radio"><label for="r2"><span class="label-txt">조회순</span></label></span>
-							</div>
+						<!-- 검색결과 기본 숨김-->
+						<div class="serch-result" style="display: none;">
 							<div class="table-wrap">
 								<table class="table">
+									<div class="table-info">
+										<span class="total-num"> 총 5건 </span>
+										<div class="form-grp">
+											<span><input type="radio" id="r1" name="rad-grp" class="form__radio" checked><label for="r1"><span class="label-txt">최신순</span></label></span>
+											<span><input type="radio" id="r2" name="rad-grp" class="form__radio"><label for="r2"><span class="label-txt">조회순</span></label></span>
+										</div>
+									</div>
 									<caption class="hidden">검색결과</caption>
 									<colgroup>
 										<col>
@@ -112,7 +112,37 @@
 									<tbody>
 										<tr>
 											<td>공지사항</td>
-											<td>[카테고리] 청소년정책참여 사이트가 오픈했습니다.</td>
+											<td>[카테고리] <strong class="clr--point">청소년정책참여</strong> 사이트가 오픈했습니다.</td>
+											<td>yyyy.mm.dd</td>
+											<td>123</td>
+										</tr>
+										<tr>
+											<td>공지사항</td>
+											<td>[카테고리] <strong class="clr--point">청소년정책참여</strong> 사이트가 오픈했습니다.</td>
+											<td>yyyy.mm.dd</td>
+											<td>123</td>
+										</tr>
+										<tr>
+											<td>공지사항</td>
+											<td>[카테고리] <strong class="clr--point">청소년정책참여</strong> 사이트가 오픈했습니다.</td>
+											<td>yyyy.mm.dd</td>
+											<td>123</td>
+										</tr>
+										<tr>
+											<td>공지사항</td>
+											<td>[카테고리] <strong class="clr--point">청소년정책참여</strong> 사이트가 오픈했습니다.</td>
+											<td>yyyy.mm.dd</td>
+											<td>123</td>
+										</tr>
+										<tr>
+											<td>공지사항</td>
+											<td>[카테고리] <strong class="clr--point">청소년정책참여</strong> 사이트가 오픈했습니다.</td>
+											<td>yyyy.mm.dd</td>
+											<td>123</td>
+										</tr>
+										<tr>
+											<td>공지사항</td>
+											<td>[카테고리] <strong class="clr--point">청소년정책참여</strong> 사이트가 오픈했습니다.</td>
 											<td>yyyy.mm.dd</td>
 											<td>123</td>
 										</tr>
@@ -141,58 +171,61 @@
 				</article>
 			</section>
 			<!-- //mark: 게시판 인덱스 -->
-			<section class="main-board--index">
-				<div class="index-list">
-					<strong>공지사항</strong>
-					<a href="" title="바로가기">더보기</a>
-					<ul>
-						<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
-						<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
-						<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
-					</ul>
-				</div>
-				<div class="index-list">
-					<strong>공지사항</strong>
-					<a href="" title="바로가기">더보기</a>
-					<ul>
-						<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
-						<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
-						<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
-					</ul>
-				</div>
-				<div class="index-list">
-					<strong>정책 제안</strong>
-					<a href="" title="바로가기">더보기</a>
-					<ul>
-						<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
-						<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
-						<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
-					</ul>
-				</div>
-				<div class="index-list">
-					<strong>자료실</strong>
-					<a href="" title="바로가기">더보기</a>
-					<ul>
-						<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
-						<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
-						<li>[공지] 정책 제안 플랫폼 사용 <span class="date">2020-06-11</span></li>
-					</ul>
+			<section class="board-wrap">
+				<div class="index-wrap">
+					<div class="index-list">
+						<strong class="tit">공지사항</strong>
+						<a href="" title="바로가기" class="more">더보기</a>
+						<ul>
+							<li><a href=""><span class="subject">[공지] 정책 제안 플랫폼 사용 정책 제안 플랫폼 사용 </span><span class="date">2020-06-11</span></a></li>
+							<li><a href=""><span class="subject">[공지] 정책 제안 플랫폼 사용 정책 제안 플랫폼 사용 </span><span class="date">2020-06-11</span></a></li>
+							<li><a href=""><span class="subject">[공지] 정책 제안 플랫폼 사용 정책 제안 플랫폼 사용 </span><span class="date">2020-06-11</span></a></li>
+							<li><a href=""><span class="subject">[공지] 정책 제안 플랫폼 사용 정책 제안 플랫폼 사용 </span><span class="date">2020-06-11</span></a></li>
+							<li><a href=""><span class="subject">[공지] 정책 제안 플랫폼 사용 정책 제안 플랫폼 사용 </span><span class="date">2020-06-11</span></a></li>
+						</ul>
+					</div>
+					<div class="index-list">
+						<strong class="tit">정책 제안</strong>
+						<a href="" title="바로가기" class="more">더보기</a>
+						<ul>
+							<li><a href=""><span class="subject">[공지] 정책 제안 플랫폼 사용 정책 제안 플랫폼 사용 </span><span class="date">2020-06-11</span></a></li>
+							<li><a href=""><span class="subject">[공지] 정책 제안 플랫폼 사용 정책 제안 플랫폼 사용 </span><span class="date">2020-06-11</span></a></li>
+							<li><a href=""><span class="subject">[공지] 정책 제안 플랫폼 사용 정책 제안 플랫폼 사용 </span><span class="date">2020-06-11</span></a></li>
+							<li><a href=""><span class="subject">[공지] 정책 제안 플랫폼 사용 정책 제안 플랫폼 사용 </span><span class="date">2020-06-11</span></a></li>
+							<li><a href=""><span class="subject">[공지] 정책 제안 플랫폼 사용 정책 제안 플랫폼 사용 </span><span class="date">2020-06-11</span></a></li>
+						</ul>
+					</div>
+					<div class="index-list">
+						<strong class="tit">자료실</strong>
+						<a href="" title="바로가기" class="more">더보기</a>
+						<ul>
+							<li><a href=""><span class="subject">[공지] 정책 제안 플랫폼 사용 정책 제안 플랫폼 사용 </span><span class="date">2020-06-11</span></a></li>
+							<li><a href=""><span class="subject">[공지] 정책 제안 플랫폼 사용 정책 제안 플랫폼 사용 </span><span class="date">2020-06-11</span></a></li>
+							<li><a href=""><span class="subject">[공지] 정책 제안 플랫폼 사용 정책 제안 플랫폼 사용 </span><span class="date">2020-06-11</span></a></li>
+							<li><a href=""><span class="subject">[공지] 정책 제안 플랫폼 사용 정책 제안 플랫폼 사용 </span><span class="date">2020-06-11</span></a></li>
+							<li><a href=""><span class="subject">[공지] 정책 제안 플랫폼 사용 정책 제안 플랫폼 사용 </span><span class="date">2020-06-11</span></a></li>
+						</ul>
+					</div>
 				</div>
 			</section>
-			
 			<!-- //mark: 영상자료 -->
-			<section>
-				<h2>영상자료</h2>
-				<p>홍보 및 교육에 대한 영상자료 </p>
+			<section class="mv-wrap">
+				<h2 class="tit-h2">영상자료</h2>
+				<p class="txt-sub1">홍보 및 교육에 대한 영상자료 </p>
 				<div class="mv-list">
 					<ul>
-						<li><a href=""><img src="" alt=""><span class="tit">내일은 여는 청소년  VLOG</span></a></li>
-						<li><a href=""><img src="" alt=""><span class="tit">내일은 여는 청소년  VLOG</span></a></li>
-						<li><a href=""><img src="" alt=""><span class="tit">내일은 여는 청소년  VLOG</span></a></li>
-						<li><a href=""><img src="" alt=""><span class="tit">내일은 여는 청소년  VLOG</span></a></li>
-						<li><a href=""><img src="" alt=""><span class="tit">내일은 여는 청소년  VLOG</span></a></li>
-						<li><a href=""><img src="" alt=""><span class="tit">내일은 여는 청소년  VLOG</span></a></li>
-						<li><a href=""><img src="" alt=""><span class="tit">내일은 여는 청소년  VLOG</span></a></li>
+						<li><a href="">
+							<img src="../../img/@mv-thumb01.png" alt=""><span class="tit">일은 여는 청소년 VLOG (by.홍도사)</span>
+							<span class="sub-tit">Tov Kingdom 조회수 352회 1개월 전</span></a>
+						</li>
+						<li><a href="">
+							<img src="../../img/@mv-thumb02.png" alt=""><span class="tit">일은 여는 청소년 VLOG (by.홍도사)</span>
+							<span class="sub-tit">Tov Kingdom 조회수 352회 1개월 전</span></a>
+						</li>
+						<li><a href="">
+							<img src="../../img/@mv-thumb03.png" alt=""><span class="tit">일은 여는 청소년 VLOG (by.홍도사)</span>
+							<span class="sub-tit">Tov Kingdom 조회수 352회 1개월 전</span></a>
+						</li>
 					</ul>
 				</div>
 			</section>
@@ -201,18 +234,15 @@
 		<footer>
 			<address>
 				<span class="detail">(16305) 경기도 수원시 장안구 송원로 55 2층</span>
-				<span class="phone"><a href="tel:031-232-9385">대표전화: 031-232-9385~5</a></span>
-				<span class="fax">팩스 : 031-232-9388</span>
-				<span class="email"><a href="mailto:kgyvc@hanmail.net">이메일 : kgyvc@hanmail.net</a></span>
-				<span class="code">고유번호 : 135-82-60877</span>
-				<span class="owner">대표자 : 서재범</span>
+				<span class="phone"><a href="tel:031-232-9385">대표전화: 031-232-9385~5</a> <span class="owner"> 대표자 : 서재범</span></span>
+				<span class="fax">팩스 : 031-232-9388 <span class="email"><a href="mailto:kgyvc@hanmail.net">이메일 : kgyvc@hanmail.net</a> <span class="code">고유번호 : 135-82-60877</span></span></span>
 			</address>
 			<div class="ex-link">
 				<ul>
-					<li><a href="">여성가족부</a></li>
-					<li><a href="">경기도</a></li>
-					<li><a href="">한국청소년 활동진흥원</a></li>
-					<li><a href="">재단법인 대건청소년회</a></li>
+					<li><a href=""><img src="../../img/fam_link01.png" alt="여성가족부"></a></li>
+					<li><a href=""><img src="../../img/fam_link02.png" alt="경기도"></a></li>
+					<li><a href=""><img src="../../img/fam_link03.png" alt="활동진흥원 한국청소년"> </a></li>
+					<li><a href=""><img src="../../img/fam_link04.png" alt="대건청소년회 재단법인"></a></li>
 				</ul>
 			</div>
 		</footer>
