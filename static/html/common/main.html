@@ -1,34 +1,64 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="initial-scale=1, viewport-fit=cover">
-    <link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="initial-scale=1, viewport-fit=cover">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
 	<link href="../../img/common/favicon-152.png" rel="apple-touch-icon-precomposed">
-    <title>청출어람</title>
-    <link rel="stylesheet" href="../../css/style.css">
-    <script src="../../js/jquery-3.4.1.min.js"></script>
-    <script src="../../js/ANUI.js"></script>
-    <script src="../../js/common.js"></script>
+	<title>청출어람</title>
+	<link rel="stylesheet" href="../../css/style.css">
+	<script src="../../js/jquery-3.4.1.min.js"></script>
+	<script src="../../js/ANUI.js"></script>
+	<script src="../../js/common.js"></script>
 </head>
+
 <body class="main">
 	<!-- //mark: skip-navi -->
 	<div id="skip">
-        <a href="#nav">전체 메뉴 바로가기</a>
-        <a href="#cont">본문 바로가기</a>
-    </div>
-    <div class="container--main">
-        <header>
+		<a href="#nav">전체 메뉴 바로가기</a>
+		<a href="#cont">본문 바로가기</a>
+	</div>
+	<div class="container--main">
+		<header>
 			<h1><a href="#"><img src="../../img/logo_01@2x.png" alt="경기도 청소년참여플랫폼 청출어람"></a></h1>
 			<div class="gnb" id="nav">
-				<ul>
-					<li><a href="">소개</a></li>
-					<li><a href="">전체공개</a></li>
-					<li><a href="">正말正책</a></li>
-					<li><a href="">자료실</a></li>
+				<ul role="menubar" class="menu2depth--allsub aui-allsub">
+					<li class="">
+						<a href="" role="menuitem"><span>소개</span></a>
+						<ul role="menu">
+							<li role="none"><a href="" role="menuitem">청소년참여기구</a></li>
+							<li role="none"><a href="" role="menuitem">청출어람</a></li>
+							<li role="none"><a href="" role="menuitem">운영기관</a></li>
+						</ul>
+
+					</li>
+					<li class="">
+						<a href="" role="menuitem"><span>정보공유</span></a>
+						<ul role="menu">
+							<li role="none"><a href="" role="menuitem">공지사항</a></li>
+							<li role="none"><a href="" role="menuitem">질의응답</a></li>
+							<li role="none"><a href="" role="menuitem">활동공유</a></li>
+						</ul>
+
+					</li>
+					<li><a href="" role="menuitem"><span>正말正책</span></a>
+						<ul role="menu">
+							<li role="none"><a href="" role="menuitem">정책제안</a></li>
+							<li role="none"><a href="" role="menuitem">제안결과</a></li>
+						</ul>
+					</li>
+					<li class="cs"><a href="" role="menuitem"><span>자료실</span></a>
+						<ul role="menu">
+							<li role="none"><a href="" role="menuitem">교육관</a></li>
+							<li role="none"><a href="" role="menuitem">홍보관</a></li>
+							<li role="none"><a href="" role="menuitem">보도자료</a></li>
+						</ul>
+					</li>
 				</ul>
+				<span class="floatBar"></span>
 			</div>
 			<div class="family-link">
 				<a href=""><img src="../../img/banner01.png" alt="새로운 경기 공정한 세상"></a>
@@ -45,11 +75,14 @@
 					<article class="main-banner">
 						<div class="banner-sm">
 							<a href="" title="바로가기"><img src="../../img/top-banner01.png" alt="경기도 청소년 정책관련정보"></a>
-							<a href="" title="바로가기"><img src="../../img/top-banner02.png" alt="경기도 청소년 시설"><span class="num"><strong>123</strong>곳</span></a>
+							<a href="" title="바로가기"><img src="../../img/top-banner02.png" alt="경기도 청소년 시설"><span
+									class="num"><strong>123</strong>곳</span></a>
 							<a href="" title="바로가기"><img src="../../img/top-banner04.png" alt="경기도 청소년참여위원회 현황"></a>
-							<a href="" title="바로가기"><img src="../../img/top-banner05.png" alt="현재 제안 중인 정책"><span class="num"><strong>14</strong>건</span></a>
+							<a href="" title="바로가기"><img src="../../img/top-banner05.png" alt="현재 제안 중인 정책"><span
+									class="num"><strong>14</strong>건</span></a>
 						</div>
-						<a href="" title="바로가기" class="banner-big"><img src="../../img/top-banner03.png" alt="제1회 청년의 날"></a>
+						<a href="" title="바로가기" class="banner-big"><img src="../../img/top-banner03.png"
+								alt="제1회 청년의 날"></a>
 					</article>
 				</div>
 			</section>
@@ -89,8 +122,10 @@
 								총 5건
 							</span>
 							<div class="form-grp">
-								<span><input type="radio" id="r1" name="rad-grp" class="form__radio" checked><label for="r1"><span class="label-txt">최신순</span></label></span>
-								<span><input type="radio" id="r2" name="rad-grp" class="form__radio"><label for="r2"><span class="label-txt">조회순</span></label></span>
+								<span><input type="radio" id="r1" name="rad-grp" class="form__radio" checked><label
+										for="r1"><span class="label-txt">최신순</span></label></span>
+								<span><input type="radio" id="r2" name="rad-grp" class="form__radio"><label
+										for="r2"><span class="label-txt">조회순</span></label></span>
 							</div>
 							<div class="table-wrap">
 								<table class="table">
@@ -179,43 +214,44 @@
 					</ul>
 				</div>
 			</section>
-			
+
 			<!-- //mark: 영상자료 -->
 			<section>
 				<h2>영상자료</h2>
 				<p>홍보 및 교육에 대한 영상자료 </p>
 				<div class="mv-list">
 					<ul>
-						<li><a href=""><img src="" alt=""><span class="tit">내일은 여는 청소년  VLOG</span></a></li>
-						<li><a href=""><img src="" alt=""><span class="tit">내일은 여는 청소년  VLOG</span></a></li>
-						<li><a href=""><img src="" alt=""><span class="tit">내일은 여는 청소년  VLOG</span></a></li>
-						<li><a href=""><img src="" alt=""><span class="tit">내일은 여는 청소년  VLOG</span></a></li>
-						<li><a href=""><img src="" alt=""><span class="tit">내일은 여는 청소년  VLOG</span></a></li>
-						<li><a href=""><img src="" alt=""><span class="tit">내일은 여는 청소년  VLOG</span></a></li>
-						<li><a href=""><img src="" alt=""><span class="tit">내일은 여는 청소년  VLOG</span></a></li>
+						<li><a href=""><img src="" alt=""><span class="tit">내일은 여는 청소년 VLOG</span></a></li>
+						<li><a href=""><img src="" alt=""><span class="tit">내일은 여는 청소년 VLOG</span></a></li>
+						<li><a href=""><img src="" alt=""><span class="tit">내일은 여는 청소년 VLOG</span></a></li>
+						<li><a href=""><img src="" alt=""><span class="tit">내일은 여는 청소년 VLOG</span></a></li>
+						<li><a href=""><img src="" alt=""><span class="tit">내일은 여는 청소년 VLOG</span></a></li>
+						<li><a href=""><img src="" alt=""><span class="tit">내일은 여는 청소년 VLOG</span></a></li>
+						<li><a href=""><img src="" alt=""><span class="tit">내일은 여는 청소년 VLOG</span></a></li>
 					</ul>
 				</div>
 			</section>
+	</div>
+	<!-- //mark: footer -->
+	<footer>
+		<address>
+			<span class="detail">(16305) 경기도 수원시 장안구 송원로 55 2층</span>
+			<span class="phone"><a href="tel:031-232-9385">대표전화: 031-232-9385~5</a></span>
+			<span class="fax">팩스 : 031-232-9388</span>
+			<span class="email"><a href="mailto:kgyvc@hanmail.net">이메일 : kgyvc@hanmail.net</a></span>
+			<span class="code">고유번호 : 135-82-60877</span>
+			<span class="owner">대표자 : 서재범</span>
+		</address>
+		<div class="ex-link">
+			<ul>
+				<li><a href="">여성가족부</a></li>
+				<li><a href="">경기도</a></li>
+				<li><a href="">한국청소년 활동진흥원</a></li>
+				<li><a href="">재단법인 대건청소년회</a></li>
+			</ul>
 		</div>
-		<!-- //mark: footer -->
-		<footer>
-			<address>
-				<span class="detail">(16305) 경기도 수원시 장안구 송원로 55 2층</span>
-				<span class="phone"><a href="tel:031-232-9385">대표전화: 031-232-9385~5</a></span>
-				<span class="fax">팩스 : 031-232-9388</span>
-				<span class="email"><a href="mailto:kgyvc@hanmail.net">이메일 : kgyvc@hanmail.net</a></span>
-				<span class="code">고유번호 : 135-82-60877</span>
-				<span class="owner">대표자 : 서재범</span>
-			</address>
-			<div class="ex-link">
-				<ul>
-					<li><a href="">여성가족부</a></li>
-					<li><a href="">경기도</a></li>
-					<li><a href="">한국청소년 활동진흥원</a></li>
-					<li><a href="">재단법인 대건청소년회</a></li>
-				</ul>
-			</div>
-		</footer>
-    </div>
+	</footer>
+	</div>
 </body>
+
 </html>
