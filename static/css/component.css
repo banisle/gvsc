@@ -1250,16 +1250,7 @@ html.mobile .form__select {
 }
 
 [class^='menu2depth']>li a:after {
-	content: '';
-	display: block;
-	position: absolute;
-	top: 50%;
-	right: 0;
-	transform: translateY(-50%);
-	width: 1px;
-	height: 16px;
-	background: #fff;
-	opacity: .3;
+
 }
 
 [class^='menu2depth']>li ul {

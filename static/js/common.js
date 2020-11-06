@@ -7,12 +7,14 @@ $(document).ready(function(){
     $sBar = $nav.find('.floatBar');
 
     $a.on('mouseover', function(){
-        var aW = $(this).width(),
-            aL = $(this).offset().left;
+		var _t = $(this),
+			_tP = $(this).parent(),
+			aW = _t.width(),
+            aL = _tP.position().left;
 
         $sBar.css({
             'width': aW,
-            'left' : aL - 223
+            'left' : aL + 100
 		});
 	});
 
