@@ -210,7 +210,7 @@ ANUI.module = (function () {
 					.attr("tabindex", "-1")
 					.removeClass("on");
 
-					
+
 
 			});
 
@@ -237,7 +237,7 @@ ANUI.module = (function () {
 					.attr("tabindex", "-1")
 					.removeClass("on");
 
-				
+
 			});
 
 
@@ -2176,15 +2176,17 @@ ANUI.module = (function () {
 				e.preventDefault();
 			});
 			$menu.on('mouseenter focusin', function (e) {
-				var $t = $(this);
-				$t.addClass('active');
+				$menu.addClass('active');
 				$menu.find('ul').height(h);
 			});
 			$menu.on('mouseleave focusout', function (e) {
-				var $t = $(this);
-				$t.removeClass('active');
+				$menu.removeClass('active');
 				$menu.find('ul').height(0);
 			});
+			$(window).on('scroll', function(){
+				$menu.removeClass('active');
+				$menu.find('ul').height(0);
+			})
 
 		},
 		// mark : scrlTopUi

@@ -67,7 +67,25 @@ outline: none;
 		url('../fonts/notokr-bold.woff') format('woff');
 }
 
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@font-face {
+	font-family: 'Nanum Gothic';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/NanumGothic.eot');
+	src: url('../fonts/NanumGothic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/NanumGothic.woff2') format('woff2'),
+		url('../fonts/NanumGothic.woff') format('woff');
+}
+@font-face {
+	font-family: 'Nanum Gothic';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/NanumGothicBold.eot');
+	src: url('../fonts/NanumGothicBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/NanumGothicBold.woff2') format('woff2'),
+		url('../fonts/NanumGothicBold.woff') format('woff');
+}
+
 
 .fw-l{font-weight: 100}
 .fw-r{font-weight: 300}
@@ -76,7 +94,6 @@ outline: none;
 
 .ff-ng-r{ font-family: 'Nanum Gothic'; font-weight: 400; }
 .ff-ng-b{ font-family: 'Nanum Gothic'; font-weight: 700; }
-.ff-ng-eb{ font-family: 'Nanum Gothic'; font-weight: 800; }
 
 /* mark: skip navi */
 #skip {position: relative;}
