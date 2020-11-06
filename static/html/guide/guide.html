@@ -15,8 +15,8 @@
     
     <style>
         .guidewrap {
-            width: 100%;
-            margin: 0 auto;
+			margin: 0 auto;
+			padding: 0 20px;
             line-height: 1.6
 
         }
@@ -91,14 +91,29 @@
 
         <div class="guideTit">
             <strong>radio</strong>
-            <span>
-                <input type="radio" id="rad-on1" class="form_radio" name="radio_grp" checked>
-                <label for="rad-on1"><span class="label-txt"><strong>라디오1</strong></span></label>
-            </span><br />
-            <span>
-                <input type="radio" id="rad-on2" class="form_radio" name="radio_grp">
-                <label for="rad-on2"><span class="label-txt">라디오2 </span></label>
-            </span>
+            <div class="form-grp">
+				<span><input type="radio" id="r1" name="rad-grp" class="form__radio" checked><label for="r1"><span class="label-txt">최신순</span></label></span>
+				<span><input type="radio" id="r2" name="rad-grp" class="form__radio"><label for="r2"><span class="label-txt">조회순</span></label></span>
+			</div>
+		</div>
+		
+        <div class="guideTit">
+            <strong>footer</strong>
+            <footer class="footer">
+				<address>
+					<span class="detail">(16305) 경기도 수원시 장안구 송원로 55 2층</span>
+					<span class="phone"><a href="tel:031-232-9385">대표전화: 031-232-9385~5</a> <span class="owner"> 대표자 : 서재범</span></span>
+					<span class="fax">팩스 : 031-232-9388 <span class="email"><a href="mailto:kgyvc@hanmail.net">이메일 : kgyvc@hanmail.net</a> <span class="code">고유번호 : 135-82-60877</span></span></span>
+				</address>
+				<div class="ex-link">
+					<ul>
+						<li><a href=""><img src="../../img/fam_link01.png" alt="여성가족부"></a></li>
+						<li><a href=""><img src="../../img/fam_link02.png" alt="경기도"></a></li>
+						<li><a href=""><img src="../../img/fam_link03.png" alt="활동진흥원 한국청소년"> </a></li>
+						<li><a href=""><img src="../../img/fam_link04.png" alt="대건청소년회 재단법인"></a></li>
+					</ul>
+				</div>
+			</footer>
         </div>
 
         <div class="guideTit">
@@ -113,7 +128,15 @@
             </div>
             
         </div>
-
+		<div class="guideTit">
+            <strong>search</strong>
+			<div class="form-search">
+				<div class="form-search__inp">
+					<input type="search" placeholder="검색어를 입력하세요">
+				</div>
+				<button type="button" class="btn-search"><span>검색</span></button>
+			</div>
+		</div>
 
 
 
@@ -124,23 +147,13 @@
                     <option value="">Seoul</option>
                 </select>
             </div>
-            <div class="selectWrap">
-                <select title="test" class="form_select wait" >
-                    <option value="">Please select region 2</option>
-                </select>
-            </div>
-            <div class="selectWrap">
-                <select title="test" class="form_select active" >
-                    <option value="">Please select region 2</option>
-                </select>
-            </div>
 		</div>
 		
         <div class="guideTit">
-            <strong>table</strong>
-            <div class="table">
-				<table>
-					<caption>검색결과</caption>
+			<strong>table</strong>
+			<div class="table-wrap">
+				<table class="table">
+					<caption class="hidden">검색결과</caption>
 					<colgroup>
 						<col>
 						<col>
@@ -158,30 +171,44 @@
 					<tbody>
 						<tr>
 							<td>공지사항</td>
-							<td>[카테고리] 청소년정책참여 사이트가 오픈했습니다.</td>
+							<td>[카테고리] <strong class="clr--point">청소년정책참여</strong> 사이트가 오픈했습니다.</td>
+							<td>yyyy.mm.dd</td>
+							<td>123</td>
+						</tr>
+						<tr>
+							<td>공지사항</td>
+							<td>[카테고리] <strong class="clr--point">청소년정책참여</strong> 사이트가 오픈했습니다.</td>
+							<td>yyyy.mm.dd</td>
+							<td>123</td>
+						</tr>
+						<tr>
+							<td>공지사항</td>
+							<td>[카테고리] <strong class="clr--point">청소년정책참여</strong> 사이트가 오픈했습니다.</td>
+							<td>yyyy.mm.dd</td>
+							<td>123</td>
+						</tr>
+						<tr>
+							<td>공지사항</td>
+							<td>[카테고리] <strong class="clr--point">청소년정책참여</strong> 사이트가 오픈했습니다.</td>
+							<td>yyyy.mm.dd</td>
+							<td>123</td>
+						</tr>
+						<tr>
+							<td>공지사항</td>
+							<td>[카테고리] <strong class="clr--point">청소년정책참여</strong> 사이트가 오픈했습니다.</td>
+							<td>yyyy.mm.dd</td>
+							<td>123</td>
+						</tr>
+						<tr>
+							<td>공지사항</td>
+							<td>[카테고리] <strong class="clr--point">청소년정책참여</strong> 사이트가 오픈했습니다.</td>
 							<td>yyyy.mm.dd</td>
 							<td>123</td>
 						</tr>
 					</tbody>
 				</table>
-				<div class="pagewrap">
-					<span class="pagination">
-						<a href="" class="prev"><span class="hidden">이전 10개</span></a>
-						<!-- 활성화 active 클래스 -->
-						<a href="" class="num active"><span>1</span></a>
-						<a href="" class="num"><span>2</span></a>
-						<a href="" class="num"><span>3</span></a>
-						<a href="" class="num"><span>4</span></a>
-						<a href="" class="num"><span>5</span></a>
-						<a href="" class="num"><span>6</span></a>
-						<a href="" class="num"><span>7</span></a>
-						<a href="" class="num"><span>8</span></a>
-						<a href="" class="num"><span>9</span></a>
-						<a href="" class="num"><span>10</span></a>
-						<a href="" class="next"><span class="hidden">다음 10개</span></a>
-					</span>
-				</div>
 			</div>
+            
         </div>
 
     </div>
