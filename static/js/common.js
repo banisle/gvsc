@@ -12,7 +12,7 @@ $(document).ready(function(){
 
         $sBar.css({
             'width': aW,
-            'left' : aL - 160
+            'left' : aL - 223
 		});
 	});
 

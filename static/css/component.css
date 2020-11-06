@@ -490,20 +490,31 @@ input.form__radio:disabled+label:before:hover {
 }
 
 input.form__radio+label {
-	font-family: 'Font Awesome 5 Free';
-	font-weight: normal;
+	position: relative;
 	font-size: 28px
 }
 
 input.form__radio+label:before {
-	content: "\f111";
-	color: #717171;
-	padding-right: 5px
+	content: "";
+    width: 20px;
+    height: 20px;
+    border: solid 1px #2990d2;
+    background-color: #ffffff;
+	display: inline-block;
+    box-sizing: border-box;
+    border-radius: 50%;
 }
 
-input.form__radio:checked+label:before {
-	content: "\f058";
-	color: #006cd1
+input.form__radio:checked+label:after {
+	content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: #fc725c;
+    left: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
 }
 
 input.form__chk.inp--error+label:before,
@@ -1453,13 +1464,19 @@ html.mobile .form__select {
 }
 
 .pagination a {
+	overflow: hidden;
 	position: relative;
 	float: left;
+	margin-right: 10px;
 	width: 32px;
 	height: 32px;
 	line-height: 32px;
-	color: #b2b2b2;
-	font-size: 12px;
+	color: #919191;
+	background-color: #fff;
+	font-size: 14px;
+	border-radius: 6px;
+
+
 }
 
 .pagination a:after {
@@ -1469,8 +1486,9 @@ html.mobile .form__select {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	border: 1px solid #dfdee1;
-	border-right: 0;
+	border: 1px solid #919191;
+	border-radius: 6px;
+
 }
 
 .pagination .prev:before {
@@ -1478,11 +1496,10 @@ html.mobile .form__select {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	width: 5px;
-	height: 9px;
-	background: url('../img/icn_ir.png') 0 0 no-repeat;
-	background-position: -279px -7px;
-	transform: translate(-50%, -50%);
+	width: 8px;
+	height: 12px;
+	background: url('../img/page_prev.png') 0 0 no-repeat;
+	transform: translate(-35%, -50%);
 }
 
 .pagination .next:before {
@@ -1490,39 +1507,53 @@ html.mobile .form__select {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	width: 5px;
-	height: 9px;
-	background: url('../img/icn_ir.png') 0 0 no-repeat;
-	background-position: -254px -7px;
-	transform: translate(-50%, -50%);
+	width: 8px;
+	height: 12px;
+	background: url('../img/page_next.png') 0 0 no-repeat;
+	transform: translate(-35%, -50%);
+}
+.pagination .pprev:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 13px;
+	height: 12px;
+	background: url('../img/page_pprev.png') 0 0 no-repeat;
+	transform: translate(-35%, -50%);
+}
+
+.pagination .nnext:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 13px;
+	height: 12px;
+	background: url('../img/page_nnext.png') 0 0 no-repeat;
+	transform: translate(-35%, -50%);
 }
 
 .pagination a:last-child:after {
-	border: 1px solid #dfdee1;
 }
 
 .pagination a:hover,
+.pagination a:focus,
 .pagination a.active {
-	color: #3fad57;
+	color: #fff;
+	background: #fc725c;
+
 }
 
 .pagination a:hover:after,
+.pagination a:focus:after,
 .pagination a.active:after {
 	right: -1px;
-	color: #3fad57;
-	border: 1px solid #3fad57;
+	color: #fff;
+	border: 1px solid #fc725c;
 	z-index: 1;
 }
 
-.pagination .prev:hover:before,
-.pagination .prev.active:before {
-	background-position: -305px -7px;
-}
-
-.pagination .next:hover:before,
-.pagination .next.active:before {
-	background-position: -332px -7px;
-}
 
 
 /* //mark:  tooltip */
