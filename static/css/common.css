@@ -104,6 +104,17 @@ img {
 	font-size: 0;
 	transform: translateY(-50%);
 }
+/* //mark: modal */
+.laypop header{position: relative;}
+.laypop .btn-popclose{
+	position: absolute;
+	top:50%;
+	right: 11px;
+	width: 25px;height: 25px;
+	background: url('../img/icn_popclose.png') 50% 50% no-repeat;
+	transform: translateY(-50%);
+	font-size: 0;
+}
 
 /* //mark: table */
 .table-wrap {
@@ -213,27 +224,27 @@ footer.footer {
 }
 
 /* //mark : gnb */
-header {
+[class^="container--"] header {
 	position: relative;
 	height: 109px;
 	padding: 28px 0 17px;
 	box-sizing: border-box;
 }
 
-header h1 {
+[class^="container--"] header h1 {
 	display: inline-block;
 	padding-left: 36px;
 }
 
-header h1>a {
+[class^="container--"] header h1>a {
 	display: inline-block;
 }
 
-header h1 img {
+[class^="container--"] header h1 img {
 	width: 130px;
 }
 
-header .gnb {
+[class^="container--"] header .gnb {
 	display: inline-block;
 	padding-top: 16px;
 	padding-left: 59px;
@@ -243,48 +254,48 @@ header .gnb {
 	vertical-align: top;
 }
 
-header .gnb>ul>li {
+[class^="container--"] header .gnb>ul>li {
 	display: inline-block;
 }
 
-header .gnb>ul>li:last-child {
+[class^="container--"] header .gnb>ul>li:last-child {
 	padding-right: 0;
 }
 
-header .gnb>ul>li>a {
+[class^="container--"] header .gnb>ul>li>a {
 	display: inline-block;
 	padding: 0 42px 30px 42px;
 	color: #333;
 }
 
-header .gnb>ul>li>a.on,
-header .gnb>ul>li>a:hover {
+[class^="container--"] header .gnb>ul>li>a.on,
+[class^="container--"] header .gnb>ul>li>a:hover {
 	color: #417ec7;
 }
 
-header .gnb li ul a {
+[class^="container--"] header .gnb li ul a {
 	padding-bottom: 23px;
 	line-height: 27px;
 	text-align: center;
 }
 
-header .gnb li ul li:last-child a {
+[class^="container--"] header .gnb li ul li:last-child a {
 	padding-bottom: 0;
 }
 
-header .family-link {
+[class^="container--"] header .family-link {
 	float: right;
 	padding-right: 38px;
 	padding-top: 10px;
 	vertical-align: top;
 }
 
-header .family-link a {
+[class^="container--"] header .family-link a {
 	display: inline-block;
 	vertical-align: middle;
 }
 
-header .family-link a:first-child {
+[class^="container--"] header .family-link a:first-child {
 	padding-right: 20px;
 }
 
@@ -633,7 +644,7 @@ header .family-link a:first-child {
 	padding: 91px 0 55px;
 }
 .sub-content .sec.v1{ background: #ecfffa; }
-.sub-content .sec.v2{ background: #f3f5ff ; }
+.sub-content .sec.v2{ background: url('../img/bg-sub-intro.png') 50% 50% no-repeat #f3f5ff; }
 .sub-content .sec.v3{ padding-bottom: 133px; background: #f1fdff ; }
 .sub-content .sec .subject-wrap{
 	width: 1180px;
@@ -704,8 +715,92 @@ header .family-link a:first-child {
 .sub-content .sec.v3 .icn--target:after{ background: url('../img/icn_target_v2.png') 0 0 no-repeat; }
 .sub-content .sec.v3 .icn--law:after{ background: url('../img/icn_law_v2.png') 0 0 no-repeat; }
 
+.sub-content.intro01 .aui-tab-wrap.i-1::after{
+	content: '';
+	position: absolute;
+	top: 560px;left: 0;right: 0;bottom: 104px;
+	background-color: #f1fdff;
+	z-index: -100;
+}
 
-/* //mark: sub 전체공개 */
+.sub-content.intro01 .map-31-wrap{
+	position: relative;
+	width: 1180px;
+	margin: 107px auto;
+	height: 1072px;
+	background: url('../img/map.png') 0 0 no-repeat;
+	background-size: auto;
+}
+.sub-content.intro01 .map-31-wrap .btn-icn{ position: absolute; }
+
+
+/* 김포 */
+.sub-content.intro01 .map-31-wrap .map-kimpo{ top: 445px; left: 130px; }
+/* 파주시 */
+.sub-content.intro01 .map-31-wrap .map-paju{top: 310px;left: 240px;}
+/* 고양시 */
+.sub-content.intro01 .map-31-wrap .map-goyang{top: 460px;left: 280px;}
+/* 연천군 */
+.sub-content.intro01 .map-31-wrap .map-yeonchon{top:100px ; left: 430px;}
+/* 동두천시 */
+.sub-content.intro01 .map-31-wrap .map-ddchon{top: 260px; left: 450px;}
+/* 양주시 */
+.sub-content.intro01 .map-31-wrap .map-yangjoo{top: 330px; left: 390px;}
+/* 의정부시 */
+.sub-content.intro01 .map-31-wrap .map-ijb{top: 410px; left:440px ;}
+/* 포천군 */
+.sub-content.intro01 .map-31-wrap .map-fochun{top:200px ; left: 600px;}
+/* 부천시 */
+.sub-content.intro01 .map-31-wrap .map-bucheon{top:575px; left: 190px; }
+/* 시흥시 */
+.sub-content.intro01 .map-31-wrap .map-sih{top:665px; left: 160px; }
+/* 광명시 */
+.sub-content.intro01 .map-31-wrap .map-km{top: 595px; left: 290px; }
+/* 안산시 */
+.sub-content.intro01 .map-31-wrap .map-as{top: 725px; left: 220px; }
+/* 안양시 */
+.sub-content.intro01 .map-31-wrap .map-aa{top: 655px; left: 300px; }
+/* 군포시 */
+.sub-content.intro01 .map-31-wrap .map-kp{top: 705px; left: 320px; }
+/* 과천시 */
+.sub-content.intro01 .map-31-wrap .map-kc{top: 625px; left: 380px; }
+/* 의왕시 */
+.sub-content.intro01 .map-31-wrap .map-iw{top: 675px; left: 380px; }
+/* 성남시 */
+.sub-content.intro01 .map-31-wrap .map-sn{top: 645px; left: 490px; }
+/* 구리시 */
+.sub-content.intro01 .map-31-wrap .map-guri{top:515px; left: 490px; }
+/* 남양주시 */
+.sub-content.intro01 .map-31-wrap .map-nyj{top: 435px; left: 580px; }
+/* 가평군 */
+.sub-content.intro01 .map-31-wrap .map-gp{top: 350px; left: 750px; }
+/* 하남시 */
+.sub-content.intro01 .map-31-wrap .map-hn{top:575px; left: 550px; }
+/* 광주시 */
+.sub-content.intro01 .map-31-wrap .map-kj{top: 655px; left: 650px; }
+/* 양평군 */
+.sub-content.intro01 .map-31-wrap .map-yp{top: 575px; left: 890px; }
+/* 수원시 */
+.sub-content.intro01 .map-31-wrap .map-sw{top: 755px; left: 380px; }
+/* 화성시 */
+.sub-content.intro01 .map-31-wrap .map-hs{top: 855px; left: 280px; }
+/* 오산시 */
+.sub-content.intro01 .map-31-wrap .map-os{top: 835px; left: 420px; }
+/* 용인시 */
+.sub-content.intro01 .map-31-wrap .map-yi{top: 765px; left: 570px; }
+/* 이천시 */
+.sub-content.intro01 .map-31-wrap .map-ic{top: 785px; left: 790px; }
+/* 여주군 */
+.sub-content.intro01 .map-31-wrap .map-yj{top: 755px; left: 950px; }
+/* 평택시 */
+.sub-content.intro01 .map-31-wrap .map-ft{top: 975px; left: 400px; }
+/* 안성시 */
+.sub-content.intro01 .map-31-wrap .map-asung{top: 925px; left: 650px; }
+
+/* laypop */
+
+
+/* //mark: sub 정보공유 */
 /* //mark: sub 정말정책 */
 /* //mark: sub 자료실 */
 

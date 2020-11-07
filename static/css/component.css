@@ -384,14 +384,20 @@ button[class^=btn-icn] {
 	line-height: 30px;
 	letter-spacing: 0;
 	box-sizing: border-box;
-	background-color: #f3f5f8;
-	border: 1px solid #9b9fa8;
+	background-color: transparent;
+	border: 0;
 }
 
 a[class^=btn-icn]>span,
 button[class^=btn-icn]>span {
-	padding: 0 12px 0;
-	color: #575b63;
+	padding: 0 23px;
+	border-radius: 16px;
+	border: solid 1px #000000;
+	background-color: #fff;
+	font-size: 16px;
+	color: #333;
+	line-height: 32px;
+	font-weight: 500;
 }
 
 a[class^=btn-icn]>span>i.fa,
@@ -401,13 +407,13 @@ button[class^=btn-icn]>span>i.fas {
 	padding: 0 5px 0 0;
 }
 
-a[class^=btn-icn]:active,
-button[class^=btn-icn]:active,
-a[class^=btn-icn]:hover,
-button[class^=btn-icn]:hover {
-	background-color: #e9ebef;
-	border-color: #2b2e38;
-	color: #2b2e38;
+a[class^=btn-icn]:active > span,
+button[class^=btn-icn]:active > span,
+a[class^=btn-icn]:hover > span,
+button[class^=btn-icn]:hover  > span{
+	border: solid 1px #fff;
+	background-color: #228af1;
+	color: #fff;
 }
 
 a[class^=btn-icn]:disabled,
@@ -976,23 +982,24 @@ html.mobile .form__select {
 }
 
 .laypop.type01 .wrap-modal .inner {
-	width: 728px;
-	margin: 0 auto
+	width: 400px;
+	margin: 0 auto;
+	border-radius: 0;
 }
 
 .laypop__header h1 {
-	padding: 24px;
+	padding: 15px 0 14px;
 	text-align: center;
-	font-size: 18px;
-	border-bottom: 1px solid #eee;
+	font-size: 22px;
+	background-color: #228af1;
+	color: #fff;
 }
 
 .laypop__content {
 	overflow: auto;
-	height: 50vh;
-	margin-top: 14px;
+	/* height: 330px; */
+	margin: 14px 0 0 0;
 	padding: 0 14px 14px;
-	border-bottom: 1px solid #eee;
 }
 
 .laypop__content .scrollWrap {
@@ -1622,6 +1629,8 @@ html.mobile .form__select {
 	overflow-y: auto;
 	position: absolute;
 	left: 0;
+	top: 10px;
+	bottom: 10px;
 }
 
 /* 스크롤바 크기 만큼 + padding-right */
