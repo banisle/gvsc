@@ -238,21 +238,20 @@ a[class^=btn],
 button[class^=btn] {
 	display: inline-block;
 	position: relative;
-	height: 52px;
+	height: 25px;
 	padding: 0;
-	font-size: 16px;
+	font-size: 12px;
 	font-weight: bold;
 	box-sizing: border-box;
 	color: #fff;
-	background-color: #aa301c;
-	border-radius: 2px;
+	background-color: #417ec7;
+	border-radius: 28px;
 	text-align: center;
 	vertical-align: middle;
 	letter-spacing: 0;
 }
 
-a[class^=btn]:before,
-button[class^=btn]:before {
+a[class^=btn]:before{
 	content: "";
 	display: inline-block;
 	height: 100%;
@@ -437,25 +436,39 @@ button[class^=btn-icn]:disabled:hover>span {
 	color: #e9ebef;
 }
 
-a[class^=btn][class*=--list],
-button[class^=btn][class*=--list] {
-	border: 1px solid #d2d2d2;
-	font-size: 16px;
-	color: #666;
-	line-height: 36px;
-	padding: 0 27px;
+a[class^=btn][class*=--line],
+button[class^=btn][class*=--line] {
+	border: 1px solid #417ec7;
+	background: #fff;
+}
+a[class^=btn][class*=--line] > span,
+button[class^=btn][class*=--line] > span{
+	color: #417ec7;
 }
 
-a[class^=btn][class*=--list],
-button[class^=btn][class*=--list]:focus,
-a[class^=btn][class*=--list],
-button[class^=btn][class*=--list]:hover {
-	border-color: #3ead57;
+a[class^=btn][class*=--line],
+button[class^=btn][class*=--line]:focus,
+a[class^=btn][class*=--line],
+button[class^=btn][class*=--line]:hover {
 }
 
-a[class^=btn][class*=--mid],
-button[class^=btn][class*=--mid] {
-	min-width: 136px;
+a[class^=btn][class*=--main],
+button[class^=btn][class*=--main] {
+	height: 42px;
+	background: #30a4ee;
+}
+a[class^=btn][class*=--main] > span,
+button[class^=btn][class*=--main] > span{
+	padding: 0 33px;
+	color: #fff;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+a[class^=btn][class*=--main],
+button[class^=btn][class*=--main]:focus,
+a[class^=btn][class*=--main],
+button[class^=btn][class*=--main]:hover {
 }
 
 
@@ -682,6 +695,11 @@ ul.aui-tab li a.on span{
 	right: 0px;
 	bottom: 0px;
 	z-index:-1;
+}
+.aui-tab-wrap.v2 input:checked+label.aui-tab-btn:after,
+.aui-tab-wrap.v2 .aui-tab-btn.on:after {
+	content: '';
+	background:#228af1;
 }
 
 .aui-tab-list {
