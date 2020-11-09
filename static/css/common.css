@@ -47,6 +47,8 @@ img {
 .ml-s{
 	margin-left: 20px;
 }
+.pb-l{padding-bottom: 28px;}
+
 
 /* //mark: text */
 .tit-h2 {
@@ -200,6 +202,7 @@ img {
 }
 /* //mark: form */
 .selectWrap{
+	display: inline-block;
 	position: relative;
 	width: 200px;
 }
@@ -314,6 +317,17 @@ img {
 
 .table tbody td.txt-l {padding-left: 30px;}
 
+.table.view-type{border-top: 1px solid #707070;}
+.table.view-type .subject{ color: #fff;background-color: #686868; }
+.table.view-type .content{ height: 400px;}
+.table.view-type th,
+.table.view-type td{ padding: 10px; font-size: 14px; vertical-align: middle; }
+.table.view-type tbody th{ background: #c4c4c4; color: #686868;}
+.table.view-type tbody th,
+.table.view-type tbody td{
+	border-right: 1px solid #707070;
+	border-bottom: 1px solid #707070;
+}
 
 /* //mark: layout */
 .row-2 > .l{ float: left; width: 50%;padding-right:10px;box-sizing: border-box;}
@@ -1037,6 +1051,12 @@ button[class=btn--login]{
 /* //mark: sub 정보공유 */
 /* //mark: sub 정말정책 */
 /* //mark: sub 자료실 */
+.thumb-list{ width: 100%; }
+.thumb-list li{ float: left; width: 380px; padding-right: 20px; padding-bottom: 20px; box-sizing: border-box; }
+.thumb-list li:first-child{}
+.thumb-list li:nth-child(3n+4){clear: both;}
+.thumb-list li > a{ display: block;  border: 1px solid #707070;}
+.thumb-list li > a > span{display: block; padding: 10px; font-size: 16px;line-height: 24px; text-align: center;}
 
 /* //mark: footer */
 footer.footer {

@@ -1,28 +1,103 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="initial-scale=1, viewport-fit=cover">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
 	<link href="../../img/common/favicon-152.png" rel="apple-touch-icon-precomposed">
-    <title>layout</title>
-    <link rel="stylesheet" href="../../css/style.css">
-    <script src="../../js/jquery-3.4.1.min.js"></script>
-    <script src="../../js/ANUI.js"></script>
-    <script src="../../js/common.js"></script>
+	<title>sub layout sample</title>
+	<link rel="stylesheet" href="../../css/style.css">
+	<script src="../../js/jquery-3.4.1.min.js"></script>
+	<script src="../../js/ANUI.js"></script>
+	<script src="../../js/common.js"></script>
 </head>
-<body class="sub">
-    <div class="container">
-        <header>
-            <h1>title</h1>
-            <a href="javascript:history.back()" class="back"><span><span class="hidden">back</span></span></a>
-        </header>
-        <div class="container">
-            <section>
-                <article>컨텐츠 영역</article>
-            </section>
-        </div>
-    </div>
+
+<body class="">
+	<!-- mark: skip-navi -->
+	<div id="skip">
+		<a href="#nav">전체 메뉴 바로가기</a>
+		<a href="#cont">본문 바로가기</a>
+	</div>
+	<div class="container--sub">
+		<header>
+			<h1><a href="#"><img src="../../img/logo_01@2x.png" alt="경기도 청소년참여플랫폼 청출어람"></a></h1>
+			<div class="gnb" id="nav">
+				<ul role="menubar" class="menu2depth--allsub aui-allsub">
+					<li class="">
+						<a href="" role="menuitem"><span>소개</span></a>
+						<ul role="menu">
+							<li role="none"><a href="" class="on" role="menuitem">청소년참여기구</a></li>
+							<li role="none"><a href="" role="menuitem">청출어람</a></li>
+							<li role="none"><a href="" role="menuitem">운영기관</a></li>
+						</ul>
+
+					</li>
+					<li class="">
+						<a href="" role="menuitem"><span>정보공유</span></a>
+						<ul role="menu">
+							<li role="none"><a href="" role="menuitem">공지사항</a></li>
+							<li role="none"><a href="" role="menuitem">질의응답</a></li>
+							<li role="none"><a href="" role="menuitem">활동공유</a></li>
+						</ul>
+
+					</li>
+					<li><a href="" role="menuitem"><span>正말正책</span></a>
+						<ul role="menu">
+							<li role="none"><a href="" role="menuitem">정책제안</a></li>
+							<li role="none"><a href="" role="menuitem">제안결과</a></li>
+						</ul>
+					</li>
+					<li class="cs"><a href="" role="menuitem"><span>자료실</span></a>
+						<ul role="menu">
+							<li role="none"><a href="" role="menuitem">교육관</a></li>
+							<li role="none"><a href="" role="menuitem">홍보관</a></li>
+							<li role="none"><a href="" role="menuitem">보도자료</a></li>
+						</ul>
+					</li>
+				</ul>
+				<span class="floatBar"></span>
+			</div>
+			<div class="family-link">
+				<a href=""><img src="../../img/banner01.png" alt="새로운 경기 공정한 세상"></a>
+				<a href=""><img src="../../img/banner02.png" alt="청소년활동진흥센터"></a>
+			</div>
+			<!-- <button type="button" class="top-util"><span>로그아웃</span></button> -->
+		</header>
+		<!-- mark: content -->
+		<div id="cont">
+
+			<div class="sub-content intro02 clearfix">
+				<section class="sec">
+					<div>
+						content
+					</div>
+				</section>
+			</div>
+
+		</div>
+		<footer class="footer">
+			<address>
+				<span class="detail">(16305) 경기도 수원시 장안구 송원로 55 2층</span>
+				<span class="phone"><a href="tel:031-232-9385">대표전화: 031-232-9385~5</a> <span class="owner"> 대표자 : 서재범</span></span>
+				<span class="fax">팩스 : 031-232-9388 <span class="email"><a href="mailto:kgyvc@hanmail.net">이메일 : kgyvc@hanmail.net</a> <span class="code">고유번호 : 135-82-60877</span></span></span>
+			</address>
+			<div class="ex-link">
+				<ul>
+					<li><a href=""><img src="../../img/fam_link01.png" alt="여성가족부"></a></li>
+					<li><a href=""><img src="../../img/fam_link02.png" alt="경기도"></a></li>
+					<li><a href=""><img src="../../img/fam_link03.png" alt="활동진흥원 한국청소년"> </a></li>
+					<li><a href=""><img src="../../img/fam_link04.png" alt="대건청소년회 재단법인"></a></li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+
 </body>
+<script>
+
+</script>
+
 </html>
