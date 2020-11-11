@@ -8,7 +8,7 @@
 	<meta name="viewport" content="initial-scale=1, viewport-fit=cover">
 	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
 	<link href="../../img/common/favicon-152.png" rel="apple-touch-icon-precomposed">
-	<title>정책제안- 청출어람</title>
+	<title>정책제안 리스트- 청출어람</title>
 	<link rel="stylesheet" href="../../css/style.css">
 	<script src="../../js/jquery-3.4.1.min.js"></script>
 	<script src="../../js/ANUI.js"></script>
@@ -23,56 +23,75 @@
 	</div>
 	<div class="container--sub">
 		<header>
-			<h1><a href="#">경기도 청소년참여플랫폼 청출어람</a></h1>
+			<h1><a href="#"><img src="../../img/logo_01@2x.png" alt="경기도 청소년참여플랫폼 청출어람"></a></h1>
 			<div class="gnb" id="nav">
-				<ul>
-					<li><a href="">소개</a></li>
-					<li><a href="">전체공개</a></li>
-					<li><a href="">正말正책</a></li>
-					<li><a href="">자료실</a></li>
+				<ul role="menubar" class="menu2depth--allsub aui-allsub">
+					<li class="">
+						<a href="" role="menuitem"><span>소개</span></a>
+						<ul role="menu">
+							<li role="none"><a href="" role="menuitem">청출어람</a></li>
+							<li role="none"><a href="" role="menuitem">운영기관</a></li>
+						</ul>
+
+					</li>
+					<li class="">
+						<a href="" role="menuitem"><span>정보공유</span></a>
+						<ul role="menu">
+							<li role="none"><a href="" role="menuitem">공지사항</a></li>
+							<li role="none"><a href="" role="menuitem">질의응답</a></li>
+							<li role="none"><a href="" role="menuitem">활동공유</a></li>
+						</ul>
+
+					</li>
+					<li><a href="" role="menuitem"><span>正말正책</span></a>
+						<ul role="menu">
+							<li role="none"><a href="" class="on" role="menuitem">정책제안</a></li>
+							<li role="none"><a href="" role="menuitem">제안결과</a></li>
+						</ul>
+					</li>
+					<li class="cs"><a href="" role="menuitem"><span>자료실</span></a>
+						<ul role="menu">
+							<li role="none"><a href="" role="menuitem">교육관</a></li>
+							<li role="none"><a href="" role="menuitem">홍보관</a></li>
+							<li role="none"><a href="" role="menuitem">보도자료</a></li>
+						</ul>
+					</li>
 				</ul>
-				<div class="family-link">
-					<a href=""><img src="" alt="새로운 경기 공정한 세상"></a>
-					<a href=""><img src="" alt="청소년활동진흥센터"></a>
-				</div>
-				<button type="button" class="top-util"><span>로그아웃</span></button>
+				<span class="floatBar"></span>
 			</div>
+			<div class="family-link">
+				<a href=""><img src="../../img/banner01.png" alt="새로운 경기 공정한 세상"></a>
+				<a href=""><img src="../../img/banner02.png" alt="청소년활동진흥센터"></a>
+			</div>
+			<!-- <button type="button" class="top-util"><span>로그아웃</span></button> -->
 		</header>
 		<!-- mark: content -->
 		<div id="cont">
-			<div class="aui-tab-wrap">
-				<ul class="aui-tab" role="tablist">
-					<li><span><a href="#" id="aui-tab-btn1" class="aui-tab-btn on" role="tab"
-								aria-controls="aui-tab-list1"><span>정책제안</span></a></span></li>
-					<li><span><a href="#" id="aui-tab-btn2" class="aui-tab-btn" role="tab"
-								aria-controls="aui-tab-list2"><span>제안 결과</span></a></span></li>
-				</ul>
-				<!-- 정책제안 -->
-				<div id="aui-tab-list1" class="aui-tab-list on" role="tabpanel" aria-labelledby="aui-tab-btn1">
-					<section>
-						<h1>정책제안</h1>
-						<p>청소년을 위해 변화하였으면 하는 것들에 대해 자유롭게 의견을 제안하는 공간입니다.</p>
+			<!-- 공지사항 -->
+			<div class="sub-content board-type clearfix">
+				<section class="sec">
+					<div>
+
+						<h1 class="txt-sub-tit clr--primary ff-ng-b">정책제안</h1>
+						<p class="txt-sub2">경기도청소년활동진흥센터는 청소년들의 올바른 성장을 지원합니다.</p>
 						<!-- 검색 -->
-						<div class="">
-							<div class="form-search-wrap">
-								<div class="select-wrap aui-selectbox">
-									<select title="test" id="sel01" class="" >
-										<option value="선택하세요" selected disabled hidden>전체</option>
-										<option value="test2" disabled >test2</option>
-										<option value="test3">test3</option>
-										<option value="test4">test4</option>
-									</select>
+						<div class="board-form-search clearfix">
+							<div class="selectWrap">
+								<select title="test" class="form_select">
+									<option value="">전체</option>
+								</select>
+							</div>
+							<div class="form-search">
+								<div class="form-search__inp">
+									<input type="search" placeholder="검색어를 입력하세요">
 								</div>
+								<button type="button" class="btn-search"><span>검색</span></button>
 							</div>
-							<div class="search-wrap">
-								<span class="inp-form aui-hasDelForm"><input type="text" placeholder="검색어를 입력하세요." class="aui-hasDel"></span>
-							</div>
-							<button type="button" class="btn"><span class="icn--search">검색</span></button>
 						</div>
 						<!-- list -->
-						<div>
+						<div class="clearfix">
 							<span class="total-num">총 1000건</span>
-							<div class="form-grp">
+							<div class="form-grp inline">
 								<span><input type="radio" id="" name="rad-grp" class="form__radio" checked><label for=""><span class="label-txt">최신순</span></label></span>
 								<span><input type="radio" id="" name="rad-grp" class="form__radio" ><label for=""><span class="label-txt">참여순</span></label></span>
 							</div>
@@ -83,19 +102,122 @@
 											<strong>청소년도 이용 가능한 클럽이 있었으면 좋겠어요. </strong>
 											<p>청소년 보호법에 위반하지 않는 범위 내에서 청소년들도 스트레스 해소를 하기 위해 이용할 수 있는 클럽이 생겼으면 좋겠습니다. 클럽도 문화생활의 일환이라고 생각합니다. </p>
 											<div class="info">
-												<span>경기도 수원시</span>
-												<span class="date">2020.08.14. 제안</span>
+												<span class="place">경기도 수원시</span>
+												<span class="date-wrap">
+													<span class="date">2020.08.14. 제안</span>
+												</span>
 											</div>
 										</div>
 										<span class="count">00명 참여</span>
-										<span class="reply">0</span>
+										<span class="reply">댓글 수 0</span>
 									</li>
+									<li>
+										<div class="box">
+											<strong>청소년도 이용 가능한 클럽이 있었으면 좋겠어요. </strong>
+											<p>청소년 보호법에 위반하지 않는 범위 내에서 청소년들도 스트레스 해소를 하기 위해 이용할 수 있는 클럽이 생겼으면 좋겠습니다. 클럽도 문화생활의 일환이라고 생각합니다. </p>
+											<div class="info">
+												<span class="place">경기도 수원시</span>
+												<span class="date-wrap">
+													<span class="date">2020.08.14. 제안</span>
+												</span>
+											</div>
+										</div>
+										<span class="count">00명 참여</span>
+										<span class="reply">댓글 수 0</span>
+									</li>
+									<li>
+										<div class="box">
+											<strong>청소년도 이용 가능한 클럽이 있었으면 좋겠어요. </strong>
+											<p>청소년 보호법에 위반하지 않는 범위 내에서 청소년들도 스트레스 해소를 하기 위해 이용할 수 있는 클럽이 생겼으면 좋겠습니다. 클럽도 문화생활의 일환이라고 생각합니다. </p>
+											<div class="info">
+												<span class="place">경기도 수원시</span>
+												<span class="date-wrap">
+													<span class="date">2020.08.14. 제안</span>
+												</span>
+											</div>
+										</div>
+										<span class="count">00명 참여</span>
+										<span class="reply">댓글 수 0</span>
+									</li>
+									<li>
+										<div class="box">
+											<strong>청소년도 이용 가능한 클럽이 있었으면 좋겠어요. </strong>
+											<p>청소년 보호법에 위반하지 않는 범위 내에서 청소년들도 스트레스 해소를 하기 위해 이용할 수 있는 클럽이 생겼으면 좋겠습니다. 클럽도 문화생활의 일환이라고 생각합니다. </p>
+											<div class="info">
+												<span class="place">경기도 수원시</span>
+												<span class="date-wrap">
+													<span class="date">2020.08.14. 제안</span>
+												</span>
+											</div>
+										</div>
+										<span class="count">00명 참여</span>
+										<span class="reply">댓글 수 0</span>
+									</li>
+									<li>
+										<div class="box">
+											<strong>청소년도 이용 가능한 클럽이 있었으면 좋겠어요. </strong>
+											<p>청소년 보호법에 위반하지 않는 범위 내에서 청소년들도 스트레스 해소를 하기 위해 이용할 수 있는 클럽이 생겼으면 좋겠습니다. 클럽도 문화생활의 일환이라고 생각합니다. </p>
+											<div class="info">
+												<span class="place">경기도 수원시</span>
+												<span class="date-wrap">
+													<span class="date">2020.08.14. 제안</span>
+												</span>
+											</div>
+										</div>
+										<span class="count">00명 참여</span>
+										<span class="reply">댓글 수 0</span>
+									</li>
+									<li>
+										<div class="box">
+											<strong>청소년도 이용 가능한 클럽이 있었으면 좋겠어요. </strong>
+											<p>청소년 보호법에 위반하지 않는 범위 내에서 청소년들도 스트레스 해소를 하기 위해 이용할 수 있는 클럽이 생겼으면 좋겠습니다. 클럽도 문화생활의 일환이라고 생각합니다. </p>
+											<div class="info">
+												<span class="place">경기도 수원시</span>
+												<span class="date-wrap">
+													<span class="date">2020.08.14. 제안</span>
+												</span>
+											</div>
+										</div>
+										<span class="count">00명 참여</span>
+										<span class="reply">댓글 수 0</span>
+									</li>
+									<li>
+										<div class="box">
+											<strong>청소년도 이용 가능한 클럽이 있었으면 좋겠어요. </strong>
+											<p>청소년 보호법에 위반하지 않는 범위 내에서 청소년들도 스트레스 해소를 하기 위해 이용할 수 있는 클럽이 생겼으면 좋겠습니다. 클럽도 문화생활의 일환이라고 생각합니다. </p>
+											<div class="info">
+												<span class="place">경기도 수원시</span>
+												<span class="date-wrap">
+													<span class="date">2020.08.14. 제안</span>
+												</span>
+											</div>
+										</div>
+										<span class="count">00명 참여</span>
+										<span class="reply">댓글 수 0</span>
+									</li>
+									<li>
+										<div class="box">
+											<strong>청소년도 이용 가능한 클럽이 있었으면 좋겠어요. </strong>
+											<p>청소년 보호법에 위반하지 않는 범위 내에서 청소년들도 스트레스 해소를 하기 위해 이용할 수 있는 클럽이 생겼으면 좋겠습니다. 클럽도 문화생활의 일환이라고 생각합니다. </p>
+											<div class="info">
+												<span class="place">경기도 수원시</span>
+												<span class="date-wrap">
+													<span class="date">2020.08.14. 제안</span>
+												</span>
+											</div>
+										</div>
+										<span class="count">00명 참여</span>
+										<span class="reply">댓글 수 0</span>
+									</li>
+
 								</ul>
 							</div>
 						</div>
+
 						<!-- pagination -->
-						<div class="pagewrap">
+						<div class="pagewrap mt--l">
 							<span class="pagination">
+								<a href="" class="pprev"><span class="hidden">이전 10개</span></a>
 								<a href="" class="prev"><span class="hidden">이전 10개</span></a>
 								<!-- 활성화 active 클래스 -->
 								<a href="" class="num active"><span>1</span></a>
@@ -109,41 +231,33 @@
 								<a href="" class="num"><span>9</span></a>
 								<a href="" class="num"><span>10</span></a>
 								<a href="" class="next"><span class="hidden">다음 10개</span></a>
+								<a href="" class="nnext"><span class="hidden">다음 10개</span></a>
 							</span>
 						</div>
-
-						<div class="btn-wrap">
-							<button type="button" class="btn">글쓰기</button>
-						</div>
-					</section>
-				</div>
+					</div>
+				</section>
 			</div>
-
 		</div>
-		<footer>
+		<footer class="footer">
 			<address>
 				<span class="detail">(16305) 경기도 수원시 장안구 송원로 55 2층</span>
-				<span class="phone"><a href="tel:031-232-9385">대표전화: 031-232-9385~5</a></span>
-				<span class="fax">팩스 : 031-232-9388</span>
-				<span class="email"><a href="mailto:kgyvc@hanmail.net">이메일 : kgyvc@hanmail.net</a></span>
-				<span class="code">고유번호 : 135-82-60877</span>
-				<span class="owner">대표자 : 서재범</span>
+				<span class="phone"><a href="tel:031-232-9385">대표전화: 031-232-9385~5</a> <span class="owner"> 대표자 :
+						서재범</span></span>
+				<span class="fax">팩스 : 031-232-9388 <span class="email"><a href="mailto:kgyvc@hanmail.net">이메일 :
+							kgyvc@hanmail.net</a> <span class="code">고유번호 : 135-82-60877</span></span></span>
 			</address>
 			<div class="ex-link">
 				<ul>
-					<li><a href="">여성가족부</a></li>
-					<li><a href="">경기도</a></li>
-					<li><a href="">한국청소년 활동진흥원</a></li>
-					<li><a href="">재단법인 대건청소년회</a></li>
+					<li><a href=""><img src="../../img/fam_link01.png" alt="여성가족부"></a></li>
+					<li><a href=""><img src="../../img/fam_link02.png" alt="경기도"></a></li>
+					<li><a href=""><img src="../../img/fam_link03.png" alt="활동진흥원 한국청소년"> </a></li>
+					<li><a href=""><img src="../../img/fam_link04.png" alt="대건청소년회 재단법인"></a></li>
 				</ul>
 			</div>
 		</footer>
 	</div>
 </body>
 <script>
-	// ANUI.module.tabUi();
-	ANUI.module.selectUi();
-	ANUI.module.inputDelUi();
 
 </script>
 

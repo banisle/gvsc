@@ -464,6 +464,19 @@ button[class^=btn][class*=--main] > span{
 	font-size: 18px;
 	line-height: 1.5;
 }
+a[class^=btn][class*=--badge],
+button[class^=btn][class*=--badge] {
+	height: 30px;
+	font-size: 14px;
+	background: #30a4ee;
+}
+a[class^=btn][class*=--main] > span,
+button[class^=btn][class*=--main] > span{
+	padding: 0 33px;
+	color: #fff;
+	font-size: 18px;
+	line-height: 1.5;
+}
 
 a[class^=btn][class*=--main],
 button[class^=btn][class*=--main]:focus,
