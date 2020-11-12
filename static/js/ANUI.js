@@ -1106,6 +1106,7 @@ ANUI.module = (function () {
 				var $tr = t.closest($el); // 클릭한 버튼이 속한 el 요소
 				$tr.next().after($tr); // 현재 el 의 다음 el 뒤에 선택한 el 넣기
 			}
+			console.log('updnChg');
 		},
 
 

@@ -15,12 +15,10 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="../../js/jquery-3.4.1.min.js"></script>
 	<script src="../../js/bootstrap.bundle.min.js"></script>
-	<!-- datepicker lib -->
-    <script src="../../js/jquery-ui.js"></script>
-    <!-- admin custom JS -->
-	<script src="../../js/admin_custom.js"></script>
 	<!-- front ui -->
     <script src="../../js/ANUI.js"></script>
+    <!-- admin custom JS -->
+	<script src="../../js/admin_custom.js"></script>
 
     <title>계정관리 - 어드민</title>
 </head>
@@ -48,7 +46,7 @@
 									<th scope="col">노출순서</th>
 								</tr>
 							</thead>
-							<tbody class="ui-updn">
+							<tbody class="aui-updn">
 								<tr>
 									<td>1</td>
 									<td>교육</td>
@@ -67,8 +65,8 @@
 									</td>
 									<td>
 										<div class="btn-wrap">
-											<span><button type="button" class="btn-icn icn_up ui-row-up"><span class="">▲</span></button></span>
-											<span><button type="button" class="btn-icn icn_up ui-row-dn"><span class="">▼</span></button></span>
+											<span><button type="button" class="btn-icn icn_up aui-row-up"><span class="">▲</span></button></span>
+											<span><button type="button" class="btn-icn icn_up aui-row-dn"><span class="">▼</span></button></span>
 										</div>
 									</td>
 								</tr>
@@ -90,8 +88,8 @@
 									</td>
 									<td>
 										<div class="btn-wrap">
-											<span><button type="button" class="btn-icn icn_up ui-row-up"><span class="">▲</span></button></span>
-											<span><button type="button" class="btn-icn icn_up ui-row-dn"><span class="">▼</span></button></span>
+											<span><button type="button" class="btn-icn icn_up aui-row-up"><span class="">▲</span></button></span>
+											<span><button type="button" class="btn-icn icn_up aui-row-dn"><span class="">▼</span></button></span>
 										</div>
 									</td>
 								</tr>
@@ -113,8 +111,8 @@
 									</td>
 									<td>
 										<div class="btn-wrap">
-											<span><button type="button" class="btn-icn icn_up ui-row-up"><span class="">▲</span></button></span>
-											<span><button type="button" class="btn-icn icn_up ui-row-dn"><span class="">▼</span></button></span>
+											<span><button type="button" class="btn-icn icn_up aui-row-up"><span class="">▲</span></button></span>
+											<span><button type="button" class="btn-icn icn_up aui-row-dn"><span class="">▼</span></button></span>
 										</div>
 									</td>
 								</tr>
@@ -136,8 +134,8 @@
 									</td>
 									<td>
 										<div class="btn-wrap">
-											<span><button type="button" class="btn-icn icn_up ui-row-up"><span class="">▲</span></button></span>
-											<span><button type="button" class="btn-icn icn_up ui-row-dn"><span class="">▼</span></button></span>
+											<span><button type="button" class="btn-icn icn_up aui-row-up"><span class="">▲</span></button></span>
+											<span><button type="button" class="btn-icn icn_up aui-row-dn"><span class="">▼</span></button></span>
 										</div>
 									</td>
 								</tr>
@@ -153,7 +151,9 @@
         </div>
     </div>
 <script>
-	ANUI.module.updnChgUi('.ui-updn','tr');
+	$(document).ready(function(){
+		ANUI.module.updnChgUi('.aui-updn','tr');
+	});
 </script>
 </body>
 
