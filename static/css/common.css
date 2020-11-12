@@ -612,6 +612,7 @@ footer.footer {
 	background-color: #417ec7;
 }
 
+.btn-logout{top: -27px;}
 /* //mark: login */
 .container--sub.login {
 	position: absolute;
@@ -1498,12 +1499,12 @@ button[class=btn--login] {
 	clear: both;
 }
 
-.thumb-list li>a {
+.thumb-list li>div {
 	display: block;
 	border: 1px solid #707070;
 }
 
-.thumb-list li>a>span {
+.thumb-list li>div>span {
 	display: block;
 	padding: 10px;
 	font-size: 16px;

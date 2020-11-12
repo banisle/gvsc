@@ -1355,7 +1355,7 @@ html.mobile .form__select {
 	z-index: 1;
 }
 .menu2depth--allsub.active:after {
-	height: 190px;
+	height: 220px;
 }
 
 .menu2depth--allsub.active>li ul { height: auto; padding: 28px 0 0 }
