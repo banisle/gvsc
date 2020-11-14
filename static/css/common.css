@@ -49,6 +49,26 @@ img {
 	transform: translateY(-50%);
 }
 
+.stat-pos,
+.stat-neg{
+	display: inline-block;
+    position: relative;
+    line-height: 25px;
+	padding: 0 20px 0;
+    font-size: 12px;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #417ec7;
+    border-radius: 28px;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: 0;
+}
+.stat-neg{
+	border: 1px solid #417ec7;
+	background: #fff;
+	color: #417ec7;
+}
 /* //mark : space */
 .mb--s {
 	margin-bottom: 10px;
@@ -1732,7 +1752,6 @@ footer.footer .ex-link li:nth-child(2) {
 }
 
 footer.footer .ex-link li:nth-child(3) {
-	margin-top: 12px;
 }
 
 

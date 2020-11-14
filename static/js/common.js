@@ -17,10 +17,5 @@ $(document).ready(function(){
             'left' : aL + 100
 		});
 	});
-	//tab
-	ANUI.module.tabUi();
-	// modal
-	ANUI.module.modalUi();
-
 
 });

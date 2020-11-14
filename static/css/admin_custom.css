@@ -179,7 +179,7 @@ body {
 .list-group-item.active{
 	background-color: #007bff !important;
 	color: #fff!important;
-} 
+}
 /*
  * Content
  */
@@ -292,7 +292,7 @@ hr{
 	content: '파일선택';
 }
 /* 우편번호 modal */
-.postmodal_content .postmodal_header, 
+.postmodal_content .postmodal_header,
 .postmodal_content .postmodal_wrap .postmodal_search,
 .postmodal_content .postmodal_wrap .postmodal_info{
     padding: 20px;
@@ -6232,4 +6232,498 @@ hr{
 .fas {
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
+}
+
+/* //mark : gnb */
+[class^="container--"] header {
+	position: relative;
+	height: 109px;
+	padding: 28px 0 17px;
+	box-sizing: border-box;
+}
+
+[class^="container--"] header h1 {
+	display: inline-block;
+	padding-left: 36px;
+}
+
+[class^="container--"] header h1>a {
+	display: inline-block;
+}
+
+[class^="container--"] header h1 img {
+	width: 130px;
+}
+
+[class^="container--"] header .gnb {
+	display: inline-block;
+	padding-top: 16px;
+	padding-left: 59px;
+	position: relative;
+	font-size: 18px;
+	line-height: 27px;
+	vertical-align: top;
+}
+
+[class^="container--"] header .gnb>ul>li {
+	display: inline-block;
+}
+
+[class^="container--"] header .gnb>ul>li:last-child {
+	padding-right: 0;
+}
+
+[class^="container--"] header .gnb>ul>li>a {
+	display: inline-block;
+	padding: 0 42px 30px 42px;
+	color: #333;
+}
+
+[class^="container--"] header .gnb>ul>li>a.on,
+[class^="container--"] header .gnb>ul>li>a:hover {
+	color: #417ec7;
+}
+
+[class^="container--"] header .gnb li ul a {
+	padding-bottom: 23px;
+	line-height: 27px;
+	text-align: center;
+}
+
+[class^="container--"] header .gnb li ul li:last-child a {
+	padding-bottom: 0;
+}
+
+[class^="container--"] header .family-link {
+	float: right;
+	padding-right: 38px;
+	padding-top: 10px;
+	vertical-align: top;
+}
+
+[class^="container--"] header .family-link a {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+[class^="container--"] header .family-link a:first-child {
+	padding-right: 20px;
+}
+
+.gnb-sub {
+	overflow: hidden;
+	background: #228af1;
+}
+
+.gnb-sub li {
+	float: left;
+}
+
+.gnb-sub li a {
+	display: block;
+	padding: 16px 21px 15px;
+	font-size: 16px;
+	color: #fff;
+}
+
+.gnb-sub li a.on,
+.gnb-sub li a:hover {
+	background-color: #417ec7;
+}
+
+.btn-logout {
+	position: relative;
+	top: 0;
+	padding: 5px 0;
+	border-radius: 10px;
+    border: none;
+}
+
+
+/* //mark:  2depth gnb */
+[class^='menu2depth'] {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+[class^='menu2depth']>li {
+	position: relative;
+	text-align: center;
+}
+
+[class^='menu2depth']>li>a {
+	display: block;
+	position: relative;
+	padding: 0;
+	line-height: 35px
+}
+
+[class^='menu2depth']>li>a span {
+	display: block;
+	position: relative;
+	color: #333;
+	font-size: 18px;
+}
+
+[class^='menu2depth']>li>a:focus span,
+[class^='menu2depth']>li>a:hover span {
+	position: relative;
+	color:#228af1;
+}
+
+[class^='menu2depth']>li>a span:after {
+
+}
+
+[class^='menu2depth']>li.active>a span:after {
+	opacity: 1;
+	transform: scaleX(1);
+}
+
+[class^='menu2depth']>li.cs a:after,
+[class^='menu2depth']>li:first-child a span:after,
+[class^='menu2depth']>li:last-child a span:after {
+	display: none;
+}
+
+[class^='menu2depth']>li a:after {
+
+}
+
+[class^='menu2depth']>li ul {
+	display: none;
+	position: absolute;
+	padding: 19px 0 27px;
+	left: 0;
+	right: 0;
+	z-index: 10;
+}
+
+[class^='menu2depth']>li.active ul {
+	display: block;
+}
+
+[class^='menu2depth']>li ul a {
+	display: inline-block;
+	font-size: 17px;
+	color: #333;
+}
+
+[class^='menu2depth']>li ul a.on,
+[class^='menu2depth']>li ul a:focus,
+[class^='menu2depth']>li ul a:hover {
+	color: #228af1;
+}
+
+.menu2depth--allsub { position: relative; margin-bottom: 0;}
+.menu2depth--allsub>li ul {
+	overflow: hidden;
+	display: block;
+	height: 0;
+	padding: 0;
+	box-shadow: none;
+	/* transition: all .2s ease-out; */
+}
+.menu2depth--allsub>li ul:after {
+
+}
+.menu2depth--allsub>li:last-child ul:after{display: none;}
+.menu2depth--allsub.active:after {
+	content:'';
+	display:block;
+	position: fixed;
+	top:109px;
+	left: 0;
+	right: 0;
+	height:0;
+	background: rgba(255,255,255,.9);
+	border-top:1px solid #bebebe;
+	z-index: 1;
+}
+.menu2depth--allsub.active:after {
+	height: 220px;
+}
+
+.menu2depth--allsub.active>li ul { height: auto; padding: 28px 0 0 }
+.floatBar {
+	position: absolute;
+	bottom: 0;
+	height: 2px;
+	background-color: #228af1;
+	transition: all ease .5s;
+}
+/* //mark: buttons */
+[class^=btn-wrap] {
+	overflow: hidden;
+}
+
+[class^=btn-wrap][class*=--row-2]>span {
+	float: left;
+	width: 50%;
+	padding-right: 2.5px;
+	box-sizing: border-box;
+}
+
+[class^=btn-wrap][class*=--row-2]>span:last-child {
+	float: left;
+	width: 50%;
+	padding: 0 0 0 2.5px;
+	box-sizing: border-box;
+}
+
+[class^=btn-wrap][class*=--flex] {
+	display: flex;
+	justify-content: space-between;
+}
+
+[class^=btn-wrap][class*=--flex]>button:nth-child(2) {
+	margin: 0 5px
+}
+
+a[class^=btn],
+button[class^=btn] {
+
+}
+
+a[class^=btn]:before{
+	content: "";
+	display: inline-block;
+	height: 100%;
+	line-height: 0;
+	vertical-align: middle;
+	font-size: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* ie9 버튼 pressed 효과 제거 position 속성 추가 */
+a[class^=btn]>span,
+button[class^=btn]>span {
+	display: inline-block;
+	/* position: absolute; */
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	line-height: normal;
+	padding: 0 20px 0;
+	color: #fff
+}
+
+a[class^=btn][class*=--free-width],
+button[class^=btn][class*=--free-width] {
+	min-width: auto;
+}
+
+a[class^=btn][class*=--free-width]>span,
+button[class^=btn][class*=--free-width]>span {
+	position: relative;
+}
+
+a[class^=btn][class*=--md],
+button[class^=btn][class*=--md] {
+	height: 38px;
+}
+
+a[class^=btn][class*=--sm],
+button[class^=btn][class*=--sm] {
+	height: 28px;
+}
+
+a[class^=btn][class*=--xs],
+button[class^=btn][class*=--xs] {
+	height: 22px;
+}
+
+a[class^=btn][class*=--md]>span,
+button[class^=btn][class*=--md]>span {
+	line-height: 38px
+}
+
+a[class^=btn][class*=--sm]>span,
+button[class^=btn][class*=--sm]>span {
+	line-height: 28px;
+	font-size: 14px;
+}
+
+a[class^=btn][class*=--xs]>span,
+button[class^=btn][class*=--xs]>span {
+	line-height: 22px;
+	font-size: 12px;
+}
+
+a[class^=btn][class*=--no],
+button[class^=btn][class*=--no] {
+	background: #5b5b5b
+}
+
+a[class^=btn][class*=--ok]:active,
+button[class^=btn][class*=--ok]:active,
+a[class^=btn][class*=--ok]:focus,
+button[class^=btn][class*=--ok]:focus,
+a[class^=btn][class*=--ok]:hover,
+button[class^=btn][class*=--ok]:hover {
+	background: #771403
+}
+
+a[class^=btn][class*=--no]:active,
+button[class^=btn][class*=--no]:active,
+a[class^=btn][class*=--no]:focus,
+button[class^=btn][class*=--no]:focus,
+a[class^=btn][class*=--no]:hover,
+button[class^=btn][class*=--no]:hover {
+	background: #2b2b2b
+}
+
+a[class^=btn][class*=--ok]:disabled,
+button[class^=btn][class*=--ok]:disabled,
+a[class^=btn][class*=--ok]:disabled:active,
+button[class^=btn][class*=--ok]:disabled:active,
+a[class^=btn]:disabled:hover,
+button[class^=btn][class*=--ok]:disabled:hover,
+a[class^=btn][class*=disabled],
+button[class^=btn][class*=--ok][class*=disabled],
+a[class^=btn][class*=disabled]:active,
+button[class^=btn][class*=--ok][class*=disabled]:active,
+a[class^=btn][class*=disabled]:hover,
+button[class^=btn][class*=--ok][class*=disabled]:hover {
+	background: #e49c90
+}
+
+a[class^=btn][class*=--no]:disabled,
+button[class^=btn][class*=--no]:disabled,
+a[class^=btn][class*=--no]:disabled:active,
+button[class^=btn][class*=--no]:disabled:active,
+a[class^=btn][class*=--no]:disabled:hover,
+button[class^=btn][class*=--no]:disabled:hover,
+a[class^=btn][class*=--no][class*=--disabled],
+button[class^=btn][class*=--no][class*=--disabled],
+a[class^=btn][class*=--no][class*=--disabled]:active,
+button[class^=btn][class*=--no][class*=--disabled]:active,
+a[class^=btn][class*=--no][class*=--disabled]:hover,
+button[class^=btn][class*=--no][class*=--disabled]:hover {
+	background: #b6b6b6
+}
+
+a[class^=btn-icn],
+button[class^=btn-icn] {
+	display: inline-block;
+	min-width: auto;
+	height: 32px;
+	padding: 0;
+	border-radius: 2px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 14px;
+	line-height: 30px;
+	letter-spacing: 0;
+	box-sizing: border-box;
+	background-color: transparent;
+	border: 0;
+}
+
+a[class^=btn-icn]>span,
+button[class^=btn-icn]>span {
+	padding: 0 23px;
+	border-radius: 16px;
+	border: solid 1px #000000;
+	background-color: #fff;
+	font-size: 16px;
+	color: #333;
+	font-weight: 500;
+}
+
+a[class^=btn-icn]>span>i.fa,
+button[class^=btn-icn]>span>i.fa,
+a[class^=btn-icn]>span>i.fas,
+button[class^=btn-icn]>span>i.fas {
+	padding: 0 5px 0 0;
+}
+
+a[class^=btn-icn]:active > span,
+button[class^=btn-icn]:active > span,
+a[class^=btn-icn]:hover > span,
+button[class^=btn-icn]:hover  > span{
+	border: solid 1px #fff;
+	background-color: #228af1;
+	color: #fff;
+}
+
+a[class^=btn-icn]:disabled,
+button[class^=btn-icn]:disabled,
+a[class^=btn-icn]:disabled:active,
+button[class^=btn-icn]:disabled:active,
+a[class^=btn-icn]:disabled:hover,
+button[class^=btn-icn]:disabled:hover {
+	background-color: #fff;
+	border-color: #e9ebef;
+}
+
+a[class^=btn-icn]:disabled>span,
+button[class^=btn-icn]:disabled>span,
+a[class^=btn-icn]:disabled:active>span,
+button[class^=btn-icn]:disabled:active>span,
+a[class^=btn-icn]:disabled:hover>span,
+button[class^=btn-icn]:disabled:hover>span {
+	color: #e9ebef;
+}
+
+a[class^=btn][class*=--line],
+button[class^=btn][class*=--line] {
+	border: 1px solid #417ec7;
+	background: #fff;
+}
+a[class^=btn][class*=--line] > span,
+button[class^=btn][class*=--line] > span{
+	color: #417ec7;
+}
+
+a[class^=btn][class*=--line],
+button[class^=btn][class*=--line]:focus,
+a[class^=btn][class*=--line],
+button[class^=btn][class*=--line]:hover {
+}
+
+a[class^=btn][class*=--main],
+button[class^=btn][class*=--main] {
+	height: 42px;
+	background: #30a4ee;
+}
+a[class^=btn][class*=--main] > span,
+button[class^=btn][class*=--main] > span{
+	padding: 0 33px;
+	color: #fff;
+	font-size: 18px;
+	line-height: 1.5;
+}
+a[class^=btn][class*=--badge],
+button[class^=btn][class*=--badge] {
+	height: 30px;
+	font-size: 14px;
+	background: #30a4ee;
+}
+a[class^=btn][class*=--outline],
+button[class^=btn][class*=--outline] {
+	line-height: 36px;
+	background-color: #fff;
+}
+a[class^=btn][class*=--outline] > span,
+button[class^=btn][class*=--outline] > span{
+	padding-right: 0;
+	font-size: 20px;
+	color: #30a4ee;
+}
+a[class^=btn][class*=--main] > span,
+button[class^=btn][class*=--main] > span{
+	padding: 0 33px;
+	color: #fff;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+a[class^=btn][class*=--main],
+button[class^=btn][class*=--main]:focus,
+a[class^=btn][class*=--main],
+button[class^=btn][class*=--main]:hover {
 }
