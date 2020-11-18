@@ -520,7 +520,7 @@ input.form__chk:checked+label:after {
     height: 14px;
     background-color: #228af1;
 	left: 3px;
-    top: 13px;
+    top: 8px;
     border-radius: 50%;
 }
 
@@ -568,8 +568,8 @@ input.form__radio:checked+label:after {
     height: 14px;
     background-color: #fc725c;
     left: 3px;
-    top: 50%;
-    transform: translateY(-50%);
+    top:7px;
+    /* transform: translateY(-50%); */
     border-radius: 50%;
 }
 

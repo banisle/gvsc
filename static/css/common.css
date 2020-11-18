@@ -1760,7 +1760,75 @@ footer.footer .ex-link li:nth-child(3) {
 
 /* //mark: @media 960이하 반응형 */
 @media screen and (max-width:960px) {
+    .content,
+    .sub-content,
+    footer.footer {
+        padding: 0 10px;
+    }
+     
+    ul.aui-tab{
+        width: 100%;
+    }
+    .container--sub::after{
+        display: none;
+    }
+    .sub-content.intro02 .bg-01 {
+        padding:0;
+        background: none;
+    }
+    .row-2 > .l,
+    .row-2 > .r{
+        width: 100%;
+    }
+    .sub-content .sec.v0,
+    .sub-content .sec.v2 .subject-wrap,
+    .sub-content .sec.v3 .subject-wrap,
+    .sub-content .sec.v0 .txt-sub-tit,
+    .sub-content .sec .subject-wrap{
+        background: none;
+        padding: 0;
+        min-height: auto;
+    }
+     
+    .sub-content .sec > div,
+    .sub-content .sec .subject-wrap{
+        width:auto;
+    }
+    .sub-content .sec .tit-h4::before{
+        display: none;
+    }
+    .selectWrap{
+        width: 100%;
+    }
+    .board-form-search .form-search {
+        display:block;
+        padding-top:10px;
+        width:auto;
+    }
+    .login-wrap{
+        width: 80% !important;
+    }
 
+    .box--list li {
+        width: 100%;
+    }
+
+    .propose-wrap .info-box{
+        width: auto;
+    }
+    .steparea--v2 .step-wrap > span:first-child span{
+        width: auto;
+        left:0;
+        transform: translateX(0);
+    }
+    .steparea--v2 .step-wrap > span:last-child{
+        width: auto;
+        right:0;
+        transform: translateX(0);
+    }
+    .thumb-list li{
+        width: 100%;
+    }
 	[class^="container--"] header,
 	.sub-content,
 	.gnb-sub,
@@ -1786,7 +1854,9 @@ footer.footer .ex-link li:nth-child(3) {
 		width: 100vw;
 		padding: 0;
 	}
-
+    footer.footer{
+        padding-top:30px;
+    }
 	footer.footer .ex-link {
 		height: auto;
 	}
