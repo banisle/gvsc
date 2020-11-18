@@ -503,25 +503,31 @@ input.form__chk+label {
 }
 
 input.form__chk+label:before {
-	content: "";
-    width: 20px;
-    height: 20px;
-    border: solid 1px #a5a5a5;
-    background-color: #ffffff;
+	transform: translateY(-50%);
+	content:
+	"";
+	position: absolute;
+	width: 20px;
+	top: 50%;
+	left: 0;
+	height: 20px;
+	border: solid 1px #a5a5a5;
+	background-color: #ffffff;
 	display: inline-block;
-    box-sizing: border-box;
-    border-radius: 50%;
+	box-sizing: border-box;
+	border-radius: 50%;
 }
 
 input.form__chk:checked+label:after {
 	content: "";
-    position: absolute;
-    width: 14px;
-    height: 14px;
-    background-color: #228af1;
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	background-color: #228af1;
 	left: 3px;
-    top: 8px;
-    border-radius: 50%;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 50%;
 }
 
 input.form__chk+label:hover:before,
@@ -547,30 +553,35 @@ input.form__radio:disabled+label:before:hover {
 
 input.form__radio+label {
 	position: relative;
-	font-size: 28px
+	font-size: 28px;
+	padding-left: 15px;
 }
 
 input.form__radio+label:before {
 	content: "";
-    width: 20px;
-    height: 20px;
-    border: solid 1px #2990d2;
-    background-color: #ffffff;
+	top: 50%;
+	transform: translateY(-50%);
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 0;
+	border: solid 1px #2990d2;
+	background-color: #ffffff;
 	display: inline-block;
-    box-sizing: border-box;
-    border-radius: 50%;
+	box-sizing: border-box;
+	border-radius: 50%;
 }
 
 input.form__radio:checked+label:after {
 	content: "";
-    position: absolute;
-    width: 14px;
-    height: 14px;
-    background-color: #fc725c;
-    left: 3px;
-    top:7px;
-    /* transform: translateY(-50%); */
-    border-radius: 50%;
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	background-color: #fc725c;
+	left: 3px;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 50%;
 }
 
 input.form__chk.inp--error+label:before,
@@ -655,9 +666,9 @@ input.form__chk__slide:disabled+label:before {
 input+label>.label-txt {
 	position: relative;
 	top: -2px;
-	padding-left: 8px;
+	padding-left: 12px;
 	font-size: 14px;
-	vertical-align: middle
+	vertical-align: middle;
 }
 
 /* //mark: aui-tab */
