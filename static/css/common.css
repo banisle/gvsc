@@ -1965,11 +1965,18 @@ footer.footer .ex-link li:nth-child(3) {
         height: auto;
         background:none;
         margin-top:0;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     .sub-content.intro01 .map-31-wrap .btn-icn{
         position: initial;
-        display:inline-block;
-        margin:0 0 15px;
+        width:25%;
+        margin:0 5px 15px;
+    }
+    .sub-content.intro01 .map-31-wrap .btn-icn >span{
+        width:100%;
+        padding: 0;
     }
 	.sub-content.intro03 .i-0 .tit-wrap{
 		padding-left: 0;
