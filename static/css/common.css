@@ -1761,6 +1761,9 @@ footer.footer .ex-link li:nth-child(3) {
 
 /* //mark: @media 960이하 반응형 */
 @media screen and (max-width:960px) {
+	html.fixed{
+		overflow-y: hidden;
+	}
     [class^="container--"] header .family-link{display:none}
     [class^="container--"] header .mo-menu{
         position: absolute;
@@ -1776,7 +1779,9 @@ footer.footer .ex-link li:nth-child(3) {
 	}
 
     [class^="container--"] header .gnb{
-		top: 15px;
+		position: fixed;
+		top: 108px;
+		bottom: 0;
 		left: 0;
 		z-index: 1000;
 		width: 100%;
