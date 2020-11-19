@@ -263,6 +263,8 @@ a[class^=btn]:before{
 	border: 0;
 }
 
+
+
 /* ie9 버튼 pressed 효과 제거 position 속성 추가 */
 a[class^=btn]>span,
 button[class^=btn]>span {
@@ -1382,6 +1384,7 @@ html.mobile .aui-content {
 	height: 2px;
 	background-color: #228af1;
 	transition: all ease .5s;
+	pointer-events: none;
 }
 
 

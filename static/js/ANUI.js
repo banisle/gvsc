@@ -1055,27 +1055,33 @@ ANUI.module = (function () {
 			var $submenu = $menu.find('> li > a');
 			var h = 0;
 
-			$menu.find('ul').each(function (index) {
-				var height = this.scrollHeight;
-				h = h < height ? height : h;
-			});
+			if ( $(window).width() <= 960 ) {
+				return;
+			} else{
+				$menu.find('ul').each(function (index) {
+					var height = this.scrollHeight;
+					h = h < height ? height : h;
+				});
 
-			//init
-			$submenu.on('click', function (e) {
-				e.preventDefault();
-			});
-			$menu.on('mouseenter focusin', function (e) {
-				$menu.addClass('active');
-				$menu.find('ul').height(h);
-			});
-			$menu.on('mouseleave focusout', function (e) {
-				$menu.removeClass('active');
-				$menu.find('ul').height(0);
-			});
-			$(window).on('scroll', function(){
-				$menu.removeClass('active');
-				$menu.find('ul').height(0);
-			})
+				//init
+				$submenu.on('click', function (e) {
+					e.preventDefault();
+				});
+				$menu.on('mouseenter focusin', function (e) {
+					$menu.addClass('active');
+					$menu.find('ul').height(h);
+				});
+				$menu.on('mouseleave focusout', function (e) {
+					$menu.removeClass('active');
+					$menu.find('ul').height(0);
+				});
+				$(window).on('scroll', function(){
+					$menu.removeClass('active');
+					$menu.find('ul').height(0);
+				});
+
+			}
+
 
 		},
 

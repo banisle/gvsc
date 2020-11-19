@@ -1,31 +1,57 @@
-$(document).ready(function(){
-	// gnb
-    ANUI.module.gnbAllUi();
+$(document).ready(function () {
 
-    var $moBtn = $('.mo-menu'),
-        $headerGnb = $('header .gnb');
+	var _pc = 0;
+	var _mo = 0;
 
-    $moBtn.on('click', function(){
-        $headerGnb.toggleClass('on');
-    });
+	$(window).on('load resize', function () {
+		var $w = $(this).width();
 
-    if (!isMobile) {
+		if ($w > 960) {
 
-        var $nav = $('.gnb'),
-        $a = $nav.find('> ul > li > a'),
-        $sBar = $nav.find('.floatBar');
+			if ( _pc == 0 ) {
+				_pc = 1;
 
-        $a.on('mouseover', function(){
-            var _t = $(this),
-                _tP = $(this).parent(),
-                aW = _t.width(),
-                aL = _tP.position().left;
+				var $nav = $('.gnb'),
+					$a = $nav.find('> ul > li > a'),
+					$sBar = $nav.find('.floatBar');
 
-            $sBar.css({
-                'width': aW,
-                'left' : aL + 100
-            });
-        });
-    }
+				$a.on('mouseover', function () {
+					var _t = $(this),
+						_tP = $(this).parent(),
+						aW = _t.width(),
+						aL = _tP.position().left;
 
+					$sBar.css({
+						'width': aW,
+						'left': aL + 100
+					});
+				});
+				ANUI.module.gnbAllUi();
+
+			}
+		} else {
+			$('.aui-allsub').off('mouseenter focusin mouseleave focusout');
+
+			if ( _mo == 0) {
+				_mo = 1;
+
+				var $moBtn = $('.mo-menu'),
+					$headerGnb = $('header .gnb'),
+					$fold = $headerGnb.find('.dep1');
+
+
+					$moBtn.on('click', function () {
+						$(this).toggleClass('on');
+						$headerGnb.toggleClass('on');
+					});
+
+					$fold.on('click',function(e){
+						e.preventDefault();
+						$(this).parent().toggleClass('on');
+					});
+					ANUI.module.gnbAllUi();
+
+			}
+		}
+	});
 });
