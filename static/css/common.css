@@ -1767,15 +1767,18 @@ footer.footer .ex-link li:nth-child(3) {
     [class^="container--"] header .family-link{display:none}
     [class^="container--"] header .mo-menu{
         position: absolute;
-        right:20px;
+        right:27px;
         top:50%;
         transform: translateY(-50%);
-        width: 50px;
-        height: 50px;
-        background: red;
+        width: 40px;
+        height: 40px;
+        background: url('../img/icn_side_menu.png') 50% 50% no-repeat;
+	}
+	[class^="container--"] header .mo-menu > span{
+		font-size: 0;
 	}
     [class^="container--"] header .mo-menu.on{
-		background:blue;
+		background: url('../img/icn_side_close.png') 50% 50% no-repeat;
 	}
 
     [class^="container--"] header .gnb{
@@ -1787,7 +1790,6 @@ footer.footer .ex-link li:nth-child(3) {
 		width: 100%;
 		padding: 0;
 		background: white;
-		border: 1px solid #707070;
 		border-right: 0;
 		border-left: 0;
 		transform: translateX(-100%);
@@ -1798,16 +1800,23 @@ footer.footer .ex-link li:nth-child(3) {
 	}
     [class^="container--"] header .gnb>ul>li{
 		width: 100%;
+		float: left;
 		text-align: left;
 		border-top:1px solid #e3e3e3;
+	}
+	[class^="container--"] header .gnb>ul>li>a.login {
+		background: none !important;
 	}
 	[class^="container--"] header .gnb>ul>li>a {
 		width: 100%;
 		padding: 5px 10px;
 		font-size: 16px;
 		box-sizing: border-box;
+		background: url('../img/icn_side_arr.png') calc(100% - 27px) 50% no-repeat;
 	}
-
+	[class^="container--"] header .gnb>ul>li.on>a{
+		background: url('../img/icn_side_arr_up.png') calc(100% - 27px) 50% no-repeat;
+	}
 	.map-31-wrap a[class^=btn]:before{
 		position: absolute;
 	}
@@ -1821,6 +1830,7 @@ footer.footer .ex-link li:nth-child(3) {
 		height: auto;
 		padding-left:15px;
 		border-top:1px solid #e3e3e3;
+		background: #f3f3f3;
 
 	}
 	.gnb .menu2depth--allsub>li.on ul{
@@ -1828,9 +1838,12 @@ footer.footer .ex-link li:nth-child(3) {
 	}
 	.gnb .menu2depth--allsub>li ul li a{
 		width: 100%;
-		padding: 5px 0;
-		font-size: 14px;
+		padding: 9px 0;
+		font-size: 18px;
 		text-align: left;
+	}
+	[class^="container--"] header .gnb li ul li:last-child a {
+		padding-bottom: 9px;
 	}
 	.floatBar{display: none;}
 
