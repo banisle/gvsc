@@ -1760,10 +1760,21 @@ footer.footer .ex-link li:nth-child(3) {
 
 /* //mark: @media 960이하 반응형 */
 @media screen and (max-width:960px) {
-    [class^="container--"] header .family-link,
-    [class^="container--"] header .gnb{display:none}
+    [class^="container--"] header .family-link{display:none}
+    [class^="container--"] header .mo-menu{
+        position: absolute;
+        right:20px; 
+        top:50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        background: red;
+    }
 
-    .content,
+    [class^="container--"] header .gnb.on{
+        background: red;
+    }
+    
     .sub-content,
     footer.footer {
         padding: 0 20px;
@@ -1792,7 +1803,7 @@ footer.footer .ex-link li:nth-child(3) {
     }
 
     .content .board-wrap .index-wrap{
-        padding:20px 10px;
+        padding:20px 20px;
     }
     .content .board-wrap .index-wrap .index-list{
         margin-bottom:10px;
@@ -1802,7 +1813,7 @@ footer.footer .ex-link li:nth-child(3) {
     }
 
     .content .serch-result {
-        padding:10px;
+        padding:10px 20px;
     }
     .main-banner{
         width:100%;
@@ -1817,6 +1828,16 @@ footer.footer .ex-link li:nth-child(3) {
 	.content .talk-wrap .main-board--step li{
 		margin-bottom: 40px;
 	}
+
+    .content .mv-wrap{
+        padding: 40px 20px;
+        box-sizing: border-box;
+    }
+
+    .content .main-search-wrap .form-search{
+        display:flex;
+        justify-content: space-between;
+    }
 
 	.table thead th,
 	.table tbody td{
