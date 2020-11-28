@@ -1854,7 +1854,7 @@ footer.footer .ex-link li:nth-child(3) {
 	.gnb .menu2depth--allsub>li ul{
 		position: relative;
 		display: none;
-		height: auto;
+		height: auto !important;
 		padding-left:15px;
 		border-top:1px solid #e3e3e3;
 		background: #f3f3f3;
