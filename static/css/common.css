@@ -1892,17 +1892,23 @@ footer.footer .ex-link li:nth-child(3) {
         padding:0;
         width: 100%;
     }
+    .content .banner-wrap article {
+		display: flex;
+		flex-direction: column-reverse;
+	}
     .content .banner-wrap article .banner-sm{
         width: 100%;
     }
     .content .banner-wrap article .banner-sm .unit {
         clear:both;
         width:100%;
-    }
+	}
+	.content .banner-wrap article .banner-sm .unit:nth-child(4){
+		margin-bottom: 0;
+	}
 
     .content .banner-wrap article .banner-big{
-        width:100%;
-        float:initial;
+        margin-bottom: 20px;
     }
 
     .content .board-wrap .index-wrap{
