@@ -113,8 +113,6 @@ img {
 
 /* //mark: text */
 .textbox-area {
-	border: solid 1px #707070;
-	background-color: #ffffff;
 }
 
 .textbox-area textarea {
@@ -127,8 +125,19 @@ img {
 	color: #919191;
 	resize: none;
 	box-sizing: border-box;
+	border: solid 1px #707070;
+    background-color: #ffffff;
 }
-
+.textbox-area.has-btn {
+    padding-right: 110px;
+    position: relative;
+}
+.textbox-area.has-btn > button{
+	position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
 .subject-tit {
 	padding: 55px 0 37px;
 	font-size: 38px;
@@ -171,6 +180,7 @@ img {
 	font-size: 22px;
 	line-height: 42px;
 	color: #2d2d2d;
+	word-break: break-all;
 }
 
 .txt-box-in.v1 {
@@ -277,7 +287,8 @@ img {
 .reply-wrap .file {
     padding: 7px 42px;
     margin-bottom: 20px;
-    border: solid 1px #707070;
+	border: solid 1px #707070;
+	border-top: 0;
     background-color: #ffffff;
     font-size: 20px;
 }
@@ -289,16 +300,18 @@ img {
     display: inline-block;
 }
 .reply-wrap .reply{
-	padding-left: 42px;
-	padding-right: 210px;
 	font-family: 'NanumGothic';
 	font-size: 20px;
 	line-height: 1.8;
 	color: #000;
 }
+.reply-wrap .reply .btn-wrap{
+	border-bottom: 1px solid #707070;
+	margin-bottom: 20px;
+}
 .reply-wrap .reply .st01,
 .reply-wrap .reply .st02{
-	display: block; position: relative;padding-left: 25px;
+	display: block; position: relative;padding-left: 45px;
 	line-height: 36px;
 }
 .reply-wrap .reply .st01::before,
@@ -1614,6 +1627,12 @@ button[class=btn--login] {
 }
 
 .box--list li .box>p {
+	overflow: hidden;
+	height: 50px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 	font-size: 12px;
 	line-height: 18px;
 	color: #333;
@@ -1755,19 +1774,26 @@ footer.footer .ex-link li:nth-child(2) {
 footer.footer .ex-link li:nth-child(3) {
 }
 
-
+[class^="container--"] header .mo-menu{
+	display: none;
+}
 
 
 
 /* //mark: @media 960이하 반응형 */
 @media screen and (max-width:960px) {
-	html.fixed{
-		overflow-y: hidden;
+	html.masked:after{
+		content: '';
+		position: fixed;
+		background: rgba(0,0,0,.7);
+		top: 0;bottom: 0;left: 0;right: 0;
+		pointer-events: none;
 	}
     [class^="container--"] header .family-link{display:none}
     [class^="container--"] header .mo-menu{
+		display: block;
         position: absolute;
-        right:27px;
+        left: 27px;
         top:50%;
         transform: translateY(-50%);
         width: 40px;
@@ -1782,7 +1808,7 @@ footer.footer .ex-link li:nth-child(3) {
 	}
 
     [class^="container--"] header .gnb{
-		position: fixed;
+		position: absolute;
 		top: 108px;
 		bottom: 0;
 		left: 0;
@@ -1802,6 +1828,7 @@ footer.footer .ex-link li:nth-child(3) {
 		width: 100%;
 		float: left;
 		text-align: left;
+		background: #fff;
 		border-top:1px solid #e3e3e3;
 	}
 	[class^="container--"] header .gnb>ul>li>a.login {
@@ -1847,15 +1874,19 @@ footer.footer .ex-link li:nth-child(3) {
 	}
 	.floatBar{display: none;}
 
+
+	[class^="container--"] header {
+		text-align: center;
+	}
     .sub-content,
     footer.footer {
-        padding: 0 20px;
+        padding: 0 10px;
 	}
 	footer.footer address{
 		padding-bottom: 20px;
 	}
     .content .banner-wrap{
-        padding: 20px;
+        padding: 20px 10px;
     }
     .content .banner-wrap > div{
         padding:0;
@@ -1875,17 +1906,26 @@ footer.footer .ex-link li:nth-child(3) {
     }
 
     .content .board-wrap .index-wrap{
-        padding:20px 20px;
+        padding:20px 10px;
     }
     .content .board-wrap .index-wrap .index-list{
         margin-bottom:10px;
     }
     .content .board-wrap .index-wrap .index-list:last-child{
         margin-bottom: 0;
-    }
+	}
+	.table tbody td > p{
+		display:-webkit-box;
+		-webkit-line-clamp:2;
+		-webkit-box-orient:vertical;
+		line-height:20px;
+		overflow:hidden;
+		text-overflow:ellipsis;
+		text-align: left;
+	}
 
     .content .serch-result {
-        padding:10px;
+        padding:0;
     }
     .main-banner{
         width:100%;
@@ -1898,24 +1938,28 @@ footer.footer .ex-link li:nth-child(3) {
 		font-size: 16px;
 	}
 	.content .talk-wrap {
-		padding: 60px 20px 0;
+		padding: 60px 10px 0;
 	}
 	.content .talk-wrap .main-board--step li{
 		margin-bottom: 40px;
 	}
 
     .content .mv-wrap{
-        padding: 40px 20px;
+        padding: 40px 10px;
         box-sizing: border-box;
     }
 
     .content .main-search-wrap .form-search{
         display:flex;
         justify-content: space-between;
-    }
+	}
+	.table-wrap .table-info .total-num{
+		font-size: 16px;
+	}
 
 	.table thead th,
 	.table tbody td{
+		padding: 10px 5px;
 		font-size: 14px;
 	}
 
@@ -1930,16 +1974,26 @@ footer.footer .ex-link li:nth-child(3) {
 	}
 	.tit-h3{font-size: 30px;}
 	.tit-h4{font-size: 28px;}
-	.txt-sub-tit{font-size: 20px;}
+	.txt-sub-tit{font-size: 16px;}
 	.sub-content .sec{padding: 45px 0 27px;}
 	.sub-content .sec .txt-box>dt{font-size: 22px;}
-	.txt-box-in{font-size: 16px;}
+	.txt-box-in.v1{
+		padding: 20px 10px !important;
+	}
+	.txt-box-in{
+		font-size: 16px;
+	}
 	.laypop.type01 .wrap-modal .inner{width: 100%;}
 	.txt-box{padding: 10px;}
+	.txt-box.v1{font-size: 16px;}
     .container--sub::after{
         display: none;
 	}
-	.list-bu01>li{font-size: 18px;line-height: 1.5;}
+	.list-bu01>li{padding-left: 10px; font-size: 16px;line-height: 1.5;}
+	.list-bu01>li::before{
+		top: 7px;
+		width: 6px;height: 6px;
+	}
 	.pagewrap>button{margin-top: 20px;}
     .sub-content{
         padding-top:0 !important;
@@ -1951,8 +2005,12 @@ footer.footer .ex-link li:nth-child(3) {
     }
     .row-2 > .l,
     .row-2 > .r{
-        width: 100%;
-    }
+		width: 100%;
+		padding-left: 0;
+	}
+	.row-2 > .r{
+		margin-top: 10px;
+	}
     .sub-content .sec.v0,
     .sub-content .sec.v2 .subject-wrap,
     .sub-content .sec.v3 .subject-wrap,
@@ -1987,7 +2045,7 @@ footer.footer .ex-link li:nth-child(3) {
 	.table tbody td.txt-l{padding-left: 5px;}
 	input[type=file]{width: 100%;}
 	.form-grp>span{
-		padding: 0 5px 0 0;
+		padding: 0 15px 0 0;
 	}
 	.txt-box.v3{
 		padding: 15px;
@@ -2117,5 +2175,11 @@ footer.footer .ex-link li:nth-child(3) {
 		width:25%;
 		padding: 0 10px;
         box-sizing: border-box;
-    }
+	}
+	footer.footer .ex-link li:first-child img{
+		width: 45%;
+	}
+	footer.footer .ex-link li:nth-child(2){
+		margin-top: 0;
+	}
 }

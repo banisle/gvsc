@@ -43,7 +43,7 @@ $(document).ready(function () {
 					$moBtn.on('click', function () {
 						$(this).toggleClass('on');
 						$headerGnb.toggleClass('on');
-						$('html').toggleClass('fixed');
+						$('html').toggleClass('masked');
 					});
 
 					$fold.on('click',function(e){
