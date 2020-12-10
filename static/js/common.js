@@ -1,9 +1,11 @@
 $(document).ready(function () {
+	console.log('ready');
 
 	var _pc = 0;
 	var _mo = 0;
 
-	$(window).on('load resize', function () {
+	var gnbCall = function(){
+
 		var $w = $(this).width();
 
 		if ($w > 960) {
@@ -54,5 +56,10 @@ $(document).ready(function () {
 
 			}
 		}
+	}();
+
+	$(window).on('resize', function () {
+		gnbCall();
 	});
+
 });
