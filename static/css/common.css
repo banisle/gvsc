@@ -272,6 +272,21 @@ img {
 	font-size: 20px;
 	line-height: 1.8;
 }
+.txt-box-tit{
+	padding:15px 0 15px 42px;
+	background: #333;
+	font-size: 22px;
+	color:#fff;
+}
+.txt-box.v3-2 {
+	padding: 35px 13px 41px 42px;
+	border: solid 1px #707070;
+	border-radius: 0;
+	background-color: #f6f6f6;
+	font-family: 'NanumGothic';
+	font-size: 20px;
+	line-height: 1.8;
+}
 .txt-box.v4{
 	border:0;
 	background: transparent;
@@ -1625,9 +1640,12 @@ button[class=btn--login] {
 
 .box--list li .box>strong {
 	display: block;
-	padding-bottom: 17px;
-	font-size: 14px;
-	color: #417ec7;
+    padding-bottom: 17px;
+    font-size: 14px;
+    color: #417ec7;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .box--list li .box>p {
@@ -1687,6 +1705,23 @@ button[class=btn--login] {
 	transform: translateY(-50%);
 }
 
+.bu-list > li{
+    position:relative;
+    padding-left:15px;
+    font-size:17px;
+
+}
+.bu-list > li::before{
+    content:'';
+    display:block;
+    position:absolute;
+    top:10px;
+    left:0;
+    width:4px;
+    height:4px;
+    background:#333;
+    border-radius:50%;
+}
 
 
 /* //mark: sub 자료실 */
