@@ -3,8 +3,9 @@ $(document).ready(function () {
 
 	var _pc = 0;
 	var _mo = 0;
+	var gnbCall;
 
-	var gnbCall = function(){
+	gnbCall = function(){
 
 		var $w = $(this).width();
 
